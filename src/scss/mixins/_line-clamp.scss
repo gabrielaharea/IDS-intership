@@ -1,0 +1,14 @@
+/**
+ * @mixin
+ * @name lineClamp
+ * @param $lines
+ * @description Mixin lineClamp CSS property allows limiting of the contents of a block container to the specified number of lines.
+ * @example how to use  @include lineClamp(7);
+ * @see documentation https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp
+ */
+@mixin lineClamp($lines) {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: $lines;
+	overflow: hidden;
+}

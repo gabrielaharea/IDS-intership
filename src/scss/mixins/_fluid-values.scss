@@ -1,0 +1,32 @@
+/**
+ * @mixin
+ * @name fluidValue
+ * @param $property: font-size
+ * @param $maxValue: 50
+ * @param $minValue: 20
+ * @param $maxWidthContainer: 1100
+ * @param $minWidthContainer: 320
+ * @description Mixin fluidValue return CSS properties and values.
+ * @example @include fluidValue("font-size", 50, 20, 1100, 320);
+ */
+ @mixin fluidValue(
+  $property,
+  $maxValue,
+  $minValue,
+  $maxWidthContainer: 1100,
+  $minWidthContainer: 320
+) {
+  #{$property}: #{$maxValue + px};
+
+  @media (min-width: #{$minWidthContainer + px}) and (max-width: #{$maxWidthContainer + px}) {
+    #{$property}: calc(
+      #{$minValue + px} + (#{$maxValue - $minValue}) * ((
+              100vw - #{$minWidthContainer + px}
+            ) / #{$maxWidthContainer - $minWidthContainer})
+    );
+  }
+
+  @media (max-width: #{$minWidthContainer - 1 + px}) {
+    #{$property}: #{$minValue + px};
+  }
+}
