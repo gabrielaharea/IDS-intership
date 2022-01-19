@@ -1,0 +1,46 @@
+.main-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 70px;
+}
+
+#img-astronaut {
+  width: 574px;
+  height: 574px;
+  margin-top: 52px;
+  margin-bottom: 120px;
+  margin-right: 120px;
+}
+
+.main-description {
+  margin-top: 120px;
+  margin-left: 105px;
+
+  h1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 70px;
+    line-height: 75px;
+  }
+
+  #p-red {
+    color: $colorTextPink;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  #p-black {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 40px;
+    color: $colorTextBlack;
+  }
+}
