@@ -1,0 +1,19 @@
+.main-footer {
+  background-color: $colorBackgroundBlueDark;
+  color: $colorTextWhite;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 125px;
+  align-items: stretch;
+
+  .first-column {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .second-column {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
