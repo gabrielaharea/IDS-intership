@@ -2,10 +2,16 @@
   background-color: $colorBackgroundBlueDark;
   color: $colorTextWhite;
   display: grid;
-  align-items: center;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 125px;
-  align-items: stretch;
+  column-gap: 125px;
+  height: max-content;
+  padding: 105px 105px 105px 105px;
+
+  .text-left {
+  }
+
+  .text-right {
+  }
 
   .first-column {
     grid-column-start: 1;
@@ -16,4 +22,27 @@
     grid-column-start: 2;
     grid-column-end: 3;
   }
+
+  h5 {
+    font-size: 28px;
+    padding-bottom: 40px;
+  }
+
+  p {
+    font-size: 15px;
+    a {
+      color: $colorTextWhite;
+    }
+  }
+}
+
+#link-contact-footer {
+  color: $colorTextWhite;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
