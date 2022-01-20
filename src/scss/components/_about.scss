@@ -1,0 +1,42 @@
+.section_about {
+  background-color: $colorBackgroundGrey;
+  height: 560px;
+  margin-bottom: 200px;
+  z-index: -1;
+  color: $colorTextWhite;
+
+  .container_about {
+    display: grid;
+    grid-template-columns: 445px 769px;
+    justify-content: center;
+    z-index: 10;
+  }
+
+  .container_text_about {
+    background-color: $colorBackgroundBlueDark;
+    height: 560px;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    #about {
+      padding-top: 120px;
+    }
+
+    #ids {
+       padding-top: 30%;
+    }
+  }
+
+   .about_p {
+     padding: 370px 110px 30px;
+     line-height: 27px;
+     align-items: center;
+
+   }
+
+  .container_foto_about{
+    background-color: $colorBackgroundBlueLight;
+    height: 639.57px;
+  }
+}
