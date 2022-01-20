@@ -2,47 +2,54 @@
   background-color: $colorBackgroundBlueDark;
   color: $colorTextWhite;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 635px 350px;
   column-gap: 125px;
-  height: max-content;
-  padding: 105px 105px 105px 105px;
+  padding: 120px 105px 120px 105px;
 
-  .text-left {
+  .about-left {
+    display: grid;
   }
 
-  .text-right {
-  }
-
-  .first-column {
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-
-  .second-column {
-    grid-column-start: 2;
-    grid-column-end: 3;
+  .about-right {
+    display: grid;
   }
 
   h5 {
     font-size: 28px;
-    padding-bottom: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0px;
+    text-align: left;
+
+    margin: 0;
   }
 
-  p {
-    font-size: 15px;
+  div {
+    .link_insomniac {
+      //margin-top: 40px;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 27px;
+      letter-spacing: 1.1299999952316284px;
+      text-align: left;
+    }
+
     a {
       color: $colorTextWhite;
     }
   }
-}
 
-#link-contact-footer {
-  color: $colorTextWhite;
-  text-decoration: none;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  #link-contact-footer {
+    color: $colorTextWhite;
+    font-style: normal;
+
+    border: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
+  }
 }
