@@ -1,3 +1,23 @@
 .section_ids {
   background-color: $colorBackgroundBlueLight;
+  
+  &::before {
+
+  }
+
+  .container_ids{
+    display: grid;
+    grid-template-columns: 445px 769px;
+    justify-content: center;
+    height: 560px;
+
+    .container_grid_lord{
+      
+    }
+
+    .container_grid_ids{
+
+    }
+  }
+
 }
