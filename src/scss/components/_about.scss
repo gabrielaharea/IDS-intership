@@ -3,14 +3,12 @@
   height: 560px;
   margin-top: 120px;
   margin-bottom: 200px;
-  z-index: -1;
   color: $colorTextWhite;
 
   .container_about {
     display: grid;
     grid-template-columns: 445px 769px;
     justify-content: center;
-    z-index: 10;
   }
 
   .container_text_about {

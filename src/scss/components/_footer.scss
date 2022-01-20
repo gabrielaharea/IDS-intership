@@ -1,13 +1,14 @@
 .section_footer {
   background-color: $colorBackgroundBlueDark;
+
   
   .container_footer {
-    background-color: $colorBackgroundBlueDark;
     color: $colorTextWhite;
     display: grid;
     grid-template-columns: 635px 350px;
     column-gap: 125px;
     padding: 120px 105px 120px 105px;
+    justify-content: center;
 
     .about-left {
       display: grid;
