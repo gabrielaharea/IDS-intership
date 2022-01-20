@@ -8,10 +8,12 @@
 
   .about-left {
     display: grid;
+    grid-template-rows: auto 324px 20px;
   }
 
   .about-right {
     display: grid;
+    grid-template-rows: max-content 300px max-content;
   }
 
   h5 {
@@ -23,6 +25,12 @@
     text-align: left;
 
     margin: 0;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin: 0;
+    margin-top: 20px;
   }
 
   div {
