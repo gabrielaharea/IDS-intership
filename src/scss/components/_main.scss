@@ -1,8 +1,3 @@
-.main-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 70px;
-}
 
 #img-astronaut {
   width: 574px;
@@ -12,7 +7,10 @@
   margin-right: 120px;
 }
 
-.main-description {
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 70px;
   margin-top: 120px;
   margin-left: 105px;
 

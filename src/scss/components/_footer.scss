@@ -1,63 +1,67 @@
-.main-footer {
+.section_footer {
   background-color: $colorBackgroundBlueDark;
-  color: $colorTextWhite;
-  display: grid;
-  grid-template-columns: 635px 350px;
-  column-gap: 125px;
-  padding: 120px 105px 120px 105px;
-
-  .about-left {
+  
+  .container_footer {
+    background-color: $colorBackgroundBlueDark;
+    color: $colorTextWhite;
     display: grid;
-    grid-template-rows: auto 324px 20px;
-  }
+    grid-template-columns: 635px 350px;
+    column-gap: 125px;
+    padding: 120px 105px 120px 105px;
 
-  .about-right {
-    display: grid;
-    grid-template-rows: max-content 300px max-content;
-  }
+    .about-left {
+      display: grid;
+      grid-template-rows: auto 324px 20px;
+    }
 
-  h5 {
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 42px;
-    letter-spacing: 0px;
-    text-align: left;
+    .about-right {
+      display: grid;
+      grid-template-rows: max-content 300px max-content;
+    }
 
-    margin: 0;
-    margin-bottom: 20px;
-  }
-
-  p {
-    margin: 0;
-    margin-top: 20px;
-  }
-
-  div {
-    .link_insomniac {
-      //margin-top: 40px;
-      font-size: 18px;
+    h5 {
+      font-size: 28px;
       font-style: normal;
       font-weight: 400;
-      line-height: 27px;
-      letter-spacing: 1.1299999952316284px;
+      line-height: 42px;
+      letter-spacing: 0px;
       text-align: left;
+
+      margin: 0;
+      margin-bottom: 20px;
     }
 
-    a {
+    p {
+      margin: 0;
+      margin-top: 20px;
+    }
+
+    div {
+      .link_insomniac {
+        //margin-top: 40px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 1.1299999952316284px;
+        text-align: left;
+      }
+
+      a {
+        color: $colorTextWhite;
+      }
+    }
+
+    #link-contact-footer {
       color: $colorTextWhite;
+      font-style: normal;
+
+      border: none;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 2px;
     }
-  }
-
-  #link-contact-footer {
-    color: $colorTextWhite;
-    font-style: normal;
-
-    border: none;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 2px;
   }
 }
