@@ -1,17 +1,24 @@
-
 #img-astronaut {
   width: 574px;
   height: 574px;
-  margin-bottom: 120px;
-  margin-right: 120px;
+  justify-items: end;
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 70px;
-  margin-top: 120px;
-  margin-left: 105px;
+  margin: 0;
+  margin-top: 52px;
+  padding-bottom: 120px;
+  padding: 0;
+  padding-left: 105px;
+  padding-right: 105px;
+
+  .container_text {
+    justify-items: start;
+    align-self: center;
+  }
 
   h1 {
     font-style: normal;
