@@ -1,23 +1,41 @@
 .section_ids {
-  background-color: $colorBackgroundBlueLight;
-  
-  &::before {
+  background-color: white;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  height: 778px;
 
+  .color_blue {
+    background-color: $colorBackgroundBlueLight;
+    height: 516px;
   }
 
-  .container_ids{
+  .color_red {
+    background-color: $colorBackgroundRed;
+    height: 423px;
+    margin-top: 355px;
+  }
+
+  .luna {
+    z-index: 1;
+  }
+
+  .container_ids {
     display: grid;
     grid-template-columns: 445px 769px;
     justify-content: center;
     height: 560px;
 
-    .container_grid_lord{
-      
+    .box_green {
+      background-color: $colorBackgroundGreen;
+      height: 263px;
+      z-index: 2;
     }
 
-    .container_grid_ids{
-
+    .container_grid_ids {
+      background-color: $colorBackgroundBlueLightLight;
+      padding-top: 300px;
+      padding-left: 115px;
+      padding-right: 115px;
     }
   }
-
 }
