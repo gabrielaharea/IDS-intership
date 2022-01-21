@@ -1,7 +1,7 @@
 .section_ids {
   background-color: white;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto 1214px auto;
   height: 778px;
 
   .color_blue {
@@ -21,9 +21,9 @@
 
   .container_ids {
     display: grid;
-    grid-template-columns: 445px 769px;
-    justify-content: center;
-    height: 560px;
+    grid-template-columns: 445px 770px;
+    // justify-content: center;
+    // height: 560px;
 
     .box_green {
       background-color: $colorBackgroundGreen;
@@ -33,9 +33,11 @@
 
     .container_grid_ids {
       background-color: $colorBackgroundBlueLightLight;
-      padding-top: 300px;
+      padding-top: 100px;
       padding-left: 115px;
       padding-right: 115px;
+      margin-top: 150px;
+      margin-bottom: 125px;
     }
   }
 }
