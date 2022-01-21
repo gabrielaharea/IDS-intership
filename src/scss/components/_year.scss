@@ -1,0 +1,9 @@
+.section-years {
+  background-color: $colorBackgroundBlueNormal;
+
+
+  .container-years {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
