@@ -8,15 +8,40 @@
     grid-template-rows: 395px 55px 525px;
     grid-template-columns: 1324px;
     justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
 
     .box_content_up {
       display: grid;
       grid-template-columns: 440px 691px;
+
+      // .title_content_up {
+      // }
     }
 
     .box_content_down {
       display: grid;
       grid-template-columns: 440px 691px;
+
+      // .text_content_down {
+      // }
+
+      .down_images {
+        padding-top: 60px;
+
+        .img_galaxy {
+          z-index: 2;
+          background-size: fit;
+        }
+
+        .img_cosmonauts {
+          z-index: 3;
+          position: absolute;
+          left: 400px;
+          top: 3400px;
+          
+        }
+      }
     }
   }
 }
