@@ -1,8 +1,9 @@
 .section_ids {
   background-color: white;
   display: grid;
-  grid-template-columns: auto 1214px auto;
-  height: 778px;
+  grid-template-columns: auto 1324px auto;
+  height: 750px;
+  margin-bottom: 70px;
 
   .color_blue {
     background-color: $colorBackgroundBlueLight;
@@ -15,18 +16,25 @@
     margin-top: 355px;
   }
 
+  // container -
   .container_ids {
     display: grid;
-    grid-template-columns: 445px 770px;
-    justify-content: center;
+    grid-template-columns: max-content 1fr;
+
     // height: 560px;
 
+    // container ---  1
     .container_voldemord {
       grid-template-rows: 280px;
       display: grid;
 
+      .container_luna {
+        object-fit: contain;
+      }
+
       .box_green {
         background-color: $colorBackgroundGreen;
+        width: 440px;
         height: 263px;
         z-index: 3;
         margin-top: 235px;
@@ -57,19 +65,30 @@
         }
       }
 
-      .luna {
+      .container_luna {
         z-index: 2;
+
+        img {
+          width: 444px;
+          height: 624.59px;
+          position: absolute;
+          object-fit: none;
+        }
       }
     }
 
+    // container -- 2
     .container_grid_ids {
+      height: 659px;
+
       z-index: 2;
       background-color: $colorBackgroundBlueLightLight;
+
       padding-top: 100px;
       padding-left: 115px;
       padding-right: 115px;
-      margin-top: 150px;
-      margin-bottom: 125px;
+      margin-top: 119px;
+      // margin-bottom: 125px;
 
       .title_message {
         padding-bottom: 20px;
