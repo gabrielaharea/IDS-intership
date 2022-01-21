@@ -1,11 +1,11 @@
 .section-years {
   background-color: $colorBackgroundBlueNormal;
-  height: 1378px;
+  height: 1280px;
 
   .container-years {
     color: $colorTextWhite;
     display: grid;
-    grid-template-rows: 395px 55px 525px;
+    grid-template-rows: 395px 55px 58px;
     grid-template-columns: 1324px;
     justify-content: center;
     padding-top: 120px;
@@ -38,36 +38,71 @@
     .box_content_down {
       display: grid;
       grid-template-columns: 450px auto;
+      grid-template-rows: 590px;
 
       .text_content_down {
         padding-top: 100px;
+        padding-left: 100px;
 
         .img_icon_pink {
+        }
+
+        .title_item_1 {
+          font-style: italic;
+          font-weight: normal;
+          padding-top: 35px;
+          padding-bottom: 17px;
+        }
+        .title_item_2 {
+          font-style: italic;
+          font-weight: normal;
+          padding-bottom: 17px;
+        }
+        .title_item_3 {
+          font-style: normal;
+          font-weight: normal;
+        }
+        .title_item_4 {
+          font-style: normal;
+          font-weight: normal;
+          padding-bottom: 35px;
+        }
+
+        .link_readMore {
+          font-style: normal;
+          font-weight: normal;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: #ffffff;
+
+          img {
+            padding-left: 15px;
+          }
         }
       }
       .down_images {
         padding-top: 60px;
-        display: grid;
+        // display: grid;
         justify-items: center;
 
         .img_galaxy {
           z-index: 2;
           position: relative;
-          background-size: fit;
-          left: 100px;
+          // left: 400x;
+          right: -250px;
         }
 
         .img_cosmonauts {
           z-index: 3;
           position: relative;
-          left: 85px;
+          left: 180px;
           bottom: 465px;
         }
 
         .img_desktop {
           z-index: 4;
           position: relative;
-          left: 85px;
+          left: 180px;
           bottom: 876px;
         }
       }
