@@ -2,8 +2,8 @@
   background-color: white;
   display: grid;
   grid-template-columns: auto 1324px auto;
-  height: 750px;
-  margin-bottom: 70px;
+  height: 777px;
+  // margin-bottom: 70px;
 
   .color_blue {
     background-color: $colorBackgroundBlueLight;
@@ -20,7 +20,6 @@
   .container_ids {
     display: grid;
     grid-template-columns: max-content 1fr;
-
     // height: 560px;
 
     // container ---  1
