@@ -13,15 +13,31 @@
 
     .box_content_up {
       display: grid;
-      grid-template-columns: 440px 691px;
+      grid-template-columns: 440px auto;
 
-      // .title_content_up {
-      // }
+      .title_content_up {
+        padding-left: 90px;
+        font-style: normal;
+        font-weight: normal;
+      }
+
+      .description_content_up {
+        padding-left: 225px;
+        padding-right: 100px;
+        font-style: normal;
+        font-weight: normal;
+
+        h5 {
+          padding-bottom: 50px;
+          font-style: italic;
+          font-weight: normal;
+        }
+      }
     }
 
     .box_content_down {
       display: grid;
-      grid-template-columns: 440px 691px;
+      grid-template-columns: 450px auto;
 
       .text_content_down {
         padding-top: 100px;
@@ -36,18 +52,22 @@
 
         .img_galaxy {
           z-index: 2;
+          position: relative;
           background-size: fit;
+          left: 100px;
         }
 
         .img_cosmonauts {
           z-index: 3;
           position: relative;
+          left: 85px;
           bottom: 465px;
         }
 
         .img_desktop {
           z-index: 4;
           position: relative;
+          left: 85px;
           bottom: 876px;
         }
       }
