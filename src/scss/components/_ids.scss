@@ -34,9 +34,9 @@
 
       .box_green {
         background-color: $colorBackgroundGreen;
-        width: 440px;
+        width: 444px;
         height: 263px;
-        z-index: 3;
+        z-index: 2;
         margin-top: 235px;
         color: $colorTextWhite;
         padding: 41px 65px 59px 65px;
@@ -45,6 +45,7 @@
         font-style: normal;
         font-weight: normal;
         line-height: 27px;
+        object-fit: cover;
 
         .title_lord {
           margin-bottom: 18px;
@@ -66,7 +67,7 @@
       }
 
       .container_luna {
-        z-index: 2;
+        // z-index: 2;
 
         img {
           width: 444px;
@@ -81,7 +82,7 @@
     .container_grid_ids {
       height: 659px;
 
-      z-index: 2;
+      // z-index: 2;
       background-color: $colorBackgroundBlueLightLight;
 
       padding-top: 100px;
