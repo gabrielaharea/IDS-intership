@@ -1,9 +1,22 @@
 .section-years {
   background-color: $colorBackgroundBlueNormal;
-
+  height: 1378px;
 
   .container-years {
+    color: $colorTextWhite;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-rows: 395px 55px 525px;
+    grid-template-columns: 1324px;
+    justify-content: center;
+
+    .box_content_up {
+      display: grid;
+      grid-template-columns: 440px 691px;
+    }
+
+    .box_content_down {
+      display: grid;
+      grid-template-columns: 440px 691px;
+    }
   }
 }
