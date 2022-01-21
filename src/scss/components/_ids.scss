@@ -15,29 +15,78 @@
     margin-top: 355px;
   }
 
-  .luna {
-    z-index: 1;
-  }
-
   .container_ids {
     display: grid;
     grid-template-columns: 445px 770px;
-    // justify-content: center;
+    justify-content: center;
     // height: 560px;
 
-    .box_green {
-      background-color: $colorBackgroundGreen;
-      height: 263px;
-      z-index: 2;
+    .container_voldemord {
+      grid-template-rows: 280px;
+      display: grid;
+
+      .box_green {
+        background-color: $colorBackgroundGreen;
+        height: 263px;
+        z-index: 3;
+        margin-top: 235px;
+        color: $colorTextWhite;
+        padding: 41px 65px 59px 65px;
+        // font
+        align-items: center;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 27px;
+
+        .title_lord {
+          margin-bottom: 18px;
+          font-style: normal;
+          font-weight: normal;
+        }
+
+        .paragraf_lord {
+          margin-bottom: 11px;
+          font-style: normal;
+          font-weight: normal;
+        }
+
+        .gmail_lord {
+          font-style: normal;
+          font-weight: normal;
+          padding-bottom: 59px;
+        }
+      }
+
+      .luna {
+        z-index: 2;
+      }
     }
 
     .container_grid_ids {
+      z-index: 2;
       background-color: $colorBackgroundBlueLightLight;
       padding-top: 100px;
       padding-left: 115px;
       padding-right: 115px;
       margin-top: 150px;
       margin-bottom: 125px;
+
+      .title_message {
+        padding-bottom: 20px;
+        font-style: normal;
+        font-weight: normal;
+      }
+      .text_pink {
+        color: $colorTextPink;
+        padding-bottom: 30px;
+        font-style: normal;
+        font-weight: normal;
+      }
+      .paragraf_message {
+        font-style: normal;
+        font-weight: normal;
+        padding-bottom: 93px;
+      }
     }
   }
 }
