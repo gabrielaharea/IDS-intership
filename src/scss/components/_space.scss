@@ -1,0 +1,51 @@
+.section_space {
+  height: 777px;
+  margin-top: 120px;
+  margin-bottom: 99px;
+  background: linear-gradient(
+    90deg,
+    $colorBackgroundGrey 73%,
+    $colorTextWhite 50%
+  );
+
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1324px;
+
+  .container_space {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
+
+    .text_space {
+      justify-self: center;
+      padding-top: 120px;
+      padding-left: 100px;
+      padding-right: 130px;
+
+      .title_space {
+        padding-bottom: 30px;
+        font-style: normal;
+        font-weight: normal;
+      }
+
+      .description_space {
+        font-style: normal;
+        font-weight: normal;
+        padding-bottom: 30px;
+      }
+
+      .link_viewAll {
+        font-style: normal;
+        font-weight: normal;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $colorTextBlue;
+      }
+    }
+
+    .box_img_circle {
+      justify-self: center;
+    }
+  }
+}
