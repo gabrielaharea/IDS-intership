@@ -1,0 +1,25 @@
+.podcasts_section {
+  height: 245 px;
+  justify-items: center;
+
+  .container_podcasts {
+    display: grid;
+    grid-template-columns: 750px 450px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .podcasts_text {
+      font-style: normal;
+      font-weight: normal;
+      margin-left: 80px;
+    }
+
+    .podcasts_button {
+      justify-self: end;
+      margin-right: 120px;
+    }
+  }
+}

@@ -1,13 +1,12 @@
 .astronaut_pee {
   height: 759px;
-  margin-bottom: 200px;
+  margin-bottom: 41px;
 
   .container_astronautPee {
     display: grid;
     grid-template-columns: 740;
     justify-items: center;
-    // align-items: center;
-    // justify-content: center;
+    justify-content: center;
 
     .text_astronautPee {
       background-color: $colorBackgroundRed;
@@ -16,7 +15,7 @@
       position: relative;
       width: 740px;
       height: 496px;
-      right: 20.5%;
+      right: 34%;
       top: 35%;
       text-align: left;
       // align-items: center;
@@ -41,7 +40,7 @@
       position: relative;
       // top: -500px;
       bottom: 460px;
-      left: 15%;
+      left: 25%;
     }
   }
 }
