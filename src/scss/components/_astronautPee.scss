@@ -1,0 +1,47 @@
+.astronaut_pee {
+  height: 759px;
+  margin-bottom: 200px;
+
+  .container_astronautPee {
+    display: grid;
+    grid-template-columns: 740;
+    justify-items: center;
+    // align-items: center;
+    // justify-content: center;
+
+    .text_astronautPee {
+      background-color: $colorBackgroundRed;
+      color: $colorTextWhite;
+      z-index: 2;
+      position: relative;
+      width: 740px;
+      height: 496px;
+      right: 20.5%;
+      top: 35%;
+      text-align: left;
+      // align-items: center;
+      // display: flex;
+      // justify-self: center;
+      padding: 100px 100px;
+
+      .title_astronautPee {
+        padding-bottom: 20px;
+        font-style: normal;
+        font-weight: normal;
+      }
+
+      .description_astronautPee {
+        font-style: normal;
+        font-weight: normal;
+      }
+    }
+
+    .foto_astronautPee {
+      z-index: 1;
+      position: relative;
+      // top: -500px;
+      bottom: 460px;
+      left: 15%;
+    }
+  }
+}

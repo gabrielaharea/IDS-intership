@@ -16,7 +16,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-self: center;
-    background: linear-gradient( 90deg, $colorBackgroundGrey 75%, $colorTextWhite 50%);
+    background: linear-gradient(
+      90deg,
+      $colorBackgroundGrey 75%,
+      $colorTextWhite 50%
+    );
 
     .text_space {
       justify-self: center;
@@ -36,7 +40,6 @@
         font-weight: normal;
         padding-bottom: 30px;
         line-height: 27px;
-
       }
 
       .link_viewAll {
@@ -45,6 +48,10 @@
         letter-spacing: 1px;
         text-transform: uppercase;
         color: $colorTextBlue;
+        font-style: normal;
+        font-weight: normal;
+        letter-spacing: 2px;
+        text-transform: uppercase;
       }
 
       .arrow_blue {
