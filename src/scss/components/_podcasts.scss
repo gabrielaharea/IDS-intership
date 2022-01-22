@@ -5,7 +5,6 @@
   .container_podcasts {
     display: grid;
     grid-template-columns: 701px 400px;
-    // gap: 60px;
     align-items: center;
     justify-content: center;
     padding-top: 80px;
@@ -14,27 +13,17 @@
     .podcasts_text {
       font-style: normal;
       font-weight: normal;
-      // margin-left: 80px;
     }
 
     .podcasts_button {
       justify-self: end;
-      // margin-right: 100px;
-
       background-color: $colorButtonPink;
       width: 180px;
       height: 48px;
-      // border: 0;
-      // text-stuled
       color: $colorTextWhite;
-      font-style: normal;
-      // text-align: center;
-
-      align-items: center;
-      align-content: center;
-      align-self: center;
-      align-content: center;
       padding: 14px 24px;
     }
   }
 }
+
+
