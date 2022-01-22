@@ -1,5 +1,5 @@
 .section_space {
-  height: 777px;
+  height: 680px;
   margin-top: 120px;
   margin-bottom: 99px;
   background: linear-gradient(
@@ -16,6 +16,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-self: center;
+    background: linear-gradient( 90deg, $colorBackgroundGrey 75%, $colorTextWhite 50%);
 
     .text_space {
       justify-self: center;
