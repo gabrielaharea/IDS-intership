@@ -19,7 +19,22 @@
 
     .podcasts_button {
       justify-self: end;
-      margin-right: 120px;
+      margin-right: 100px;
+
+      background-color: $colorButtonPink;
+      width: 180px;
+      height: 48px;
+      // border: 0;
+      // text-stuled
+      color: $colorTextWhite;
+      font-style: normal;
+      // text-align: center;
+
+      align-items: center;
+      align-content: center;
+      align-self: center;
+      align-content: center;
+      padding: 14px 24px;
     }
   }
 }
