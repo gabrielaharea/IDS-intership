@@ -11,14 +11,14 @@
     .text_astronautPee {
       background-color: $colorBackgroundRed;
       color: $colorTextWhite;
-      z-index: 2;
+      padding: 100px 100px;
       position: relative;
-      width: 740px;
       height: 496px;
+      width: 740px;
       right: 34%;
       top: 35%;
       text-align: left;
-      padding: 100px 100px;
+      z-index: 2;
 
       .title_astronautPee {
         padding-bottom: 20px;
@@ -35,7 +35,6 @@
     .foto_astronautPee {
       z-index: 1;
       position: relative;
-      // top: -500px;
       bottom: 460px;
       left: 25%;
     }

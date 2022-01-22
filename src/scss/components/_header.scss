@@ -1,14 +1,13 @@
 .main-header {
-  a:link {
-    text-decoration: none;
-  }
-
   display: grid;
   grid-template-columns: max-content 1fr max-content;
   align-items: center;
   padding: 21px 47px 21px 60px;
-  border: 1px solid #F0F0F0;
-  
+  border: 1px solid #f0f0f0;
+
+  a:link {
+    text-decoration: none;
+  }
 }
 
 .header-nav {
@@ -19,13 +18,14 @@
   gap: 120px;
   text-transform: uppercase;
 
-
   #nav-about {
     color: $colorTextPink;
   }
+
   #nav-kmj {
     color: $colorTextBlack;
   }
+
   #nav-kS {
     color: $colorTextBlack;
   }
@@ -36,10 +36,10 @@
   background-color: $colorButtonPink;
   width: 180px;
   height: 48px;
+  padding: 14px 24px;
   border: 0;
-  // text-stuled
+  // text-stled
   color: $colorTextWhite;
   font-style: normal;
   text-align: center;
-  padding: 14px 24px;
 }

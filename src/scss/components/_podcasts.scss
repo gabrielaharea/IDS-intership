@@ -5,8 +5,8 @@
   .container_podcasts {
     display: grid;
     grid-template-columns: 701px 400px;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     padding-top: 80px;
     padding-bottom: 80px;
 
@@ -16,11 +16,11 @@
     }
 
     .podcasts_button {
-      justify-self: end;
       background-color: $colorButtonPink;
+      color: $colorTextWhite;
+      justify-self: end;
       width: 180px;
       height: 48px;
-      color: $colorTextWhite;
       padding: 14px 24px;
     }
   }
