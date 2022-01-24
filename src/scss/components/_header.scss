@@ -1,6 +1,6 @@
 .header {
-  // max-width: 1680px;
-  // margin: 0 auto;
+  max-width: 1680px;
+  margin: 0 auto;
 
   //  font-style
   font-family: "Ideal Sans", sans-serif;
@@ -8,15 +8,20 @@
   font-style: normal;
   font-display: swap;
 
+  // codu curs
   .header__container {
     display: grid;
-    grid-template-columns: max-content 1fr max-content;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
     padding: 21px 47px 21px 60px;
     border: 1px solid #f0f0f0;
     justify-content: center;
   }
-
+  
+  .header__logo {
+    display: block;
+    width: 100%;
+  }
 }
 
 .header__nav {
@@ -49,6 +54,5 @@
   border: 0;
   // text-stled
   color: $colorTextWhite;
-  font-style: normal;
   text-align: center;
 }
