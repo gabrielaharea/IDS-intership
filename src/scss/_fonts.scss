@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Ideal Sans";
-  src: url("/src/fonts/fonts/IdealSans-Book.woff") format("woff");
+  src: url("/src/fonts/IdealSans-Book.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,15 @@
 
 @font-face {
   font-family: "Ideal Sans";
-  src: url("/src/fonts/fonts/") format("woff");
+  src: url("/src/fonts/IdealSans-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ideal Sans";
+  src: url("/src/fonts/IdealSans-BookItalic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -16,7 +24,7 @@
 
 @font-face {
   font-family: "Ideal Sans";
-  src: url("/src/fonts/font/IdealSans-Light.woff") format("woff");
+  src: url("/src/fonts/IdealSans-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -24,7 +32,7 @@
 
 @font-face {
   font-family: "Ideal Sans";
-  src: url("/src/fonts/font/IdealSans-LightItalic.woff") format("woff");
+  src: url("/src/fonts/IdealSans-LightItalic.woff") format("woff");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -32,7 +40,7 @@
 
 @font-face {
   font-family: "Ideal Sans";
-  src: url("/src/fonts/font/IdealSans-Medium.woff") format("woff");
+  src: url("/src/fonts/IdealSans-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -40,7 +48,7 @@
 
 @font-face {
   font-family: "Ideal Sans";
-  src: url("/src/fonts/font/IdealSans-MediumItalic.woff") format("woff");
+  src: url("/src/fonts//IdealSans-MediumItalic.woff") format("woff");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -48,7 +56,7 @@
 
 @font-face {
   font-family: "Ideal Sans";
-  src: url("/src/fonts/font/IdealSans-Semibold.woff") format("woff");
+  src: url("/src/fonts/IdealSans-Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;

@@ -1,3 +1,5 @@
+
+
 .hero {
   .container-hero {
     display: grid;
@@ -10,7 +12,10 @@
     padding: 0;
     padding-left: 105px;
     padding-right: 105px;
-    font-family: "Ideal Sans";
+    font-family: "Ideal Sans", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 
     .container-hero__text {
       justify-items: start;
@@ -25,7 +30,7 @@
         font-family: "Ideal Sans";
       }
 
-      .container-hero__text__descriptio {
+      .container-hero__text__description {
         color: $colorTextPink;
         font-style: normal;
         font-weight: normal;
