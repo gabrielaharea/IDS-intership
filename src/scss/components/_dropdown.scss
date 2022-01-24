@@ -1,11 +1,6 @@
 .section_dropdown {
   margin-top: 100px;
   margin-bottom: 120px;
-  //  font-style
-  font-family: "Ideal Sans", sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
 
   .container_dropdown {
     display: grid;
@@ -14,21 +9,16 @@
     gap: 50px;
 
     .box_click {
-
       .img_dropdown {
         size: 50px;
         padding-top: 7px;
       }
     }
-
-    .box_description_dropdown {
-
-      .text_dropdown {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 22px;
-        line-height: 33px;
-      }
+    .text_dropdown {
+      font-family: $font-family-base;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 33px;
     }
   }
 }

@@ -13,8 +13,8 @@
     align-items: center;
     max-width: 1680px;
     margin: 0 auto;
-    padding: 21px 47px 21px 60px;
-    font-family: "Ideal Sans";
+    padding: 21px 47px 21px 47px;
+    font-family: $font-ideal-sans ;
   }
 
   .header__logo {
@@ -54,6 +54,7 @@
 
     &.active {
       color: $colorButtonPink;
+      font-family: $font-family-base;
     }
   }
 }

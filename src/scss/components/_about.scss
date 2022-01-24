@@ -10,6 +10,10 @@
     grid-template-columns: 445px 769px;
     justify-content: center;
 
+    font-family: $font-ideal-sans;
+    font-style: normal;
+    font-weight: normal;
+
     .about__block__item2 {
       background-color: $colorBackgroundBlueDark;
       height: 560px;
