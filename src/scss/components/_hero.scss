@@ -3,19 +3,18 @@
 
   .hero__block {
     display: grid;
-    grid-template-columns: 1fr 1fr;  
-    max-width: 1214px; 
-    margin: 0 auto; 
+    grid-template-columns: 1fr 1fr;
+    max-width: 1214px;
+    margin: 0 auto;
     gap: 70px;
     justify-content: center;
     align-items: center;
-    //font styled
-    font-family: $font-ideal-sans;
 
     .hero__block__item1 {
+      font-family: $font-ideal-sans;
+      color: $colorTextBlack;
       justify-items: start;
       align-self: center;
-      color: $colorTextBlack;
       padding-bottom: 30px;
 
       .hero__description {
@@ -31,10 +30,14 @@
       }
     }
 
-    .hero__foto-astronaut {
-      height: 574px;
-      width: 574px;
-      justify-items: end;
+    img {
+      max-width: 100%;
+      height: auto;
+
+      // codul meu
+      // height: 574px;
+      // width: 574px;
+      // justify-items: end;
     }
   }
 }
