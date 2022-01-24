@@ -1,59 +1,86 @@
 .page__header {
-  // position: fixed;  //curs
-  max-width: 1680px;
-  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-bottom: 1px solid $colorGray-100;
+  background-color: $colorBackgroundWhite;
+  z-index: $zindex-sticky;
 
-  //  font-style
-  font-family: "Ideal Sans", sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-
-  // codu curs
   .section-header {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    padding: 21px 47px 21px 60px;
-    border: 1px solid #f0f0f0;
+    max-width: 1680px;
+    margin: 0 auto;
+    // padding: 21px 47px 21px 60px;
+    // border: 1px solid #f0f0f0;
     // justify-content: center;
   }
 
   .header__logo {
     display: block;
     width: 100%;
+    max-width: 105px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
   }
 }
 
 .header__nav {
+  position: relative;
   display: flex;
-  justify-content: center;
-  // justify-content: end;  //curs
-  // row-gap: 20px;        //curs
-  gap: 120px;
-  text-transform: uppercase;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  row-gap: 20px;
+  gap: 187px 20px;
+  @include fluidValue(padding-right, 187, 56, 1680, 1200);
+  @include fluidValue(column-gap, 120, 56, 1680, 1200);
 
-  .nav__item1 {
-    color: $colorTextPink;
-  }
+  // justify-content: center;
+  // gap: 120px;
+  // text-transform: uppercase;
 
-  .nav__item2 {
+  a {
+    font-size: $font-size-base-mobile;
+    font-weight: $font-weight-medium;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1.5;
     color: $colorTextBlack;
-  }
 
-  .nav__item3 {
-    color: $colorTextBlack;
+    &.active {
+      color: $colorButtonPink;
+    }
   }
 }
 
-.header__button {
-  //box-styled
-  background-color: $colorButtonPink;
-  width: 180px;
-  height: 48px;
-  padding: 14px 24px;
-  border: 0;
-  // text-stled
-  color: $colorTextWhite;
-  text-align: center;
-}
+    // .nav__item1 {
+    //   color: $colorTextPink;
+    // }
+
+    // .nav__item2 {
+    //   color: $colorTextBlack;
+    // }
+
+    // .nav__item3 {
+    //   color: $colorTextBlack;
+    // }
+  
+
+  // .header__button {
+  //   //box-styled
+  //   background-color: $colorButtonPink;
+  //   width: 180px;
+  //   height: 48px;
+  //   padding: 14px 24px;
+  //   border: 0;
+  //   // text-stled
+  //   color: $colorTextWhite;
+  //   text-align: center;
+  
+

@@ -1,0 +1,31 @@
+.btn {
+  position: relative;
+  padding: 12px 24px;
+  font-family: $font-ideal-sans;
+  font-size: 16px;
+  font-weight: $font-weight-medium;
+  line-height: 1.5;
+  color: $colorWhite;
+  text-transform: uppercase;
+  text-align: center;
+  transition: background-color 0.2s ease-out;
+
+  &.primary {
+    background-color: $colorPink;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: $colorBlue-100;
+      }
+    }
+
+    &:active {
+      background-color: $colorBlue-100;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 14px 24px;
+    font-size: 14px;
+  }
+}

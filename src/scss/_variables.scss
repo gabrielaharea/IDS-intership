@@ -12,3 +12,21 @@ $colorBackgroundRed: rgba(216, 78, 48, 1);
 $colorBackgroundGreen: rgba(141, 198, 63, 1);
 $colorBackgroundBlueLightLight: rgba(239, 249, 253, 1);
 
+$colorGrey: #eff9fd;
+$colorGray-100: #f0f0f0;
+$colorBlue-100: #023d74;
+
+/* Typography */
+$font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-ideal-sans: "Ideal Sans", $font-family-base;
+$font-mercury: "Mercury Text G2", $font-family-base;
+
+$font-size-base: 18px;
+$font-size-base-mobile: 16px;
+$line-height-base: 27px;
+$line-height-base-mobile: 24px;
+
+/* Z-index */
+$zindex-sticky: 1020;
+$zindex-fixed: 1030;
+$zindex-backdrop: 1040;
