@@ -23,15 +23,15 @@
   gap: 120px;
   text-transform: uppercase;
 
-  #nav-about {
+  .nav__item1{
     color: $colorTextPink;
   }
 
-  #nav-kmj {
+  .nav__item2 {
     color: $colorTextBlack;
   }
 
-  #nav-kS {
+  .nav__item3 {
     color: $colorTextBlack;
   }
 }
