@@ -1,4 +1,4 @@
-.header {
+.page__header {
   // position: fixed;  //curs
   max-width: 1680px;
   margin: 0 auto;
@@ -10,7 +10,7 @@
   font-display: swap;
 
   // codu curs
-  .header__container {
+  .section-header {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
