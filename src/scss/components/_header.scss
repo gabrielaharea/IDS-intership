@@ -1,18 +1,22 @@
 .header {
-  display: grid;
-  grid-template-columns: max-content 1fr max-content;
-  align-items: center;
-  padding: 21px 47px 21px 60px;
-  border: 1px solid #f0f0f0;
+  // max-width: 1680px;
+  // margin: 0 auto;
+
   //  font-style
   font-family: "Ideal Sans", sans-serif;
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 
-  a:link {
-    text-decoration: none;
+  .header__container {
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    align-items: center;
+    padding: 21px 47px 21px 60px;
+    border: 1px solid #f0f0f0;
+    justify-content: center;
   }
+
 }
 
 .header__nav {
@@ -23,7 +27,7 @@
   gap: 120px;
   text-transform: uppercase;
 
-  .nav__item1{
+  .nav__item1 {
     color: $colorTextPink;
   }
 
