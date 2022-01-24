@@ -1,6 +1,11 @@
 .podcasts_section {
   height: 215px;
   justify-items: center;
+  //  font-style
+  font-family: "Ideal Sans", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 
   .container_podcasts {
     display: grid;
@@ -25,5 +30,3 @@
     }
   }
 }
-
-

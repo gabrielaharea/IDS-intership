@@ -1,7 +1,11 @@
 .section_footer {
   background-color: $colorBackgroundBlueDark;
+  //  font-style
+  font-family: "Ideal Sans", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 
-  
   .container_footer {
     color: $colorTextWhite;
     display: grid;
@@ -51,8 +55,6 @@
       a {
         color: $colorTextWhite;
       }
-
-
     }
 
     #link-contact-footer {
@@ -67,7 +69,7 @@
       letter-spacing: 2px;
     }
 
-    .arrow_footer{
+    .arrow_footer {
       padding-left: 10px;
     }
   }

@@ -1,6 +1,11 @@
 .section-years {
   background-color: $colorBackgroundBlueNormal;
   height: 1280px;
+  //  font-style
+  font-family: "Ideal Sans", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 
   .container-years {
     color: $colorTextWhite;
