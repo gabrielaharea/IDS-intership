@@ -1,53 +1,34 @@
 .section-about {
   background-color: $colorGrey;
-  color: $colorWhite;
-  height: 560px;
+  height: 560px; // height background-grey
   margin-bottom: 200px;
 
-  .container__block__item1 {
+  .section-about-container {
     display: grid;
     grid-template-columns: 445px 769px;
-    justify-content: center;
 
+    /*font-style*/
     font-family: $font-ideal-sans;
-    font-style: normal;
-    font-weight: normal;
+    color: $colorWhite;
 
-    .about__block__item2 {
+    .about-title {
       background-color: $colorBlueDark;
       height: 560px;
-      align-items: center;
-      padding-left: 100px;
-      padding-right: 100px;
+      padding: 120px 100px 120px 100px;
 
-      .title_item1 {
-        padding-top: 120px;
-        font-style: normal;
-        font-weight: normal;
-      }
-
-      .title_item2 {
-        padding-top: 30%;
-        font-style: normal;
-        font-weight: normal;
+      h6 {
+        padding-bottom: 70px;
       }
     }
   }
 
-  .about__block__item3 {
+  .about-paragraf {
     display: grid;
     grid-template-rows: 280px;
-
-    .block__img-sky {
-      z-index: 1;
-    }
-
-    .block__about_p {
-      background-color: $colorBlueLight;
-      height: 360px;
-      padding: 90px 110px 30px;
-      line-height: 27px;
-      z-index: 2;
-    }
+  }
+  .paragraf-about {
+    background-color: $colorBlueLight;
+    height: 360px;
+    padding: 90px 115px 30px;
   }
 }
