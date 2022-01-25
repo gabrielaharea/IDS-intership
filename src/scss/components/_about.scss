@@ -1,6 +1,6 @@
 .section-about {
   background-color: $colorGrey;
-  height: 560px; // height background-grey
+  height: 560px; /* height background-grey */
   margin-bottom: 200px;
 
   .section-about-container {
@@ -10,18 +10,17 @@
     /*font-style*/
     font-family: $font-ideal-sans;
     color: $colorWhite;
-
-    .about-title {
-      background-color: $colorBlueDark;
-      height: 560px;
-      padding: 120px 100px 120px 100px;
-
-      h6 {
-        padding-bottom: 70px;
-      }
-    }
+  }
+  .about-title {
+    background-color: $colorBlueDark;
+    height: 560px;
+    padding: 120px 100px 120px 100px;
   }
 
+  h6 {
+    padding-bottom: 70px;
+  }
+  
   .about-paragraf {
     display: grid;
     grid-template-rows: 280px;
