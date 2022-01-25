@@ -4,8 +4,8 @@
   margin-bottom: 99px;
   background: linear-gradient(
     90deg,
-    $colorBackgroundGrey 73%,
-    $colorTextWhite 50%
+    $colorGrey 73%,
+    $colorWhite 50%
   );
 
   //  font-style
@@ -24,8 +24,8 @@
     align-self: center;
     background: linear-gradient(
       90deg,
-      $colorBackgroundGrey 75%,
-      $colorTextWhite 50%
+      $colorGrey 75%,
+      $colorWhite 50%
     );
 
     .text_space {
@@ -53,7 +53,7 @@
         font-weight: normal;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: $colorTextBlue;
+        color: $colorBlue;
         font-style: normal;
         font-weight: normal;
         letter-spacing: 2px;

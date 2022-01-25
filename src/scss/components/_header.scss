@@ -4,7 +4,7 @@
   right: 0;
   left: 0;
   border-bottom: 1px solid $colorGray-100;
-  background-color: $colorBackgroundWhite;
+  background-color: $colorWhite;
   z-index: $zindex-sticky;
 
   .section-header {
@@ -53,7 +53,7 @@
     color: $colorBlack;
 
     &.active {
-      color: $colorButtonPink;
+      color: $colorPink;
       font-family: $font-family-base;
     }
   }

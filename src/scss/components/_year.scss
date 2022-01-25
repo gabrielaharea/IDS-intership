@@ -1,5 +1,5 @@
 .section-years {
-  background-color: $colorBackgroundBlueNormal;
+  background-color: $colorBlueNormal;
   height: 1280px;
   //  font-style
   font-family: "Ideal Sans", sans-serif;
@@ -8,7 +8,7 @@
   font-display: swap;
 
   .container-years {
-    color: $colorTextWhite;
+    color: $colorWhite;
     display: grid;
     grid-template-rows: 395px 55px 58px;
     grid-template-columns: 1324px;

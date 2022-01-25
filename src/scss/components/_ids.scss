@@ -6,12 +6,12 @@
   // margin-bottom: 70px;
 
   .color_blue {
-    background-color: $colorBackgroundBlueLight;
+    background-color: $colorBlueLight;
     height: 516px;
   }
 
   .color_red {
-    background-color: $colorBackgroundRed;
+    background-color: $colorRed;
     height: 423px;
     margin-top: 355px;
   }
@@ -29,14 +29,14 @@
       display: grid;
 
       .box_green {
-        background-color: $colorBackgroundGreen;
+        background-color: $colorGreen;
         height: 263px;
         width: 444px;
         margin-top: 235px;
         padding: 41px 65px 59px 65px;
         z-index: 2;
         // font
-        color: $colorTextWhite;
+        color: $colorWhite;
         align-items: center;
         object-fit: cover;
 
@@ -70,7 +70,7 @@
       height: 659px;
 
       // z-index: 2;
-      background-color: $colorBackgroundBlueLightLight;
+      background-color: $colorBlueLightLight;
 
       padding-top: 100px;
       padding-left: 115px;
@@ -82,7 +82,7 @@
         padding-bottom: 20px;
       }
       .text_pink {
-        color: $colorTextPink;
+        color: $colorPink;
         padding-bottom: 30px;
         line-height: 33px;
       }
