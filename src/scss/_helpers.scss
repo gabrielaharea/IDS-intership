@@ -3,3 +3,45 @@
 *::after {
   box-sizing: border-box;
 }
+
+body {
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  min-height: 100vh;
+  padding-top: 80px;
+  font-family: $font-ideal-sans;
+  font-size: $font-size-base;
+  font-weight: $font-weight-light;
+  font-feature-settings: 'lnum';
+  line-height: $line-height-base;
+  color: $colorBlack;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1023px) {
+    padding-top: 72px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 54px;
+    font-size: $font-size-base-mobile;
+    line-height: $line-height-base-mobile;
+  }
+}
+
+.container {
+  display: grid;
+  width: 100%;
+  max-width: $container-max-width;
+  padding: 0 $container-gap;
+  margin: 0 auto;
+
+  @media (max-width: 1199px) {
+    max-width: 768px;
+    padding: 0 $container-gap-tablet;
+  }
+
+  @media (max-width: 767px) {
+    padding: 0 $container-gap;
+  }
+}
