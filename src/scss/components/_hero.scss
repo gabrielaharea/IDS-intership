@@ -1,43 +1,16 @@
+/* @TODO Code for Gabi */
 .section-hero {
-  margin-top: 172px;
+  padding: 52px 0 120px;
 
-  .hero__block {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 1214px;
-    margin: 0 auto;
-    gap: 70px;
-    justify-content: center;
-    align-items: center;
-
-    .hero__block__item1 {
-      font-family: $font-ideal-sans;
-      color: $colorTextBlack;
-      justify-items: start;
-      align-self: center;
-      padding-bottom: 30px;
-
-      .hero__description {
-        color: $colorTextPink;
-        text-transform: uppercase;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        padding-top: 30px;
-        padding-bottom: 20px;
-      }
-
-      .hero__paragraf {
-        padding-top: 20px;
-      }
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-
-      // codul meu
-      // height: 574px;
-      // width: 574px;
-      // justify-items: end;
-    }
+  h1 {
+    margin-bottom: 60px;
   }
 }
+
+.section-hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 70px;
+}
+
+

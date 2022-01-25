@@ -1,4 +1,4 @@
-$colorTextBlack: rgba(0, 0, 0, 1);
+$colorBlack: #000;
 $colorTextWhite: rgba(255, 255, 255, 1);
 $colorTextBlue: rgba(0, 105, 165, 1);
 $colorTextPink: rgba(227, 69, 194, 1);
@@ -32,6 +32,12 @@ $font-weight-bold: 700;
  
 $line-height-base: 27px;
 $line-height-base-mobile: 24px;
+
+/* Container */
+$container-max-width: 1238px;
+$container-gap: 12px;
+$container-gap-tablet: 36px;
+$container-small-max-width: 1004px;
 
 /* Z-index */
 $zindex-sticky: 1020;
