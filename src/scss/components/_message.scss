@@ -2,85 +2,183 @@
   position: relative;
   margin-bottom: 100px;
 
-    .container {
-      display: grid;
-      grid-template-columns: max-content 1fr;
-    }
+  .container {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+  }
 
-      &::before {
+    &::before {
       content: "";
       position: absolute;
       top: 0;
       left: 0;
       width: calc(50% - 600px);
-      height: calc(63%);
+      height: calc(100% - 254px);
       background-color: $colorBlue;
       z-index: -1;
     }
-
     &::after {
       content: "";
       position: absolute;
       bottom: 0;
       right: 0;
       width: calc(50% - 607px);
-      height: calc(423px);
+      height: calc(100% - 423px);
       background-color: $colorRed;
       z-index: -1;
     }
-
+  
+  
     .message-contact {
       position: relative;
       font-family: $font-family-base;
+      min-height: 777px; //
     }
 
-      img {
-        display: block;
-      }
-      
-      .message-contact-info {
-        max-width: 445px;
-        background-color: $colorGreen;
-        font-family: $font-family-base;
-        font-weight: $font-weight-normal;
-        color: $colorWhite;
-        padding: 40px 65px 60px 65px;
-        position: absolute;
-        bottom: 0;
-  
-        a {
-          color: $colorWhite;
-        }
-    
-        h4 {
-          font-weight: $font-weight-normal;
-        }
-      }
-    
-      .message-description {
-        position: relative;
-    
-        .description-text {
-          position: absolute;
-          background-color: $colorAliceBlue;
-          font-family: $font-family-base;
-          font-weight: $font-weight-normal;
-          padding: 120px 115px 93px 115px;
-          max-height: 700px;
-          bottom: 0;
-        }
-    
-        h2 {
-          margin-bottom: 20px;
-          $font-weight-normal: 400;
-        }
-    
-        h5{
-           color: $colorPink;
-           margin-bottom: 30px;
-        }
-      }
+    img {
+      display: block;
     }
+
+  .message-contact-info {
+    background-color: $colorGreen;
+    font-family: $font-family-base;
+    font-weight: $font-weight-normal;
+    color: $colorWhite;
+    padding: 40px 65px 60px 65px;
+    position: absolute;
+    bottom: 0;
+
+    p {
+      padding-top: 18px; //
+    }
+    a {
+      padding-top: 11px; //
+      color: $colorWhite;
+    }
+    h4 {
+      font-weight: $font-weight-normal;
+    }
+  }
+  
+  
+  
+  .message-description {
+    position: relative;
+
+    .description-text {
+      position: absolute;
+      background-color: $colorAliceBlue;
+      font-family: $font-family-base;
+      font-weight: $font-weight-normal;
+      padding: 120px 115px 93px 115px;
+      max-height: 700px;
+      bottom: 0;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      $font-weight-normal: 400;
+    }
+
+    h5 {
+      margin-top: 20px; //
+      margin-bottom: 30px;
+      color: $colorPink;
+
+    }
+
+  }
+}.section-message {
+  position: relative;
+  margin-bottom: 100px;
+
+  .container {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+  }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(50% - 600px);
+      height: calc(100% - 254px);
+      background-color: $colorBlue;
+      z-index: -1;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: calc(50% - 607px);
+      height: calc(100% - 423px);
+      background-color: $colorRed;
+      z-index: -1;
+    }
+  
+  
+    .message-contact {
+      position: relative;
+      font-family: $font-family-base;
+      min-height: 777px; //
+    }
+
+    img {
+      display: block;
+    }
+
+  .message-contact-info {
+    background-color: $colorGreen;
+    font-family: $font-family-base;
+    font-weight: $font-weight-normal;
+    color: $colorWhite;
+    padding: 40px 65px 60px 65px;
+    position: absolute;
+    bottom: 0;
+
+    p {
+      padding-top: 18px; //
+    }
+    a {
+      padding-top: 11px; //
+      color: $colorWhite;
+    }
+    h4 {
+      font-weight: $font-weight-normal;
+    }
+  }
+  
+  
+  
+  .message-description {
+    position: relative;
+
+    .description-text {
+      position: absolute;
+      background-color: $colorAliceBlue;
+      font-family: $font-family-base;
+      font-weight: $font-weight-normal;
+      padding: 120px 115px 93px 115px;
+      max-height: 700px;
+      bottom: 0;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      $font-weight-normal: 400;
+    }
+
+    h5 {
+      margin-top: 20px; //
+      margin-bottom: 30px;
+      color: $colorPink;
+
+    }
+
+  }
+}
 
     
 
