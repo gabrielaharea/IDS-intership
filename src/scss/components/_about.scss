@@ -1,36 +1,54 @@
 .section-about {
-  background-color: $colorGrey;
-  height: 560px; /* height background-grey */
-  margin-bottom: 200px;
+  position: relative;
+  margin-bottom: 260px;
 
-  .section-about-container {
-    display: grid;
-    grid-template-columns: 445px 769px;
-
-    /*font-style*/
-    font-family: $font-ideal-sans;
-    font-weight: $font-weight-normal;
-    color: $colorWhite;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 80px);
+    background-color: $colorGrey;
+    z-index: -1;
   }
 
+
+  .container {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+  }
+  
   .about-title {
+    grid: grid;
+    align-content: end;
+    height: calc(100% -80px);
+    padding: 120px 95px;
     background-color: $colorBlueDark;
-    height: 560px;
-    padding: 120px 100px 120px 100px;
+    color: $colorWhite;
+    font-family: $font-ideal-sans;
+    font-weight: $font-weight-normal;
+  }
+
+  h3, 
+  h6 {
+    max-width: 255px;
   }
 
   h6 {
-    padding-bottom: 70px;
+    margin-bottom: 60px;
+    text-decoration: uppercase;
   }
+ 
 
-  .about-paragraf {
+  .about-description {
     display: grid;
     grid-template-rows: 280px;
   }
-  .paragraf-about {
+  
+  .paragraph-about {
     background-color: $colorBlueLight;
-    height: 360px;
-    padding: 90px 115px 30px;
+    padding: 100px 115px 70px;
   }
 
   p {
