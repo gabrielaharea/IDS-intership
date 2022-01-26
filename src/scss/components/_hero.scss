@@ -6,6 +6,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0 70px;
+    font-family: $font-ideal-sans;
+    font-weight: $font-weight-normal;
   }
 
   h1 {
@@ -16,7 +18,9 @@
   h4 {
     color: $colorPink;
     text-transform: uppercase;
+    font-family: $font-family-base;
   }
+
   p {
     margin-top: 40px;
     /* font-style */

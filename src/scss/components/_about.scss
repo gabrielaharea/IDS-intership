@@ -9,8 +9,10 @@
 
     /*font-style*/
     font-family: $font-ideal-sans;
+    font-weight: $font-weight-normal;
     color: $colorWhite;
   }
+
   .about-title {
     background-color: $colorBlueDark;
     height: 560px;
@@ -20,7 +22,7 @@
   h6 {
     padding-bottom: 70px;
   }
-  
+
   .about-paragraf {
     display: grid;
     grid-template-rows: 280px;
@@ -29,5 +31,9 @@
     background-color: $colorBlueLight;
     height: 360px;
     padding: 90px 115px 30px;
+  }
+
+  p {
+    font-family: $font-family-base;
   }
 }
