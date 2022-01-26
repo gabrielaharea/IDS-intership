@@ -1,34 +1,38 @@
-.section-hero {
+// .section-hero {}
 
   .section-hero-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0 70px;
+
     font-family: $font-ideal-sans;
     font-weight: $font-weight-normal;
-  }
+  
 
   h1 {
     padding-top: 120px;
-    padding-bottom: 60px;
+    @include lineClamp(7);
   }
 
   h4 {
     font-family: $font-family-base;
+    margin-top: 60px;
+  }
+  
+  .active {
     color: $colorPink;
     text-transform: uppercase;
   }
 
   p {
-    padding-top: 40px;
-    /* font-style */
+    margin-top: 40px;
     font-size: 24px;
     line-height: 28px;
-    max-width: 445px;
   }
 
-  .hero-img {
-    padding-top: 52px;
-    padding-bottom: 52px;
+  img {
+    margin-top: 52px;
+    margin-bottom: 120px;
   }
 }
+
