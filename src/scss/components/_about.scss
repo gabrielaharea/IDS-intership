@@ -34,6 +34,7 @@
   h3,
   h6 {
     max-width: 255px;
+    font-weight: $font-weight-normal;
   }
 
   h6 {
@@ -41,12 +42,20 @@
     text-transform: uppercase;
   }
 }
+
 .about-description {
+  display: grid;
+  grid-template-rows: 280px;
+
+
   p {
     background-color: $colorBlue;
     color: $colorWhite;
     padding: 63px 131px 110px 110px;
     margin-top: 0;
     font-family: $font-family-base;
+    font-weight: $font-weight-normal;
   }
+
+
 }
