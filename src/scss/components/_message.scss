@@ -1,7 +1,7 @@
 .section-message {
   display: grid;
   position: relative;
-  margin-bottom: 98px; // 120px
+  margin-bottom: 100px; // 120px
 
   .container {
     display: grid;
@@ -9,13 +9,6 @@
     justify-content: end;
     margin: 0 auto;
   }
-
-  // &::before,
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   z-index: -1;
-  // }
 
   &::before {
     background-color: $colorBlue;
@@ -40,10 +33,6 @@
   .message-contact {
     position: relative;
     display: grid;
-    align-content: baseline;
-    width: 100%;
-    height: 100%;
-    min-height: 777px;
     max-width: 445px;
     color: $colorWhite;
     font-family: $font-family-base;
@@ -56,45 +45,33 @@
       height: 100%;
       z-index: -1;
     }
-    .message-image {
-      // height: 515px;
-      min-height: 1rem;
 
-      img.fade {
-        opacity: 1;
-      }
-      
-      img.lazy {
-        opacity: 0;
-        transition: opacity 1s;
-      }
-      img {
-        width: 100%;
-        height: 516px;
-        display: block;
-        object-fit: cover;
-        object-position: top;
-      }
+    img {
+      width: 100%;
+      height: 516px;
+      display: block;
+      object-fit: cover;
+      object-position: top;
     }
   }
 
   .message-contact-info {
     align-self: stretch;
-    padding: 60px 65px;
+    margin: 60px 65px;
     background-color: $colorGreen;
-
-    p {
-      font-weight: $font-weight-normal;
-      padding-top: 18px; //
-    }
-    a {
-      padding-top: 11px; //
-      color: $colorWhite;
-    }
 
     h4 {
       font-weight: $font-weight-normal;
     }
+    p {
+      font-weight: $font-weight-normal;
+      margin-top: 18px; //
+      margin-bottom: 11px;
+    }
+    a {
+      color: $colorWhite;
+    }
+
   }
 
   .message-description {
