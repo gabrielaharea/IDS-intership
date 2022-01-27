@@ -1,4 +1,6 @@
-// .section-hero {}
+.section-hero {
+  padding-top: 52px 0 120px;  
+}
 
   .section-hero-container {
     display: grid;
@@ -10,18 +12,14 @@
   
 
   h1 {
-    padding-top: 120px;
+    padding-top: 68px;
     @include lineClamp(7);
+    margin-bottom: 60px;
   }
 
   h4 {
     font-family: $font-family-base;
-    margin-top: 60px;
-  }
-  
-  .active {
-    color: $colorPink;
-    text-transform: uppercase;
+    // margin-top: 60px;
   }
 
   p {

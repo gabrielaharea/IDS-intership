@@ -30,9 +30,13 @@
   color: $colorWhite;
 
   h3,
-  h6 {
+  span {
     max-width: 255px;
     font-weight: $font-weight-normal;
+  }
+
+  span {
+    font-size: 18px;
   }
 
   h6 {
@@ -40,6 +44,7 @@
     text-transform: uppercase;
   }
 }
+
 .about-description {
   display: grid;
   grid-template-rows: 280px;
