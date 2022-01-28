@@ -8,19 +8,19 @@ if (process.env.NODE_ENV !== "production") {
 /* Document ready put your JavaScript code here */
 $(() => {});
 
-// const mainMenu = document.querySelector(".header__nav");
-// const closeMenu = document.querySelector(".closeMenu");
-// const openMenu = document.querySelector("openMenu");
+const mainMenu = document.querySelector(".menu-mobile");
+const openMenu = document.querySelector(".burger");
+const closeMenu = document.querySelector(".x");
 
-// openMenu.addEventListener("click", show);
-// closeMenu.addEventListener("click", close);
+openMenu.addEventListener("click", show);
+closeMenu.addEventListener("click", close);
 
-// function show() {
-//   mainMenu.style.display = 'flex';
-//   mainMenu.style.top = '0';
-// }
+function show() {
+  mainMenu.style.display = 'flex';
+  mainMenu.style.top = '0';
+}
 
-// function close() {
-//   mainMenu.style.top = '-100%';
-// }
+function close() {
+  mainMenu.style.display = 'none';
+}
 
