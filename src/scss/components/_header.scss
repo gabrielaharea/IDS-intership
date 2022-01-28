@@ -12,8 +12,8 @@
     grid-template-columns: auto 1fr auto;
     align-items: center;
     max-width: 1680px;
+    padding: 21px 60px;
     margin: 0 auto;
-    padding: 21px 47px 21px 47px;
     font-family: $font-ideal-sans;
   }
 
@@ -21,6 +21,7 @@
     display: flex;
     width: 100%;
     max-width: 105px;
+    height: 58px;
 
     img {
       max-width: 100%;
@@ -40,10 +41,12 @@
   @include fluidValue(padding-right, 187, 56, 1680, 1200);
   @include fluidValue(column-gap, 120, 56, 1680, 1200);
 
-  // justify-content: center;
-  // gap: 120px;
-  // text-transform: uppercase;
-
+  nav a {
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+    text-transform: uppercase;
+  }
   a {
     font-size: $font-size-base-mobile;
     font-weight: $font-weight-medium;
@@ -59,25 +62,72 @@
   }
 }
 
-// .nav__item1 {
-//   color: $colorTextPink;
-// }
+.icon-menu {
+  display: none;
+  @media (max-width: 1024px) {
+    display: block;
+  }
+}
 
-// .nav__item2 {
-//   color: $colorBlack;
-// }
+/// BUTTON BURGHER
+@media (max-width: 1024px) {
+  svg {
+    height: 80px;
+    position: absolute;
+    width: 80px;
+  }
 
-// .nav__item3 {
-//   color: $colorBlack;
-// }
+  .plate {
+    height: 80px;
+    width: 80px;
+  }
+  .burger {
+    filter: url(#gooeyness);
+  }
+  .x {
+    transform: scale(0);
+    transition: transform 400ms;
+  }
+  .line {
+    fill: none;
+    stroke: black;
+    stroke-width: 6px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transform-origin: 50%;
+    transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms,
+      transform 500ms 200ms;
+  }
+  .x .line {
+    stroke-width: 5.5px;
+  }
 
-// .header__button {
-//   //box-styled
-//   background-color: $colorButtonPink;
-//   width: 180px;
-//   height: 48px;
-//   padding: 14px 24px;
-//   border: 0;
-//   // text-stled
-//   color: $colorTextWhite;
-//   text-align: center;
+  /* First plate */
+  .plate1 .line2 {
+    stroke-dasharray: 40 200;
+    stroke-dashoffset: 0px;
+  }
+  .plate1 .line3 {
+    stroke-dasharray: 40 179;
+    stroke-dashoffset: 0px;
+  }
+  .active .line {
+    transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms;
+  }
+  .active.plate1 .line1 {
+    transform: scale(0, 1);
+    transition: transform 500ms 100ms;
+  }
+  .active.plate1 .line2 {
+    stroke-dasharray: 5px 200;
+    stroke-dashoffset: -164px;
+  }
+  .active.plate1 .line3 {
+    stroke-dasharray: 5px 179;
+    stroke-dashoffset: -142px;
+  }
+  .active .x {
+    transform: scale(1);
+    transition: transform 400ms 350ms;
+  }
+}
