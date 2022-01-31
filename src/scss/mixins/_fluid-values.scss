@@ -9,13 +9,6 @@
  * @description Mixin fluidValue return CSS properties and values.
  * @example @include fluidValue("font-size", 50, 20, 1100, 320);
  */
-//  @mixin fluidValue(
-//   $property,
-//   $maxValue,
-//   $minValue,
-//   $maxWidthContainer: 1100,
-//   $minWidthContainer: 320
-// ) {
 @mixin fluidValue(
   $property,
   $maxValue,
@@ -31,5 +24,9 @@
               100vw - #{$minWidthContainer + px}
             ) / #{$maxWidthContainer - $minWidthContainer})
     );
+  }
+
+  @media (max-width: #{$minWidthContainer - 1 + px}) {
+    #{$property}: #{$minValue + px};
   }
 }

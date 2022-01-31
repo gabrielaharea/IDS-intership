@@ -5,9 +5,13 @@
 @import 'typography';
 @import 'mixins/fluid-values';
 @import 'mixins/line-clamp';
+@import 'mixins/button-pink';
 
 /* Components */
 @import 'components/button';
+@import 'components/burger-btn';
+
+/* Components */
 @import 'components/header';
 @import 'components/footer';
 @import 'components/hero';
