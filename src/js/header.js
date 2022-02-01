@@ -18,7 +18,6 @@ const Menu = {
     document.documentElement.classList.add("no-scroll");
     this.el.classList.add("is-active");
     this.burger.classList.add("is-active");
-    this.el.classList.add("in");
     this.isOpened = true;
   },
 
@@ -27,13 +26,6 @@ const Menu = {
     this.el.classList.remove("is-active");
     this.burger.classList.remove("is-active");
     this.isOpened = false;
-  },
-
-  toggle(state) {
-    if (state === true || !this.isOpened) {
-      return this.show();
-    }
-    this.hide();
   },
 };
 

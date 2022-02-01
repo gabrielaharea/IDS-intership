@@ -6,11 +6,11 @@
   height: 40px;
   width: 40px;
   padding: 0;
+  margin-right: -12px;
   border: none;
   background-color: transparent;
   color: $colorBlack;
   cursor: pointer;
-  margin-right: -12px;
 
   &:focus {
     outline: none;
@@ -21,9 +21,14 @@
   }
 
   @media (max-width: 767px) {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transform-origin: 50%;
     height: 34px;
     width: 34px;
     margin-right: -10px;
+    transition: stroke-dasharray 0.5s 0.2s, stroke-dashoffset 0.5s 0.2s,
+      transform 0.5s 0.2s;
   }
 
   svg {
@@ -39,7 +44,8 @@
     stroke-linecap: round;
     stroke-linejoin: round;
     transform-origin: 50%;
-    transition: stroke-dasharray 0.5s 0.2s, stroke-dashoffset 0.5s 0.2s, transform 0.5s 0.2s;
+    transition: stroke-dasharray 0.5s 0.2s, stroke-dashoffset 0.5s 0.2s,
+      transform 0.5s 0.2s;
   }
 
   .line2 {
