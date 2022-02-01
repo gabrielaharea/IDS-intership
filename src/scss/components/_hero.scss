@@ -11,41 +11,31 @@
   font-weight: $font-weight-normal;
 
   @media (max-width: 1199px) {
-    max-width: 807px;
-    gap: 0 70px;
+    background-color: pink;
+    max-width: 
+  }
+
+  @media (max-width: 1023px) {
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+    padding: 10px 36px;
+    background-color: yellow;
   }
 
   @media (max-width: 767px) {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
+    padding: 10px 12px;
+    background-color: red;
   }
-  
 }
 
 .hero-content {
-  @media (max-width: 767px) {
-    padding-right: 90px;
-  }
-
-
-
-  img {
-
-    @media (max-width: 1199px) {
-      max-width: 250px;
-      max-height: 250px;
-    }
-
-    @media (max-width: 767px) {
-      max-width: auto;
-      max-height: auto;
-    }
+    
+ 
 
     h1 {
       padding-top: 68px;
-      @include lineClamp(7);
       margin-bottom: 60px;
+      @include lineClamp(7);
     }
 
     h4 {
@@ -61,6 +51,6 @@
       margin-top: 40px;
       font-size: 24px;
       line-height: 28px;
-    }
-  }
+    } 
 }
+
