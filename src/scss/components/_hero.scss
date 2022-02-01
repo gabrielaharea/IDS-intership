@@ -10,24 +10,57 @@
   font-family: $font-ideal-sans;
   font-weight: $font-weight-normal;
 
-  h1 {
-    padding-top: 68px;
-    @include lineClamp(7);
-    margin-bottom: 60px;
+  @media (max-width: 1199px) {
+    max-width: 807px;
+    gap: 0 70px;
   }
 
-  h4 {
-    font-family: $font-family-base;
-    color: $colorPink;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
+  @media (max-width: 767px) {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+}
+
+.hero-content {
+  @media (max-width: 767px) {
+    padding-right: 90px;
   }
 
-  p {
-    margin-top: 40px;
-    font-size: 24px;
-    line-height: 28px;
+
+
+  img {
+
+    @media (max-width: 1199px) {
+      max-width: 250px;
+      max-height: 250px;
+    }
+
+    @media (max-width: 767px) {
+      max-width: auto;
+      max-height: auto;
+    }
+
+    h1 {
+      padding-top: 68px;
+      @include lineClamp(7);
+      margin-bottom: 60px;
+    }
+
+    h4 {
+      font-family: $font-family-base;
+      color: $colorPink;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    p {
+      margin-top: 40px;
+      font-size: 24px;
+      line-height: 28px;
+    }
   }
 }
