@@ -42,7 +42,7 @@
     background-color: $colorRed;
 
     @media (max-width: 1199px) {
-      height: 460px;
+      height: 470px;
     }
 
     @media (max-width: 767px) {
@@ -97,7 +97,6 @@
   .message-contact-info {
     align-self: stretch;
     margin: 60px 65px;
-    background-color: $colorGreen;
 
     @media (max-width: 1199px) {
       margin: 40px 50px;
@@ -129,7 +128,7 @@
       padding: 60px 50px;
     }
 
-    @media (max-width: 1199px) {
+    @media (max-width: 768px) {
       margin: 0;
     }
 
