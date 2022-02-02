@@ -23,7 +23,7 @@
     z-index: -1;
 
     @media (max-width: 1199px) {
-      height: 443px;
+      height: calc(100% - 497px);
     }
 
     @media (max-width: 767px) {
@@ -42,7 +42,7 @@
     background-color: $colorRed;
 
     @media (max-width: 1199px) {
-      height: 470px;
+      height: calc(100% - 460px);
     }
 
     @media (max-width: 767px) {
@@ -83,8 +83,8 @@
       object-position: top;
 
       @media (max-width: 1199px) {
-        width: 310px;
-        height: 443px;
+        width: 310px;   
+        height: 443px;  // 443px
       }
 
       @media (max-width: 768px) {
@@ -102,14 +102,17 @@
       margin: 40px 50px;
     }
 
+
     h4 {
       font-weight: $font-weight-normal;
     }
+
     p {
       font-weight: $font-weight-normal;
-      margin-top: 18px; //
+      margin-top: 18px;
       margin-bottom: 11px;
     }
+
     a {
       color: $colorWhite;
     }
@@ -134,7 +137,6 @@
 
     h2 {
       margin-bottom: 20px;
-      $font-weight-normal: 400;
     }
 
     h5 {
