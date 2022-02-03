@@ -7,19 +7,33 @@
     justify-content: center;
     grid-template-columns: 50px 755px;
     gap: 50px;
+  }
 
-    .box_click {
-      
-      .img_dropdown {
-        size: 50px;
-        padding-top: 7px;
-      }
-    }
-    .text_dropdown {
-      font-family: $font-family-base;
-      font-style: normal;
-      font-weight: normal;
-      line-height: 33px;
-    }
+  .img_dropdown {
+    size: 50px;
+    padding-top: 7px;
+  }
+
+  .text {
+    font-family: $font-family-base;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 33px;
+  }
+
+  .read-more-text {
+    display: none;
+  }
+
+  .text.show-more .read-more-text{
+     display: inline;
+  }
+
+  .read-more-btn{
+    cursor: pointer;
+  }
+
+  .text.show-more .dots{
+    display: none;
   }
 }
