@@ -1,156 +1,106 @@
 .section-message {
-  display: grid;
   position: relative;
   margin-bottom: 100px;
 
   .container {
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    justify-content: end;
-    margin: 0 auto;
+    @media (min-width: 768px) {
+      grid-template-columns: max-content 1fr;
 
-    @media (max-width: 768px) {
-      grid-template-columns: none;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: calc(50% - 307px);
+      }
+
+      &::before {
+        top: 0;
+        left: 0;
+        height: calc(100% - 356px);
+        background-color: $colorBlue;
+
+        @media (min-width: 1120px) {
+          height: calc(100% - 265px);
+        }
+      }
+
+      &::after {
+        bottom: 0;
+        right: 0;
+        height: calc(100% - 460px);
+        background-color: $colorRed;
+
+        @media (min-width: 1120px) {
+          height: calc(100% - 423px);
+        }
+      }
     }
   }
+}
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    width: calc(50% - 607px);
+.message-contact {
+  background-color: $colorGreen;
+  color: $colorWhite;
+  font-family: $font-family-base;
 
-    @media (max-width: 768px) {
-      display: none;
-    }
+  @media (min-width: 768px) {
+    width: 315px;
   }
 
-  &::before {
-    top: 0;
-    left: 0;
-    height: calc(100% - 285px);
-    background-color: $colorBlue;
-
-    @media (max-width: 1199px) {
-      height: calc(100% - 497px);
-      width: calc(50% - 307px);
-    }
-
-    @media (max-width: 767px) {
-      display: none;
-    }
+  @media (min-width: 1120px) {
+    width: 444px;
   }
 
-  &::after {
-    bottom: 0;
-    right: 0;
-    height: calc(100% - 355px);
-    background-color: $colorRed;
-    align-self: flex-end;
-
-    @media (max-width: 1199px) {
-      height: calc(100% - 460px);
-      width: calc(50% - 307px);
-    }
-
-    @media (max-width: 767px) {
-      display: none;
-    }
-  }
-
-  .message-contact {
-    position: relative;
-    display: grid;
-    max-width: 445px;
+  a {
     color: $colorWhite;
-    font-family: $font-family-base;
+  }
+}
 
-    @media (max-width: 1199px) {
-      max-width: 310px;
-      grid-template-rows: min-content;
-    }
+.message-contact-info {
+  padding: 40px 25px;
 
-    @media (max-width: 768px) {
-      min-width: 100%;
-    }
-
-    &::after {
-      position: absolute;
-      content: "";
-      background-color: $colorGreen;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-    }
-
-    img {
-      width: 100%;
-      height: 516px;
-      display: block;
-      object-fit: cover;
-      object-position: top;
-
-      @media (max-width: 1199px) {
-        width: 310px;
-        height: 443px;
-      }
-
-      @media (max-width: 768px) {
-        min-width: 100%;
-        height: 100%;
-      }
-    }
+  h4 {
+    margin-bottom: 18px;
+  }
+  p {
+    margin-bottom: 11px;
   }
 
-  .message-contact-info {
-    align-self: stretch;
-    padding: 60px 65px;
-
-    @media (max-width: 1199px) {
-      padding: 40px 50px;
-    }
-
-    h4 {
-      font-weight: $font-weight-normal;
-    }
-
-    p {
-      font-weight: $font-weight-normal;
-      margin-top: 18px;
-      margin-bottom: 11px;
-    }
-
-    a {
-      color: $colorWhite;
-    }
+  @media (min-width: 1120px) {
+    padding: 41px 65px 59px;
   }
+}
 
-  .message-description {
-    position: relative;
-    display: grid;
+.message-img {
+  display: grid;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+
+.message-description {
+  background-color: $colorAliceBlue;
+  padding: 40px 25px;
+  font-family: $font-family-base;
+
+  @media (min-width: 768px) {
     margin-top: 120px;
-    padding: 120px 115px;
-    align-content: flex-end;
-    align-self: end;
-    background-color: $colorAliceBlue;
-
-    @media (max-width: 1199px) {
-      padding: 60px 50px;
-    }
-
-    @media (max-width: 768px) {
-      margin: 0;
-    }
-
-    h2 {
-      margin-bottom: 20px;
-    }
-
-    h5 {
-      margin-top: 20px;
-      margin-bottom: 30px;
-      color: $colorPink;
-    }
   }
+
+  @media (min-width: 1120px) {
+    padding: 120px 115px 93px;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+}
+
+.message-quote {
+  color: $colorPink;
+  margin-bottom: 30px;
 }
