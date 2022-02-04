@@ -1,39 +1,43 @@
+// 4 feb Mark - Eugen //
+
 .section-message {
-  position: relative;
   margin-bottom: 100px;
+  position: relative;
 
   .container {
-    @media (min-width: 768px) {
+    @media (min-width: 767px) {
       grid-template-columns: max-content 1fr;
+    }
+    &::before,
+    &::after {
+      position: absolute;
+      width: calc(50% - 200px);
+      z-index: -1;
+    }
 
-      &::before,
-      &::after {
+    &::before {
+      content: "";
+      top: 0;
+      left: 0;
+      height: calc(100% - 378px);
+      background-color: $colorBlue;
+
+      @media (min-width: 1120px) {
+        height: calc(100% - 264px);
+      }
+    }
+
+    &::after {
+      @media (min-width: 768px) {
         content: "";
-        position: absolute;
-        z-index: -1;
-        width: calc(50% - 307px);
-      }
-
-      &::before {
-        top: 0;
-        left: 0;
-        height: calc(100% - 356px);
-        background-color: $colorBlue;
-
-        @media (min-width: 1120px) {
-          height: calc(100% - 265px);
-        }
-      }
-
-      &::after {
         bottom: 0;
         right: 0;
-        height: calc(100% - 460px);
         background-color: $colorRed;
+        height: 523px;
+      }
 
-        @media (min-width: 1120px) {
-          height: calc(100% - 423px);
-        }
+      @media (min-width: 1120px) {
+        height: 423px;
       }
     }
   }
@@ -45,11 +49,11 @@
   font-family: $font-family-base;
 
   @media (min-width: 768px) {
-    width: 315px;
+    width: 320px;
   }
 
   @media (min-width: 1120px) {
-    width: 444px;
+    width: 445px;
   }
 
   a {
@@ -60,15 +64,15 @@
 .message-contact-info {
   padding: 40px 25px;
 
+  @media (min-width: 1120px) {
+    padding: 40px 65px 59px 65px;
+  }
+
   h4 {
     margin-bottom: 18px;
   }
   p {
     margin-bottom: 11px;
-  }
-
-  @media (min-width: 1120px) {
-    padding: 41px 65px 59px;
   }
 }
 
@@ -77,22 +81,20 @@
 
   img {
     width: 100%;
-    object-fit: cover;
-    object-position: top;
   }
 }
 
 .message-description {
-  background-color: $colorAliceBlue;
   padding: 40px 25px;
   font-family: $font-family-base;
+  background-color: $colorAliceBlue;
 
   @media (min-width: 768px) {
     margin-top: 120px;
   }
 
   @media (min-width: 1120px) {
-    padding: 120px 115px 93px;
+    padding: 120px 115px 93px 115px;
   }
 
   h2 {
@@ -100,7 +102,12 @@
   }
 }
 
-.message-quote {
-  color: $colorPink;
+.message-subtitle {
+  display: inline-block;
   margin-bottom: 30px;
+  color: $colorPink;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 33px;
 }
