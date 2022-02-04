@@ -1,11 +1,15 @@
-const readMoreBtn = document.querySelector(".read-more-btn");
-const text = document.querySelector(".text");
+// const text = document.querySelector(".text");
+// const button = document.querySelector(".button");
 
-readMoreBtn.addEventListener("click", e => {
-  text.classList.toggle("show-more");
-  if (readMoreBtn.interText === "Read More") {
-    readMoreBtn.innerText = "Read Less";
+button.addEventListener("click", myFunction);
+
+function myFunction() {
+  textElement = document.getElementById("text");
+  if (textElement.classList.contains("text-complete")) {
+    button.firstChild.data = "Read more";
+    textElement.setAttribute("class", "text");
   } else {
-    readMoreBtn.innerText = "Read More";
+    button.firstChild.data = "Read less";
+    textElement.setAttribute("class", "text-complete");
   }
-});
+}

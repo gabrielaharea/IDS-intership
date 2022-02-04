@@ -2,7 +2,7 @@
   margin-top: 100px;
   margin-bottom: 120px;
 
-  .container_dropdown {
+  .container {
     display: grid;
     justify-content: center;
     grid-template-columns: 50px 755px;
@@ -16,24 +16,11 @@
 
   .text {
     font-family: $font-family-base;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 33px;
+
+    @include lineClamp($lines: 3);
   }
 
-  .read-more-text {
-    display: none;
-  }
-
-  .text.show-more .read-more-text{
-     display: inline;
-  }
-
-  .read-more-btn{
-    cursor: pointer;
-  }
-
-  .text.show-more .dots{
-    display: none;
+  .text-complete {
+    font-family: $font-family-base;
   }
 }
