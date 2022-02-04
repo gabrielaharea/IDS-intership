@@ -1,11 +1,11 @@
-.section_dropdown {
+.section-dropdown {
   margin-top: 100px;
   margin-bottom: 120px;
 
   .container {
     display: grid;
     justify-content: center;
-    grid-template-columns: 50px 755px;
+    grid-template-columns: 1fr 1fr;
     gap: 50px;
   }
 
@@ -16,8 +16,7 @@
 
   .text {
     font-family: $font-family-base;
-
-    @include lineClamp($lines: 3);
+    @include lineClamp(3);
   }
 
   .text-complete {
