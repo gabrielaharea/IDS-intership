@@ -1,17 +1,8 @@
-button.addEventListener("click", myFunction);
+button = document.querySelector(".circle");
 
-function myFunction() {
-  textElement = document.getElementById("text");
-  if (textElement.classList.contains("text-complete")) {
-    textElement.setAttribute("class", "text");
-  } else {
-    textElement.setAttribute("class", "text-complete");
-  }
-}
-
-document.querySelector(".circle").addEventListener("click", () => {
+const modifyElement = () => {
   document.querySelector(".vertical").classList.toggle("open");
-  document.querySelector(".line-wrapper").classList.toggle("open");
-  document.querySelector(".content").classList.toggle("open");
-});
+  document.querySelector(".text").classList.toggle("open");
+};
 
+button.addEventListener("click", modifyElement);
