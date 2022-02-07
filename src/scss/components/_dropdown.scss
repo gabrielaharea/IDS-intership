@@ -14,14 +14,6 @@
 
   .text {
     @include lineClamp(3);
-
-    @media (max-width: 767px) {
-      @include lineClamp(2);
-    }
-  }
-
-  .text,
-  .text-complete {
     max-width: 760px;
     font-family: $font-family-base;
     line-height: 33px;
@@ -38,5 +30,14 @@
       margin-left: 20px;
       margin-right: 20px;
     }
+
+    @media (max-width: 767px) {
+      @include lineClamp(2);
+    }
+  }
+
+  .text.open {
+    @extend .text;
+    @include lineClamp(unset);
   }
 }
