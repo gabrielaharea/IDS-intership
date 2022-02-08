@@ -1,31 +1,24 @@
-@import '~normalize.css';
-@import 'fonts';
-@import 'variables';
-@import 'helpers';
-@import 'typography';
-@import 'mixins/fluid-values';
-@import 'mixins/line-clamp';
-@import 'mixins/button-pink';
+@import "~normalize.css";
+@import "fonts";
+@import "variables";
+@import "helpers";
+@import "typography";
+@import "mixins/fluid-values";
+@import "mixins/line-clamp";
+@import "mixins/button-pink";
 
 /* Components */
-@import 'components/button';
-@import 'components/burger-btn';
-@import 'components/down-btn';
+@import "components/button";
+@import "components/burger-btn";
 
 /* Components */
-@import 'components/header';
-@import 'components/footer';
-@import 'components/hero';
-@import 'components/about';
-@import 'components/message';
-@import 'components/dropdown';
-@import 'components/year';
-@import 'components/space';
-@import 'components/astronautPee';
-@import 'components/podcasts';
-
-
-
-
-
-
+@import "components/header";
+@import "components/footer";
+@import "components/hero";
+@import "components/about";
+@import "components/message";
+@import "components/dropdown";
+@import "components/year";
+@import "components/space";
+@import "components/astronautPee";
+@import "components/podcasts";

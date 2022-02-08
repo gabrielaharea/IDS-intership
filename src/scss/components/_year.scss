@@ -1,14 +1,13 @@
 .section-journey {
   background-color: $colorBlueNormal;
   color: $colorWhite;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0;
 
   .journey-content {
     display: grid;
     grid-template-columns: max-content 1fr;
-    gap: 227px;
     margin-bottom: 80px;
+    gap: 64px;
 
     h3 {
       width: 343px;
@@ -19,6 +18,7 @@
 
   .description {
     max-width: 540px;
+    justify-self: end;
 
     em {
       font-family: $font-mercury;
@@ -43,6 +43,7 @@
     gap: 196px;
     margin-left: -50px;
     position: relative;
+    padding-bottom: 60px;
 
     &::before {
       position: absolute;
@@ -65,14 +66,13 @@
       line-height: 27px;
       color: $colorWhite;
 
-      padding: 30px 0 0 0;
+      cursor: pointer;
+      position: relative;
       margin: 0;
       border: 0;
-      background: 0;
-      cursor: pointer;
-      background: transparent;
+      padding: 30px 0 0 0;
       color: $colorWhite;
-      position: relative;
+      background: transparent;
 
       &::before {
         content: "";
@@ -83,6 +83,7 @@
         border-radius: 10.5px;
         position: absolute;
         background: $colorWhite;
+        z-index: 2;
       }
 
       &::after {
@@ -104,24 +105,113 @@
 
     button:hover {
       &::before {
-        background: $colorPink;
+        animation: scaleIn 3s infinite;
+      }
+    }
+    @keyframes scaleIn {
+      50% {
+        box-shadow: 0px 0px 1px 10px $colorPink;
+        opacity: 0.5;
       }
     }
 
-    button:hover {
-      &::before {
-        background: $colorPink;
-        animation: scaleIn 0.5s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
+    // button:hover {
+    //   &::before {
+    //     background: $colorPink;
+    //     animation: scaleIn 0.5s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
 
-        @keyframes scaleIn {
-          from {
-            transform: scale(1, 1);
-            opacity: 0.5;
-          }
-          to {
-            transform: scale(2.5, 2.5);
-          }
+    //     @keyframes scaleIn {
+    //       from {
+    //         transform: scale(1, 1);
+    //         opacity: 0.5;
+    //       }
+    //       to {
+    //         transform: scale(2.5, 2.5);
+    //       }
+    //     }
+    //   }
+    // }
+  }
+
+  .journey-slides {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 85px;
+
+    .slide-info {
+      max-width: 440px;
+      padding-top: 55px;
+
+      .slide-icon {
+        background-color: $colorPink;
+        width: 90px;
+        height: 90px;
+        border-radius: 45px;
+        margin-bottom: 37px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h3 {
+        font-style: italic;
+        font-family: $font-mercury;
+        font-weight: 400;
+        margin-bottom: 17px;
+      }
+
+      h4 {
+        font-style: italic;
+        font-family: $font-ideal-sans;
+        font-weight: 400;
+        margin-bottom: 17px;
+      }
+
+      span {
+        display: inline-block;
+        font-family: $font-ideal-sans;
+        font-weight: $font-weight-medium;
+      }
+
+      p {
+        font-family: $font-family-base;
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 35px;
+      }
+
+      a {
+        color: $colorWhite;
+        text-transform: uppercase;
+        font-family: $font-ideal-sans;
+        font-weight: $font-weight-semibold;
+        letter-spacing: 1px;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        gap: 20px;
+
+        img {
+          align-items: center;
         }
+      }
+    }
+
+    .slide-image {
+      position: relative;
+      width: 100%;
+
+      .meeting {
+        position: absolute;
+        top: 40px;
+        z-index: 1;
+      }
+
+      .sky {
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 63px;
+        right: 88px;
       }
     }
   }

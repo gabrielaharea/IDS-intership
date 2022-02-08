@@ -26,6 +26,8 @@
       @media (min-width: 1199px) {
         height: calc(100% - 265px);
       }
+
+      @include fluidValue("max-height", 1040, 414, 767, 320);
     }
 
     &::after {
