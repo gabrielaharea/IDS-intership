@@ -1,114 +1,126 @@
-.section-years {
+.section-journey {
   background-color: $colorBlueNormal;
-  height: 1280px;
-  //  font-style
-  font-family: "Ideal Sans", sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+  color: $colorWhite;
+  padding-top: 120px;
+  padding-bottom: 120px;
 
-  .container-years {
-    color: $colorWhite;
+  .journey-content {
     display: grid;
-    grid-template-rows: 395px 55px 58px;
-    grid-template-columns: 1324px;
-    justify-content: center;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    grid-template-columns: max-content 1fr;
+    gap: 227px;
+    margin-bottom: 80px;
 
-    .box_content_up {
-      display: grid;
-      grid-template-columns: 440px auto;
+    h3 {
+      width: 343px;
+      font-family: $font-family-base;
+      font-weight: $font-weight-normal;
+    }
+  }
 
-      .title_content_up {
-        padding-left: 90px;
-        font-style: normal;
-        font-weight: normal;
+  .description {
+    max-width: 540px;
+
+    em {
+      font-family: $font-mercury;
+      font-size: 22px;
+      line-height: 33px;
+      display: inline-block;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-family: $font-family-base;
+      font-size: $font-size-base;
+      line-height: $line-height-base;
+      font-style: normal;
+      font-weight: $font-weight-normal;
+    }
+  }
+
+  .years-axis {
+    display: grid;
+    grid-template-columns: repeat(5, max-content);
+    gap: 196px;
+    margin-left: -50px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 1320px;
+      height: 1px;
+      top: 5px;
+      left: -57px;
+      background: linear-gradient(
+        to right,
+        rgba(248, 248, 248, 0.09),
+        rgba(252, 252, 252, 1)
+      );
+    }
+
+    button {
+      font-style: italic;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 27px;
+      color: $colorWhite;
+
+      padding: 30px 0 0 0;
+      margin: 0;
+      border: 0;
+      background: 0;
+      cursor: pointer;
+      background: transparent;
+      color: $colorWhite;
+      position: relative;
+
+      &::before {
+        content: "";
+        top: 0px;
+        left: 49%;
+        height: 11px;
+        width: 11px;
+        border-radius: 10.5px;
+        position: absolute;
+        background: $colorWhite;
       }
 
-      .description_content_up {
-        padding-left: 225px;
-        padding-right: 100px;
-        font-style: normal;
-        font-weight: normal;
-
-        h5 {
-          padding-bottom: 50px;
-          font-style: italic;
-          font-weight: normal;
-        }
+      &::after {
+        content: "";
+        opacity: 0;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        position: absolute;
+        background-color: $colorWhite;
       }
     }
 
-    .box_content_down {
-      display: grid;
-      grid-template-columns: 450px auto;
-      grid-template-rows: 590px;
-
-      .text_content_down {
-        padding-top: 100px;
-        padding-left: 100px;
-
-        .img_icon_pink {
-        }
-
-        .title_item_1 {
-          font-style: italic;
-          // font-weight: normal;
-          padding-top: 35px;
-          padding-bottom: 17px;
-        }
-        .title_item_2 {
-          font-style: italic;
-          // font-weight: normal;
-          padding-bottom: 17px;
-        }
-        .title_item_3 {
-          font-style: normal;
-          font-weight: normal;
-        }
-        .title_item_4 {
-          font-style: normal;
-          font-weight: normal;
-          padding-bottom: 35px;
-        }
-
-        .link_readMore {
-          font-style: normal;
-          font-weight: normal;
-          letter-spacing: 1px;
-          text-transform: uppercase;
-          color: #ffffff;
-
-          img {
-            padding-left: 15px;
-          }
-        }
+    button:last-of-type {
+      &::after {
+        display: none;
       }
-      .down_images {
-        padding-top: 60px;
-        // display: grid;
-        justify-items: center;
+    }
 
-        .img_galaxy {
-          z-index: 2;
-          position: relative;
-          // left: 400x;
-          right: -250px;
-        }
+    button:hover {
+      &::before {
+        background: $colorPink;
+      }
+    }
 
-        .img_cosmonauts {
-          z-index: 3;
-          position: relative;
-          left: 180px;
-          bottom: 465px;
-        }
+    button:hover {
+      &::before {
+        background: $colorPink;
+        animation: scaleIn 0.5s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
 
-        .img_desktop {
-          z-index: 4;
-          position: relative;
-          left: 180px;
-          bottom: 876px;
+        @keyframes scaleIn {
+          from {
+            transform: scale(1, 1);
+            opacity: 0.5;
+          }
+          to {
+            transform: scale(2.5, 2.5);
+          }
         }
       }
     }
