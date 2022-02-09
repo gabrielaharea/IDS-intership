@@ -2,217 +2,289 @@
   background-color: $colorBlueNormal;
   color: $colorWhite;
   padding: 120px 0;
+}
+.journey-content {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  margin-bottom: 80px;
+  gap: 64px;
 
-  .journey-content {
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    margin-bottom: 80px;
-    gap: 64px;
+  h3 {
+    width: 343px;
+    font-family: $font-family-base;
+    font-weight: $font-weight-normal;
+  }
+}
 
-    h3 {
-      width: 343px;
-      font-family: $font-family-base;
-      font-weight: $font-weight-normal;
-    }
+.description {
+  max-width: 540px;
+  justify-self: end;
+
+  em {
+    font-family: $font-mercury;
+    font-size: 22px;
+    line-height: 33px;
+    display: inline-block;
+    margin-bottom: 30px;
   }
 
-  .description {
-    max-width: 540px;
-    justify-self: end;
+  p {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    font-style: normal;
+    font-weight: $font-weight-normal;
+  }
+}
 
-    em {
-      font-family: $font-mercury;
-      font-size: 22px;
-      line-height: 33px;
-      display: inline-block;
-      margin-bottom: 30px;
-    }
+.years-axis {
+  display: grid;
+  grid-template-columns: repeat(5, max-content);
+  gap: 196px;
+  margin-left: -50px;
+  position: relative;
+  padding-bottom: 60px;
 
-    p {
-      font-family: $font-family-base;
-      font-size: $font-size-base;
-      line-height: $line-height-base;
-      font-style: normal;
-      font-weight: $font-weight-normal;
-    }
+  &::before {
+    position: absolute;
+    content: "";
+    width: 1320px;
+    height: 1px;
+    top: 5px;
+    left: -57px;
+    background: linear-gradient(
+      to right,
+      rgba(248, 248, 248, 0.09),
+      rgba(252, 252, 252, 1)
+    );
   }
 
-  .years-axis {
-    display: grid;
-    grid-template-columns: repeat(5, max-content);
-    gap: 196px;
-    margin-left: -50px;
+  button {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: $colorWhite;
+
+    cursor: pointer;
     position: relative;
-    padding-bottom: 60px;
+    margin: 0;
+    border: 0;
+    padding: 30px 0 0 0;
+    color: $colorWhite;
+    background: transparent;
 
     &::before {
-      position: absolute;
       content: "";
-      width: 1320px;
-      height: 1px;
-      top: 5px;
-      left: -57px;
-      background: linear-gradient(
-        to right,
-        rgba(248, 248, 248, 0.09),
-        rgba(252, 252, 252, 1)
-      );
+      top: 0px;
+      left: 49%;
+      height: 11px;
+      width: 11px;
+      border-radius: 10.5px;
+      position: absolute;
+      background: $colorWhite;
+      z-index: 2;
     }
 
-    button {
-      font-style: italic;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 27px;
-      color: $colorWhite;
-
-      cursor: pointer;
-      position: relative;
-      margin: 0;
-      border: 0;
-      padding: 30px 0 0 0;
-      color: $colorWhite;
-      background: transparent;
-
-      &::before {
-        content: "";
-        top: 0px;
-        left: 49%;
-        height: 11px;
-        width: 11px;
-        border-radius: 10.5px;
-        position: absolute;
-        background: $colorWhite;
-        z-index: 2;
-      }
-
-      &::after {
-        content: "";
-        opacity: 0;
-        height: 150px;
-        width: 150px;
-        border-radius: 50%;
-        position: absolute;
-        background-color: $colorWhite;
-      }
+    &::after {
+      content: "";
+      opacity: 0;
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      position: absolute;
+      background-color: $colorWhite;
     }
-
-    button:last-of-type {
-      &::after {
-        display: none;
-      }
-    }
-
-    button:hover {
-      &::before {
-        animation: scaleIn 3s infinite;
-      }
-    }
-    @keyframes scaleIn {
-      50% {
-        box-shadow: 0px 0px 1px 10px $colorPink;
-        opacity: 0.5;
-      }
-    }
-
-    // button:hover {
-    //   &::before {
-    //     background: $colorPink;
-    //     animation: scaleIn 0.5s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
-
-    //     @keyframes scaleIn {
-    //       from {
-    //         transform: scale(1, 1);
-    //         opacity: 0.5;
-    //       }
-    //       to {
-    //         transform: scale(2.5, 2.5);
-    //       }
-    //     }
-    //   }
-    // }
   }
 
-  .journey-slides {
+  button:last-of-type {
+    &::after {
+      display: none;
+    }
+  }
+
+  button:hover {
+    &::before {
+      animation: scaleIn 3s infinite;
+    }
+  }
+  @keyframes scaleIn {
+    50% {
+      box-shadow: 0px 0px 1px 10px $colorPink;
+      opacity: 0.5;
+    }
+  }
+}
+
+.journey-slides {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 85px;
+}
+
+.slide-info {
+  max-width: 440px;
+  padding-top: 55px;
+
+  .slide-icon {
     display: grid;
-    grid-template-columns: max-content 1fr;
-    gap: 85px;
+    background-color: $colorPink;
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    margin-bottom: 37px;
+    justify-content: center;
+    align-items: center;
 
-    .slide-info {
-      max-width: 440px;
-      padding-top: 55px;
+    img {
+      
+    }
+  }
 
-      .slide-icon {
-        background-color: $colorPink;
-        width: 90px;
-        height: 90px;
-        border-radius: 45px;
-        margin-bottom: 37px;
-        justify-content: center;
-        align-items: center;
-      }
+  h3 {
+    font-style: italic;
+    font-family: $font-mercury;
+    font-weight: 400;
+    margin-bottom: 17px;
+  }
 
-      h3 {
-        font-style: italic;
-        font-family: $font-mercury;
-        font-weight: 400;
-        margin-bottom: 17px;
-      }
+  h4 {
+    font-style: italic;
+    font-family: $font-ideal-sans;
+    font-weight: 400;
+    margin-bottom: 17px;
+  }
 
-      h4 {
-        font-style: italic;
-        font-family: $font-ideal-sans;
-        font-weight: 400;
-        margin-bottom: 17px;
-      }
+  span {
+    display: inline-block;
+    font-family: $font-ideal-sans;
+    font-weight: $font-weight-medium;
+  }
 
-      span {
-        display: inline-block;
-        font-family: $font-ideal-sans;
-        font-weight: $font-weight-medium;
-      }
+  p {
+    font-family: $font-family-base;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 35px;
+  }
 
-      p {
-        font-family: $font-family-base;
-        font-size: 18px;
-        line-height: 27px;
-        margin-bottom: 35px;
-      }
+  a {
+    color: $colorWhite;
+    text-transform: uppercase;
+    font-family: $font-ideal-sans;
+    font-weight: $font-weight-semibold;
+    letter-spacing: 1px;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    gap: 20px;
 
-      a {
-        color: $colorWhite;
-        text-transform: uppercase;
-        font-family: $font-ideal-sans;
-        font-weight: $font-weight-semibold;
-        letter-spacing: 1px;
-        font-size: 16px;
-        line-height: 24px;
-        display: flex;
-        gap: 20px;
+    img {
+      align-items: center;
+    }
+  }
+}
 
-        img {
-          align-items: center;
-        }
-      }
+// ............................frame....................
+.slide-image {
+  position: relative;
+  width: 100%;
+  display: block;
+  background-color: $colorWhite;
+}
+
+.slider {
+  position: relative;
+}
+
+.sky {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 63px;
+  right: 88px;
+}
+
+.slide-image {
+  position: relative;
+  width: 100%;
+  display: grid;
+  background-color: $colorWhite;
+}
+
+.slider {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 525px;
+    left: 63px;
+    background-color: $colorPink;
+    height: 7px; // figma 7px
+    width: 540px; // figma 539px
+  }
+}
+
+.sky {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 63px;
+  right: 88px;
+}
+
+.frame {
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+
+  .frame-bar {
+    background-color: $colorGreyButton;
+    height: 20px;
+    width: 692px;
+    border-radius: 6px 6px 0px 0px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 410px;
+      left: 0;
+      background-color: $colorWhite;
+      height: 9px;
+      width: 692px;
+      border-radius: 0px 0px 6px 6px;
+    }
+  }
+  .circles {
+    display: flex;
+    padding: 7px;
+  }
+
+  .circle {
+    background-color: $colorOrange;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    margin-left: 16px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      height: 8px;
+      width: 8px;
+      border-radius: 50%;
     }
 
-    .slide-image {
-      position: relative;
-      width: 100%;
+    &::before {
+      background-color: $colorRedButton;
+      left: 8px;
+    }
 
-      .meeting {
-        position: absolute;
-        top: 40px;
-        z-index: 1;
-      }
-
-      .sky {
-        position: absolute;
-        z-index: 0;
-        top: 0;
-        left: 63px;
-        right: 88px;
-      }
+    &::after {
+      background-color: $colorGreen;
+      left: 38px;
     }
   }
 }
