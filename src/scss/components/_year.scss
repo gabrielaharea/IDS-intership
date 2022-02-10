@@ -1,8 +1,9 @@
 .section-journey {
   background-color: $colorBlueNormal;
-  color: $colorWhite;
   padding: 120px 0;
+  color: $colorWhite;
 }
+
 .journey-content {
   display: grid;
   grid-template-columns: max-content 1fr;
@@ -10,9 +11,9 @@
   gap: 64px;
 
   h3 {
-    width: 343px;
+    max-width: 343px;
     font-family: $font-family-base;
-    font-weight: $font-weight-normal;
+    font-weight: normal;
   }
 }
 
@@ -21,106 +22,20 @@
   justify-self: end;
 
   em {
-    font-family: $font-mercury;
-    font-size: 22px;
-    line-height: 33px;
     display: inline-block;
     margin-bottom: 30px;
+    font-size: 22px;
+    line-height: 33px;
+    font-family: $font-mercury;
   }
 
   p {
     font-family: $font-family-base;
-    font-size: $font-size-base;
-    line-height: $line-height-base;
-    font-style: normal;
-    font-weight: $font-weight-normal;
-  }
-}
-
-.years-axis {
-  display: grid;
-  grid-template-columns: repeat(5, max-content);
-  gap: 196px;
-  margin-left: -50px;
-  position: relative;
-  padding-bottom: 60px;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 1320px;
-    height: 1px;
-    top: 5px;
-    left: -57px;
-    background: linear-gradient(
-      to right,
-      rgba(248, 248, 248, 0.09),
-      rgba(252, 252, 252, 1)
-    );
-  }
-
-  button {
-    font-style: italic;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 27px;
-    color: $colorWhite;
-
-    cursor: pointer;
-    position: relative;
-    margin: 0;
-    border: 0;
-    padding: 30px 0 0 0;
-    color: $colorWhite;
-    background: transparent;
-
-    &::before {
-      content: "";
-      top: 0px;
-      left: 49%;
-      height: 11px;
-      width: 11px;
-      border-radius: 10.5px;
-      position: absolute;
-      background: $colorWhite;
-      z-index: 2;
-    }
-
-    &::after {
-      content: "";
-      opacity: 0;
-      height: 150px;
-      width: 150px;
-      border-radius: 50%;
-      position: absolute;
-      background-color: $colorWhite;
-    }
-  }
-
-  button:last-of-type {
-    &::after {
-      display: none;
-    }
-  }
-
-  button:hover {
-    &::before {
-      animation: scaleIn 3s infinite;
-    }
-  }
-  @keyframes scaleIn {
-    50% {
-      box-shadow: 0px 0px 1px 10px $colorPink;
-      opacity: 0.5;
-    }
   }
 }
 
-.journey-slides {
-  display: grid;
-  grid-template-columns: max-content 1fr;
-  gap: 85px;
-}
+// ...................axis..........................//
 
 .slide-info {
   max-width: 440px;
@@ -135,10 +50,6 @@
     margin-bottom: 37px;
     justify-content: center;
     align-items: center;
-
-    img {
-      
-    }
   }
 
   h3 {
@@ -176,66 +87,61 @@
     letter-spacing: 1px;
     font-size: 16px;
     line-height: 24px;
-    display: flex;
-    gap: 20px;
+    padding-right: 30px;
 
-    img {
-      align-items: center;
+    .arrow {
+      width: 35px;
+      margin-left: 20px;
+      transition: transform .5s;
+    }
+
+    .arrow:hover {
+      transform: translate(20px);
     }
   }
 }
 
-// ............................frame....................
-.slide-image {
-  position: relative;
+.slide-image1,
+.slide-image2,
+.slide-image3 {
+  height: 100%;
   width: 100%;
-  display: block;
-  background-color: $colorWhite;
 }
 
-.slider {
-  position: relative;
+.slide-image2 {
+  background-color: red;
 }
 
-.sky {
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  left: 63px;
-  right: 88px;
+.slide-image3 {
+  background-color: $colorGreen;
 }
 
-.slide-image {
-  position: relative;
-  width: 100%;
+// ............................swiper.......................//
+.swiper {
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  height: 600px;
+}
+
+.swiper-slide {
   display: grid;
-  background-color: $colorWhite;
-}
+  grid-template-columns: max-content 1fr;
+  gap: 85px;
+  object-fit: contain;
 
-.slider {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 525px;
-    left: 63px;
-    background-color: $colorPink;
-    height: 7px; // figma 7px
-    width: 540px; // figma 539px
+  .sky {
+    position: relative;
+    z-index: 0;
+    top: 0;
+    left: 49%;
   }
 }
 
-.sky {
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  left: 63px;
-  right: 88px;
-}
-
+//..............................//
 .frame {
-  position: absolute;
+  position: relative;
   z-index: 1;
   top: 40px;
 
@@ -256,6 +162,7 @@
       border-radius: 0px 0px 6px 6px;
     }
   }
+
   .circles {
     display: flex;
     padding: 7px;
