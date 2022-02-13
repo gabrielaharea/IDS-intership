@@ -2,24 +2,44 @@
   background-color: $colorBlueNormal;
   padding: 120px 0;
   color: $colorWhite;
+
+  .container {
+    overflow: hidden;
+  }
 }
 
 .journey-content {
   display: grid;
   grid-template-columns: max-content 1fr;
   margin-bottom: 80px;
-  gap: 64px;
+  gap: 227px;
+  @include fluidValue("gap", 227, 64, 2000, 1200);
+  @include fluidValue("gap", 64, 20, 1199, 768);
+
+  @media (max-width: 767px) {
+    grid-template-columns: unset;
+  }
 
   h3 {
     max-width: 343px;
     font-family: $font-family-base;
     font-weight: normal;
+
+    @media (max-width: 1199px) {
+      max-width: 296px;
+      font-family: $font-ideal-sans;
+      font-size: 28px;
+      line-height: 36px;
+    }
   }
 }
-
 .description {
-  max-width: 540px;
-  justify-self: end;
+
+  @media (min-width: 768px) {
+    max-width: 296px;
+  }
+  
+  max-width: 100%;
 
   em {
     display: inline-block;
@@ -32,166 +52,5 @@
   p {
     font-family: $font-family-base;
     font-weight: normal;
-  }
-}
-
-// ...................axis..........................//
-
-.slide-info {
-  max-width: 440px;
-  padding-top: 55px;
-
-  .slide-icon {
-    display: grid;
-    background-color: $colorPink;
-    width: 90px;
-    height: 90px;
-    border-radius: 45px;
-    margin-bottom: 37px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  h3 {
-    font-style: italic;
-    font-family: $font-mercury;
-    font-weight: 400;
-    margin-bottom: 17px;
-  }
-
-  h4 {
-    font-style: italic;
-    font-family: $font-ideal-sans;
-    font-weight: 400;
-    margin-bottom: 17px;
-  }
-
-  span {
-    display: inline-block;
-    font-family: $font-ideal-sans;
-    font-weight: $font-weight-medium;
-  }
-
-  p {
-    font-family: $font-family-base;
-    font-size: 18px;
-    line-height: 27px;
-    margin-bottom: 35px;
-  }
-
-  a {
-    color: $colorWhite;
-    text-transform: uppercase;
-    font-family: $font-ideal-sans;
-    font-weight: $font-weight-semibold;
-    letter-spacing: 1px;
-    font-size: 16px;
-    line-height: 24px;
-    padding-right: 30px;
-
-    .arrow {
-      width: 35px;
-      margin-left: 20px;
-      transition: transform .5s;
-    }
-
-    .arrow:hover {
-      transform: translate(20px);
-    }
-  }
-}
-
-.slide-image1,
-.slide-image2,
-.slide-image3 {
-  height: 100%;
-  width: 100%;
-}
-
-.slide-image2 {
-  background-color: red;
-}
-
-.slide-image3 {
-  background-color: $colorGreen;
-}
-
-// ............................swiper.......................//
-.swiper {
-  overflow: hidden;
-}
-
-.swiper-wrapper {
-  height: 600px;
-}
-
-.swiper-slide {
-  display: grid;
-  grid-template-columns: max-content 1fr;
-  gap: 85px;
-  object-fit: contain;
-
-  .sky {
-    position: relative;
-    z-index: 0;
-    top: 0;
-    left: 49%;
-  }
-}
-
-//..............................//
-.frame {
-  position: relative;
-  z-index: 1;
-  top: 40px;
-
-  .frame-bar {
-    background-color: $colorGreyButton;
-    height: 20px;
-    width: 692px;
-    border-radius: 6px 6px 0px 0px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 410px;
-      left: 0;
-      background-color: $colorWhite;
-      height: 9px;
-      width: 692px;
-      border-radius: 0px 0px 6px 6px;
-    }
-  }
-
-  .circles {
-    display: flex;
-    padding: 7px;
-  }
-
-  .circle {
-    background-color: $colorOrange;
-    height: 8px;
-    width: 8px;
-    border-radius: 50%;
-    margin-left: 16px;
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      height: 8px;
-      width: 8px;
-      border-radius: 50%;
-    }
-
-    &::before {
-      background-color: $colorRedButton;
-      left: 8px;
-    }
-
-    &::after {
-      background-color: $colorGreen;
-      left: 38px;
-    }
   }
 }
