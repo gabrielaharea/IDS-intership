@@ -36,7 +36,8 @@
 .description {
 
   @media (min-width: 768px) {
-    max-width: 296px;
+    max-width: 540px;
+    justify-self: end;
   }
   
   max-width: 100%;
