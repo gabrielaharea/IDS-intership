@@ -138,7 +138,6 @@
 .arrow-white {
   align-items: center;
   transition: transform 0.6s;
-
 }
 
 .swiper-slide .slide-info .arrow-white:hover {
@@ -148,6 +147,37 @@
 .slide-image1 {
   @media (max-width: 767px) {
     display: none;
+  }
+
+  .image {
+    background-color: $colorWhite;
+  }
+
+  .meeting {
+    -webkit-transition: 5s ease-in;
+    -moz-transition: 5s ease-in;
+    -o-transition: 5s ease-in;
+    transition: 5s ease-in;
+    -webkit-animation-name: slides;
+    -webkit-animation-duration: 5s;
+    animation-name: slides;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    @media (max-width: 1199px) {
+      max-width: 335px;
+      height: auto;
+    }
+  }
+
+  @keyframes slides {
+    from {
+      transform: translate(0px, 0);
+    }
+    to {
+      transform: translate(0px, -100px);
+    }
   }
 
   .meeting {
@@ -414,4 +444,3 @@
     transform: translateY(0);
   }
 }
-
