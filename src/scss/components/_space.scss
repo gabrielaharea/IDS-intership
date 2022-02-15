@@ -81,18 +81,18 @@
     position: relative;
 
     .counterrotate {
-      height: 210px;
+      height: 380px;
       animation: arc 10s infinite linear;
     }
 
     .inner {
-      width: 10px;
-      height: 10px;
-      border: solid 2px $colorPink;
+      width: 20px;
+      height: 20px;
+      border: solid 5px $colorPink;
       border-radius: 50%;
       position: absolute;
-      right: 80px;
-      top: -70px;
+      right: 50px;
+      top: 0px;
       background-color: $colorWhite;
       display: block;
     }
