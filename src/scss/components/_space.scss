@@ -8,7 +8,9 @@
     position: absolute;
     top: 0;
     height: 100%;
-    width: 60%;
+    // width: 100%;
+    left: 0;
+    right: 30%;
     background-color: $colorGrey;
     z-index: -1;
   }
@@ -23,6 +25,10 @@
     padding: 100px 0 100px 0;
     align-self: center;
 
+    @media (max-width: 1199px) {
+      max-width: 100%;
+    }
+
     h2 {
       font-family: $font-family-base;
       font-style: normal;
@@ -35,6 +41,13 @@
       font-weight: normal;
       padding-bottom: 20px;
       max-width: 460px;
+
+      @media (max-width: 1199px) {
+        font-family: $font-mercury;
+        font-style: italic;
+        font-size: 16px;
+        line-height: 24px;
+      }
     }
 
     a {
@@ -77,6 +90,12 @@
       height: 480px;
       animation: arc 10s infinite linear;
 
+      @media (max-width: 1199px) {
+        border: solid 1px $colorPink;
+        max-width: 280px;
+        max-height: 280px;
+      }
+
       &::after {
         content: "";
         position: absolute;
@@ -86,6 +105,13 @@
         border-radius: 50%;
         border: solid 5px $colorPink;
         background-color: $colorWhite;
+
+        @media (max-width: 1199px) {
+          top: 95px;
+          width: 11px;
+          height: 11px;
+          border: solid 2px $colorPink;
+        }
       }
     }
 
@@ -112,10 +138,27 @@
       background-color: $colorWhite;
       border: solid 1px $colorPink;
 
+      @media (max-width: 1199px) {
+        top: 35%;
+        right: 0%;
+        bottom: 0%;
+        left: 25%;
+
+        max-width: 150px;
+        max-height: 150px;
+      }
+
       .slide-icon {
         position: absolute;
         top: 30%;
         left: 30%;
+
+        @media (max-width: 1199px) {
+          height: 50px;
+          width: 50px;
+          top: 30%;
+          left: 30%;
+        }
       }
     }
   }
