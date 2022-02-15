@@ -27,7 +27,7 @@
         height: calc(100% - 265px);
       }
 
-      @include fluidValue("max-height", 1040, 414, 767, 320);
+      @include fluidValue("max-width", 2002, 700, 767, 320);
     }
 
     &::after {

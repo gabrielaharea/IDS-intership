@@ -1,71 +1,118 @@
-.section_space {
-  height: 680px;
+.section-space {
+  position: relative;
   margin-top: 120px;
-  margin-bottom: 99px;
-  background: linear-gradient(
-    90deg,
-    $colorGrey 73%,
-    $colorWhite 50%
-  );
+  margin-bottom: 100px;
 
-  //  font-style
-  font-family: "Ideal Sans", sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+  &::after {
+    content: "";
+    position: absolute;
+    width: calc(50% - 300px);
+    top: 0;
+    height: 100%;
+    background-color: $colorGrey;
+    z-index: -1;
+  }
 
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 1324px;
+  .container {
+    background: linear-gradient(90deg, $colorGrey 75%, $colorWhite 50%);
 
-  .container_space {
-    display: grid;
     grid-template-columns: 1fr 1fr;
+    @include fluidValue(height, 680, 450, 1680, 768);
+  }
+
+  .space-content {
     align-self: center;
-    background: linear-gradient(
-      90deg,
-      $colorGrey 75%,
-      $colorWhite 50%
-    );
+    max-height: 338px;
 
-    .text_space {
-      justify-self: center;
-      padding-left: 100px;
-      padding-right: 190px;
+    h2 {
+      font-family: $font-family-base;
+      font-style: normal;
+      font-weight: normal;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-family: $font-family-base;
+      font-size: 18px;
+      line-height: 27px;
+      margin-bottom: 40px;
+      @include fluidValue(width, 440, 336, 1680, 1199);
+
+      @media (max-width: 1199px) {
+        font-size: 16px;
+        font-style: italic;
+        line-height: 24px;
+      }
+    }
+
+    a {
+      color: $colorPink;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    img {
+      padding-left: 22px;
       align-self: center;
-
-      .title_space {
-        padding-bottom: 30px;
-        font-style: normal;
-        font-weight: normal;
-      }
-
-      .description_space {
-        font-style: normal;
-        font-weight: normal;
-        padding-bottom: 30px;
-        line-height: 27px;
-      }
-
-      .link_viewAll {
-        font-style: normal;
-        font-weight: normal;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        color: $colorBlue;
-        font-style: normal;
-        font-weight: normal;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-      }
-
-      .arrow_blue {
-        padding-left: 15px;
-      }
     }
+  }
 
-    .box_img_circle {
-      justify-self: center;
+  .space-slider {
+    animation: rotation 20s linear infinite;
+    border: solid 1px $colorPink;
+    background: transparent;
+    border-radius: 50%;
+
+    @include fluidValue(width, 480, 280, 1680, 1200);
+    @include fluidValue(height, 480, 280, 1680, 1200);
+    @include fluidValue(width, 280, 296, 1199, 768);
+    @include fluidValue(height, 280, 296, 1199, 768);
+    @include fluidValue(width, 296, 0, 760, 0);
+    @include fluidValue(height, 296, 0, 760, 0);
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: solid 2px $colorPink;
+      top: -5px;
+      background-color: $colorWhite;
     }
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(35deg);
+    }
+    to {
+      transform: rotate(395deg);
+    }
+  }
+
+  .space-wrapper {
+    border-radius: 50%;
+    background-color: $colorWhite;
+
+    border: solid 1px $colorPink;
+
+    @include fluidValue(width, 250, 143, 1680, 1200);
+    @include fluidValue(height, 250, 143, 1680, 1200);
+    @include fluidValue(width, 140, 155, 1199, 768);
+    @include fluidValue(height, 140, 155, 1199, 768);
+    @include fluidValue(width, 155, 0, 767, 0);
+    @include fluidValue(height, 155, 0, 767, 0);
   }
 }
