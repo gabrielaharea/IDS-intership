@@ -62,7 +62,6 @@
   }
 
   .space-slider {
-    animation: rotation 20s linear infinite;
     border: solid 1px $colorPink;
     background: transparent;
     border-radius: 50%;
@@ -81,38 +80,46 @@
     align-self: center;
     position: relative;
 
-    &::after {
-      position: absolute;
-      content: "";
+    .counterrotate {
+      height: 210px;
+      animation: arc 10s infinite linear;
+    }
+
+    .inner {
       width: 10px;
       height: 10px;
-      border-radius: 50%;
       border: solid 2px $colorPink;
-      top: -5px;
+      border-radius: 50%;
+      position: absolute;
+      right: 80px;
+      top: -70px;
       background-color: $colorWhite;
+      display: block;
+    }
+
+    @keyframes arc {
+      0% {
+        transform: translate(0px) rotate(0deg);
+      }
+      100% {
+        transform: translate(0px) rotate(360deg);
+      }
     }
   }
+}
 
-  @keyframes rotation {
-    from {
-      transform: rotate(35deg);
-    }
-    to {
-      transform: rotate(395deg);
-    }
-  }
+.space-wrapper {
+  position: absolute;
 
-  .space-wrapper {
-    border-radius: 50%;
-    background-color: $colorWhite;
+  border-radius: 50%;
+  background-color: $colorWhite;
+  border: solid 1px $colorPink;
 
-    border: solid 1px $colorPink;
-
-    @include fluidValue(width, 250, 143, 1680, 1200);
-    @include fluidValue(height, 250, 143, 1680, 1200);
-    @include fluidValue(width, 140, 155, 1199, 768);
-    @include fluidValue(height, 140, 155, 1199, 768);
-    @include fluidValue(width, 155, 0, 767, 0);
-    @include fluidValue(height, 155, 0, 767, 0);
-  }
+  @include fluidValue(width, 250, 143, 1680, 1200);
+  @include fluidValue(height, 250, 143, 1680, 1200);
+  @include fluidValue(width, 140, 155, 1199, 768);
+  @include fluidValue(height, 140, 155, 1199, 768);
+  @include fluidValue(width, 155, 0, 767, 0);
+  @include fluidValue(height, 155, 0, 767, 0);  
+ 
 }
