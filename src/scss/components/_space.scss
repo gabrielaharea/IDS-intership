@@ -3,26 +3,25 @@
   margin-top: 120px;
   margin-bottom: 100px;
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
-    width: calc(50% - 300px);
     top: 0;
     height: 100%;
+    width: 60%;
     background-color: $colorGrey;
     z-index: -1;
   }
 
   .container {
-    background: linear-gradient(90deg, $colorGrey 75%, $colorWhite 50%);
-
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    @include fluidValue(height, 680, 450, 1680, 768);
+    justify-content: space-between;
   }
 
   .space-content {
+    padding: 100px 0 100px 0;
     align-self: center;
-    max-height: 338px;
 
     h2 {
       font-family: $font-family-base;
@@ -33,16 +32,9 @@
 
     p {
       font-family: $font-family-base;
-      font-size: 18px;
-      line-height: 27px;
-      margin-bottom: 40px;
-      @include fluidValue(width, 440, 336, 1680, 1199);
-
-      @media (max-width: 1199px) {
-        font-size: 16px;
-        font-style: italic;
-        line-height: 24px;
-      }
+      font-weight: normal;
+      padding-bottom: 20px;
+      max-width: 460px;
     }
 
     a {
@@ -50,76 +42,81 @@
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
-      line-height: 24px;
-      letter-spacing: 2px;
       text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: normal;
     }
 
     img {
       padding-left: 22px;
-      align-self: center;
     }
   }
 
   .space-slider {
-    border: solid 1px $colorPink;
-    background: transparent;
-    border-radius: 50%;
-
-    @include fluidValue(width, 480, 280, 1680, 1200);
-    @include fluidValue(height, 480, 280, 1680, 1200);
-    @include fluidValue(width, 280, 296, 1199, 768);
-    @include fluidValue(height, 280, 296, 1199, 768);
-    @include fluidValue(width, 296, 0, 760, 0);
-    @include fluidValue(height, 296, 0, 760, 0);
-
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    justify-self: center;
-    align-self: center;
+    padding: 100px 0 100px 0;
     position: relative;
+    align-self: center;
+    justify-self: center;
 
-    .counterrotate {
-      height: 380px;
-      animation: arc 10s infinite linear;
+    &::before {
+      content: "";
+      position: absolute;
+      width: calc(50%);
+      top: 0;
+      height: 100%;
+      background-color: $colorGrey;
+      z-index: -1;
     }
 
-    .inner {
-      width: 20px;
-      height: 20px;
-      border: solid 5px $colorPink;
+    .circle-outside {
+      justify-self: center;
+      border: solid 2px $colorPink;
+      background: transparent;
       border-radius: 50%;
-      position: absolute;
-      right: 50px;
-      top: 0px;
-      background-color: $colorWhite;
-      display: block;
+      width: 480px;
+      height: 480px;
+      animation: arc 10s infinite linear;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 160px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: solid 5px $colorPink;
+        background-color: $colorWhite;
+      }
     }
 
     @keyframes arc {
       0% {
         transform: translate(0px) rotate(0deg);
       }
+
       100% {
         transform: translate(0px) rotate(360deg);
       }
     }
+
+    .space-wrapper {
+      position: absolute;
+      top: 30%;
+      right: 0%;
+      bottom: 0%;
+      left: 25%;
+      //
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      background-color: $colorWhite;
+      border: solid 1px $colorPink;
+
+      .slide-icon {
+        position: absolute;
+        top: 30%;
+        left: 30%;
+      }
+    }
   }
-}
-
-.space-wrapper {
-  position: absolute;
-
-  border-radius: 50%;
-  background-color: $colorWhite;
-  border: solid 1px $colorPink;
-
-  @include fluidValue(width, 250, 143, 1680, 1200);
-  @include fluidValue(height, 250, 143, 1680, 1200);
-  @include fluidValue(width, 140, 155, 1199, 768);
-  @include fluidValue(height, 140, 155, 1199, 768);
-  @include fluidValue(width, 155, 0, 767, 0);
-  @include fluidValue(height, 155, 0, 767, 0);  
- 
 }
