@@ -83,17 +83,72 @@
 
     .circle-outside {
       justify-self: center;
-      border: solid 2px $colorPink;
+      border: solid 1.8px $colorPink;
       background: transparent;
       border-radius: 50%;
       width: 480px;
       height: 480px;
-      animation: arc 10s infinite linear;
+      animation: rotate 25s infinite linear;
 
       @media (max-width: 1199px) {
         border: solid 1px $colorPink;
         max-width: 280px;
         max-height: 280px;
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+          border: solid 1.8px $colorPink;
+        }
+        8% {
+          transform: rotate(30deg);
+          border: solid 1.8px red;
+        }
+        16% {
+          transform: rotate(60deg);
+          border: solid 1.8px orange;
+        }
+        24% {
+          transform: rotate(90deg);
+          border: solid 1.8px green;
+        }
+        32% {
+          transform: rotate(120deg);
+          border: solid 1.8px red;
+        }
+        40% {
+          transform: rotate(150deg);
+          border: solid 1.8px orange;
+        }
+        48% {
+          transform: rotate(180deg);
+          border: solid 1.8px yellowgreen;
+        }
+        56% {
+          transform: rotate(210deg);
+          border: solid 1.8px blue;
+        }
+        64% {
+          transform: rotate(240deg);
+          border: solid 1.8px yellow;
+        }
+        72% {
+          transform: rotate(270deg);
+          border: solid 1.8px blue;
+        }
+        80% {
+          transform: rotate(300deg);
+          border: solid 1.8px orange;
+        }
+        95% {
+          transform: rotate(330deg);
+          border: solid 1.8px red;
+        }
+        100% {
+          transform: rotate(360deg);
+          border: solid 1.8px blue;
+        }
       }
 
       &::after {
@@ -106,22 +161,57 @@
         border: solid 5px $colorPink;
         background-color: $colorWhite;
 
+        animation: color 25s  infinite;
+
+        @keyframes color {
+         10% {
+            transform: rotate(0deg);
+            border: solid 5px $colorPink;
+          }
+
+          16% {
+            transform: rotate(60deg);
+            border: solid 5px orange;
+          }
+          24% {
+            transform: rotate(90deg);
+            border: solid 5px green;
+          }
+
+          40% {
+            transform: rotate(150deg);
+            border: solid 5px orange;
+          }
+
+          56% {
+            transform: rotate(210deg);
+            border: solid 5px blue;
+          }
+          64% {
+            transform: rotate(0deg);
+            border: solid 5px yellow;
+          }
+
+          80% {
+            transform: rotate(0deg);
+            border: solid 5px orange;
+          }
+          100% {
+            transform: rotate(0deg);
+            border: solid 5px red;
+          }
+          90% {
+            transform: rotate(0deg);
+            border: solid 5px blue;
+          }
+        }
+
         @media (max-width: 1199px) {
           top: 95px;
           width: 11px;
           height: 11px;
           border: solid 2px $colorPink;
         }
-      }
-    }
-
-    @keyframes arc {
-      0% {
-        transform: translate(0px) rotate(0deg);
-      }
-
-      100% {
-        transform: translate(0px) rotate(360deg);
       }
     }
 
@@ -136,7 +226,51 @@
       height: 250px;
       border-radius: 50%;
       background-color: $colorWhite;
-      border: solid 1px $colorPink;
+      border: solid 0.67px $colorPink;
+
+      animation: colorcircle 25s step-end infinite;
+
+      @keyframes colorcircle {
+        100% {
+          border: solid 0.67px $colorPink;
+        }
+        8% {
+          border: solid 0.67px red;
+        }
+        16% {
+          border: solid 0.67px orange;
+        }
+        24% {
+          border: solid 0.67px green;
+        }
+        32% {
+          border: solid 0.67px red;
+        }
+        40% {
+          border: solid 0.67px orange;
+        }
+        48% {
+          border: solid 0.67px yellowgreen;
+        }
+        56% {
+          border: solid 0.67px blue;
+        }
+        64% {
+          border: solid 0.67px yellow;
+        }
+        72% {
+          border: solid 0.67px blue;
+        }
+        80% {
+          border: solid 0.67px orange;
+        }
+        95% {
+          border: solid 0.67px red;
+        }
+        100% {
+          border: solid 0.67px blue;
+        }
+      }
 
       @media (max-width: 1199px) {
         top: 35%;
