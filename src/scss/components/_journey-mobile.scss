@@ -10,12 +10,10 @@
   .axis {
     margin-bottom: 40px;
     position: relative;
-
     span {
       display: inline-block;
       padding: 20px 0;
     }
-
     &::before {
       position: absolute;
       bottom: 0;
@@ -39,11 +37,9 @@
       border-radius: 50%;
     }
   }
-
   .slide-info {
     width: 100%;
     margin-bottom: 50px;
-
     h3 {
       font-style: italic;
       font-family: $font-mercury;
@@ -86,33 +82,28 @@
         align-items: center;
       }
     }
-
     .slide-icon {
       margin-bottom: 20px;
     }
   }
-
   .slide-2 {
     circle {
-      fill: $colorOrange;
+      fill: $colorYellow;
     }
   }
-
   .slide-3 {
     circle {
       fill: $colorRed;
     }
   }
-
   .slide-4 {
     circle {
       fill: $colorGreen;
     }
   }
-  
   .slide-5 {
     circle {
-      fill: $colorBlue;
+      fill: $colorTurquoise;
     }
   }
 }
