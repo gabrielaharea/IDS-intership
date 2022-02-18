@@ -1,0 +1,77 @@
+.section-astronaut {
+  position: relative;
+  margin-bottom: 100px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 12%;
+    left: 0;
+    width: 50%;
+    height: 75%;
+    background-color: $colorGray;
+    z-index: -1;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      display: contents;
+    }
+  }
+
+  .text_astronautPee {
+    position: absolute;
+    // left: 370px;
+    padding: 100px;
+    max-width: 740px;
+    font-family: $font-family-base;
+    color: $colorWhite;
+    background-color: $colorRed;
+    justify-self: start;
+
+    @media (max-width: 1199px) {
+      // left: 220px;
+      max-width: 456px;
+      padding: 60px;
+      font-family: $font-ideal-sans;
+    }
+
+    @media (max-width: 767px) {
+      max-width: 100%;
+      padding: 50px 12px;
+      position: unset;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+
+      @media (max-width: 1199px) {
+        font-style: italic;
+        font-weight: normal;
+      }
+    }
+
+    p {
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 27px;
+
+      @media (max-width: 1199px) {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .foto_astronautPee {
+    justify-self: end;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
