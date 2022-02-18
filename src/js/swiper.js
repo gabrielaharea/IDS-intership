@@ -37,10 +37,12 @@ const circleSlider = new Swiper(".circle-slider", {
     slideChange: function () {
       const index_currentSlide = circleSlider.realIndex;
       const bigCircle = document.querySelector(".big-circle");
+      const slide = document.querySelector(".swiper-wrapper");
       let removeIndex = index_currentSlide === 0 ? 11 : index_currentSlide - 1;
       bigCircle.classList.add("big-circle-" + index_currentSlide);
       bigCircle.classList.remove("big-circle-" + removeIndex);
-      // bigCircle.style.top -= "5px";
+      slide.classList.add("slide-" + index_currentSlide);
+      slide.classList.remove("slide-" + removeIndex);
     },
   },
 });
