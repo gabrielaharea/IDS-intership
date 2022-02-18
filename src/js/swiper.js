@@ -23,7 +23,7 @@ var swiper = new Swiper(".journey-slider", {
 });
 
 const circleSlider = new Swiper(".circle-slider", {
-  modules: [Autoplay, EffectFade,],
+  modules: [Autoplay, EffectFade],
   autoplay: {
     delay: 1500,
     waitForTransition: false,
@@ -31,7 +31,7 @@ const circleSlider = new Swiper(".circle-slider", {
     virtualTranslate: true,
   },
   effect: "fade",
-  fadeEffect: { crossFade: true, },
+  fadeEffect: { crossFade: true },
   allowTouchMove: false,
   on: {
     slideChange: function () {
@@ -40,6 +40,7 @@ const circleSlider = new Swiper(".circle-slider", {
       let removeIndex = index_currentSlide === 0 ? 11 : index_currentSlide - 1;
       bigCircle.classList.add("big-circle-" + index_currentSlide);
       bigCircle.classList.remove("big-circle-" + removeIndex);
+      // bigCircle.style.top -= "5px";
     },
   },
 });

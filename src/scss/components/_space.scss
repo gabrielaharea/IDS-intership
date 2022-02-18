@@ -9,8 +9,9 @@
     left: 0;
     width: 50%;
     height: 100%;
-    background-color: $colorGrey;
+    background-color: $colorGray-100;
     z-index: -1;
+
     @media (max-width: 767px) {
       width: 100%;
       height: 50%;
@@ -96,7 +97,7 @@
     right: 0;
     width: 100%;
     height: 100%;
-    background-color: $colorGrey;
+    background-color: $colorGray-100;
     z-index: -1;
     transform: translateX(-50%);
 
@@ -172,19 +173,19 @@
   }
 
   &-5 {
-    color: $colorOrange;
+    color: $colorOrangeButton;
   }
 
   &-6 {
-    color: $colorBlueNormal;
+    color: $colorBlue;
   }
 
   &-7 {
-    color: $colorYellow;
+    color: $colorYellowCircle;
   }
 
   &-8 {
-    color: $colorBlueLight;
+    color: $colorBlue-100;
   }
 
   &-9 {
@@ -196,7 +197,7 @@
   }
 
   &-11 {
-    color: $colorBlueDark;
+    color: $colorDarkBlue;
   }
 }
 

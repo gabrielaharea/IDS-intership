@@ -11,7 +11,7 @@
     left: 0;
     width: 100%;
     height: calc(100% - 80px);
-    background-color: $colorGrey;
+    background-color: $colorGray-100;
     z-index: -1;
 
     @media (max-width: 767px) {
@@ -33,7 +33,7 @@
   display: grid;
   align-content: start;
   padding: 120px 95px;
-  background-color: $colorBlueDark;
+  background-color: $colorDarkBlue;
   color: $colorWhite;
 
   @media (max-width: 1199px) {
@@ -78,7 +78,7 @@
 .about-description {
   align-self: start;
   padding: 86px 115px;
-  background-color: $colorBlue;
+  background-color: $colorTurquoise;
   font-family: $font-family-base;
   font-weight: normal;
   font-style: normal;

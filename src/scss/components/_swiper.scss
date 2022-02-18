@@ -91,7 +91,7 @@
     @include fluidValue(gap, 90, 85, 1680, 1200);
     @include fluidValue(gap, 10, 30, 1199, 768);
     opacity: 0 !important;
-    
+
     &.swiper-slide-active {
       opacity: 1 !important;
       align-self: center;
@@ -101,83 +101,48 @@
 .slide-info {
   @include fluidValue(width, 415, 296, 1680, 768);
   padding-top: 55px;
-}
-
-.slide-icon {
-  margin-bottom: 37px;
   
-  circle {
-    fill: $colorPink;
+  h3 {
+    font-style: italic;
+    font-family: $font-mercury;
+    font-weight: 400;
+    margin-bottom: 17px;
   }
-
-  path {
-    fill: $colorWhite;
+  
+  h4 {
+    font-style: italic;
+    font-family: $font-ideal-sans;
+    font-weight: 400;
+    margin-bottom: 17px;
   }
-
-  .slide-2 & {
-    circle {
-      fill: $colorYellow;
-    }
+  
+  span {
+    display: inline-block;
+    font-family: $font-ideal-sans;
+    font-weight: $font-weight-medium;
   }
-
-  .slide-3 & {
-    circle {
-      fill: $colorRed;
-    }
+  
+  p {
+    font-family: $font-family-base;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 35px;
+    margin-top: 0;
   }
-
-  .slide-4 & {
-    circle {
-      fill: $colorGreen;
-    }
-  }
-
-  .slide-5 & {
-    circle {
-      fill: $colorTurquoise;
-    }
+  
+  a {
+    color: $colorWhite;
+    text-transform: uppercase;
+    font-family: $font-ideal-sans;
+    font-weight: $font-weight-semibold;
+    letter-spacing: 1px;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    gap: 20px;
   }
 }
 
-h3 {
-  font-style: italic;
-  font-family: $font-mercury;
-  font-weight: 400;
-  margin-bottom: 17px;
-}
-
-h4 {
-  font-style: italic;
-  font-family: $font-ideal-sans;
-  font-weight: 400;
-  margin-bottom: 17px;
-}
-
-span {
-  display: inline-block;
-  font-family: $font-ideal-sans;
-  font-weight: $font-weight-medium;
-}
-
-p {
-  font-family: $font-family-base;
-  font-size: 18px;
-  line-height: 27px;
-  margin-bottom: 35px;
-  margin-top: 0;
-}
-
-a {
-  color: $colorWhite;
-  text-transform: uppercase;
-  font-family: $font-ideal-sans;
-  font-weight: $font-weight-semibold;
-  letter-spacing: 1px;
-  font-size: 16px;
-  line-height: 24px;
-  display: flex;
-  gap: 20px;
-}
 
 .slide-icon {
   margin-bottom: 37px;
@@ -197,7 +162,7 @@ a {
 
   .slide2 & {
     circle {
-      fill: $colorYellow;
+      fill: $colorYellowCircle;
     }
   }
 
@@ -241,7 +206,7 @@ a {
   }
   .sky {
     &.borderYellow {
-      border-bottom: 10px solid $colorYellow;
+      border-bottom: 10px solid $colorYellowCircle;
     }
 
     &.borderRed {
@@ -257,6 +222,7 @@ a {
     }
   }
 }
+
 .frame {
   position: absolute;
   margin-left: auto;
@@ -265,12 +231,13 @@ a {
   right: 0;
   top: 40px;
   z-index: 1;
-  background-color: $colorGray;
-  border-bottom: 8px solid $colorGray;
+  background-color: $colorGrayBar;
+  border-bottom: 8px solid $colorGrayBar;
   border-radius: 6px;
   @include fluidValue(width, 692, 540, 1680, 1200);
   @include fluidValue(width, 450, 335, 1200, 768);
   @include fluidValue(width, 290, 335, 1199, 768);
+
   img {
     background-color: $colorWhite;
     height: 100%;
@@ -282,13 +249,14 @@ a {
   @include fluidValue(width, 55, 28, 1680, 768);
   @include fluidValue(height, 22, 9, 1680, 768);
 }
+
 .circle {
   position: relative;
   align-self: center;
   justify-self: center;
   @include fluidValue(width, 8, 4, 1680, 768);
   @include fluidValue(height, 8, 4, 1680, 768);
-  background-color: $colorYellow;
+  background-color: $colorYellowCircle;
   border-radius: 50%;
 
   &::before,
@@ -299,12 +267,14 @@ a {
     @include fluidValue(width, 8, 4, 1680, 768);
     @include fluidValue(height, 8, 4, 1680, 768);
   }
+
   &::before {
-    background-color: $colorRed;
+    background-color: $colorRedCircle;
     @include fluidValue("right", 16, 8, 1680, 768);
   }
+
   &::after {
-    background-color: $colorGreen;
+    background-color: $colorGreenCircle;
     @include fluidValue("left", 16, 8, 1680, 768);
   }
 }
