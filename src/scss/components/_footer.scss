@@ -2,36 +2,68 @@
   background-color: $colorDarkBlue;
 
   .container {
-    display: grid;
-    grid-template-columns: 635px 317px;
+    grid-template-columns: 635px 350px;
     column-gap: 125px;
     padding: 120px 105px;
     color: $colorWhite;
-  }
 
-  h5 {
-    font-size: 28px;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 42px;
-    margin-bottom: 40px;
-  }
+    @media (max-width: 1199px) {
+      grid-template-columns: 1fr;
+      row-gap: 54px;
+      padding: 70px 36px;
+    }
 
-  .about-left {
+    @media (max-width: 768px) {
+      row-gap: 64px;
+      padding-top: 50px;
+      padding-bottom: 46px;
+    }
+
+    h5 {
+      font-size: 28px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 42px;
+      margin-bottom: 40px;
+    }
+
     p {
       font-style: normal;
       font-size: 18px;
       line-height: 27px;
       letter-spacing: 1.13px;
+    }
+  }
+
+  .about-left {
+    h5 {
+      @media (max-width: 1199px) {
+        margin-bottom: 18px;
+      }
+
+      @media (max-width: 768px) {
+        margin-bottom: 20px;
+      }
+    }
+
+    p {
       margin-bottom: 80px;
+
+      @media (max-width: 1199px) {
+        margin-bottom: 54px;
+      }
+
+      @media (max-width: 768px) {
+        margin-bottom: 40px;
+      }
     }
 
     a {
-      color: $colorWhite;
-      text-transform: uppercase;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 2px;
+      text-transform: uppercase;
+      color: $colorWhite;
     }
 
     .arrow-footer {
@@ -40,8 +72,26 @@
   }
 
   .about-right {
+    h5 {
+      @media (max-width: 1199px) {
+        margin-bottom: 44px;
+      }
+
+      @media (max-width: 768px) {
+        margin-bottom: 35px;
+      }
+    }
+
     p {
-      margin-bottom: 104px;
+      margin-bottom: 135px;
+
+      @media (max-width: 1199px) {
+        margin-bottom: 54px;
+      }
+
+      @media (max-width: 768px) {
+        margin-bottom: 65px;
+      }
     }
 
     a {
@@ -51,13 +101,20 @@
       line-height: 24px;
       letter-spacing: 2px;
       color: $colorWhite;
+      border-bottom: 0.5px solid #ffffff;
     }
   }
 
-  .link_insomniac {
+  .link-insomniac {
     font-size: 18px;
     line-height: 27px;
     font-style: normal;
     font-weight: normal;
+  }
+
+  .web-insomniac {
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 }
