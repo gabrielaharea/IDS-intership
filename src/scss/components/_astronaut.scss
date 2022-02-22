@@ -1,4 +1,4 @@
-.section-astronaut {
+.section-ids {
   position: relative;
   margin-bottom: 80px;
 
@@ -20,9 +20,9 @@
     width: 50%;
     margin: auto;
     background-color: $colorBlue;
+    @include fluidValue(max-height, 492, 492, 1199, 767);
+    @include fluidValue(max-height, 980, 675, 767, 320);
     z-index: -1;
-    @include fluidValue("max-height", 492, 492, 1199, 767);
-    @include fluidValue("max-height", 980, 675, 767, 320);
 
     @media (max-width: 768px) {
       top: -30px;
@@ -32,64 +32,63 @@
   }
 
   .container {
-    grid-template-columns: 1fr;
-    justify-items: center;
+    display: flex;
     align-items: center;
 
     @media (max-width: 768px) {
       display: contents;
     }
   }
+}
 
-  .text-astronaut {
-    position: absolute;
-    // left: 370px;
-    padding: 100px;
-    max-width: 740px;
-    font-family: $font-family-base;
-    color: $colorWhite;
-    background-color: $colorRed;
-    justify-self: start;
+.ids-content {
+  @include fluidValue(width, 740, 456, 1336, 768);
+  @include fluidValue(margin-left, -105, 0, 1336, 768);
+  @include fluidValue(padding, 100, 50, 1336, 768);
+  background-color: $colorRed;
+  color: $colorWhite;
+  z-index: 1;
 
-    @media (max-width: 1199px) {
-      // left: 220px;
-      max-width: 456px;
-      padding: 60px;
-      font-family: $font-ideal-sans;
-    }
-
-    @media (max-width: 767px) {
-      max-width: 100%;
-      padding: 50px 12px;
-      position: unset;
-    }
-
-    h2 {
-      margin-bottom: 20px;
-
-      @media (max-width: 1199px) {
-        font-style: italic;
-        font-weight: normal;
-      }
-    }
-
-    p {
-      font-weight: normal;
-      font-size: 20px;
-      line-height: 27px;
-
-      @media (max-width: 1199px) {
-        font-size: 16px;
-        line-height: 24px;
-      }
-    }
+  @media (max-width: 767px) {
+    max-width: 100%;
+    padding: 50px 12px;
+    width: unset;
+    margin-left: unset;
   }
 
-  .foto_astronautPee {
-    justify-self: end;
+  h2 {
+    margin-bottom: 20px;
+    font-style: italic;
+    font-weight: normal;
+  }
 
-    img {
-      max-width: 100%;
+  p {
+    font-weight: normal;
+    font-size: 20px;
+
+    @media (max-width: 1199px) {
+      font-size: 16px;
+      line-height: 24px;
     }
+  }
+}
+
+.ids-img {
+  @include fluidValue(width, 896, 542, 1336, 768);
+  @include fluidValue(height, 759, 553, 1336, 768);
+  margin-left: -300px;
+  z-index: 0;
+
+  @media (max-width: 767px) {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: unset;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
