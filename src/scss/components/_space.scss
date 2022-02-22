@@ -66,14 +66,8 @@
     }
   }
 
-  a {
-    color: $colorPink;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: normal;
+  .arrow-link{
+    color: $colorPink !important; 
   }
 
   img {

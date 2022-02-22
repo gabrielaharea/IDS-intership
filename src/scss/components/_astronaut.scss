@@ -7,7 +7,7 @@
   }
 
   @media (max-width: 768px) {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   &::before {
@@ -16,18 +16,16 @@
     top: 0;
     bottom: 0;
     left: 0;
-    height: 576px;
     width: 50%;
     margin: auto;
     background-color: $colorBlue;
-    @include fluidValue(max-height, 492, 492, 1199, 767);
-    @include fluidValue(max-height, 980, 675, 767, 320);
+    @include fluidValue(max-height, 580, 452, 1336, 768);
+    @include fluidValue(max-height, 1080, 870, 768, 300);
     z-index: -1;
 
     @media (max-width: 768px) {
-      top: -30px;
-      height: 980px;
-      margin: 0;
+      top: -20px;
+      bottom: -20px;
     }
   }
 
