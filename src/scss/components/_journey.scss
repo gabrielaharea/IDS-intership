@@ -293,6 +293,24 @@
   justify-content: center;
   align-items: center;
 
+  img {
+    &.borderTurquoise {
+      border-bottom: 7px solid $colorTurquoise;
+    }
+    &.borderYellow {
+      border-bottom: 7px solid $colorYellowCircle;
+    }
+    &.borderRed {
+      border-bottom: 7px solid $colorRed;
+    }
+    &.borderGreen {
+      border-bottom: 7px solid $colorGreen;
+    }
+    &.borderGreenLighter {
+      border-bottom: 7px solid $colorGreen;
+    }
+  }
+
   > img {
     position: absolute;
     left: 50%;
