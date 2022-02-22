@@ -84,8 +84,8 @@
 .space-wrapper {
   position: relative;
   display: grid;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 
   @media (max-width: 767px) {
     grid-row: 1;
@@ -105,6 +105,8 @@
 
     @media (max-width: 768px) {
       transform: translateY(50%);
+      left: -15px;
+      width: 100vw;
     }
   }
 

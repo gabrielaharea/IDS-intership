@@ -19,6 +19,7 @@
     );
     border-image-slice: 1;
   }
+
   @media (max-width: 767px) {
     display: none;
   }
@@ -34,6 +35,8 @@
   font-style: italic;
   background-color: transparent;
   border: 0;
+  @include fluidValue(padding-top, 15, 25, 1680, 768);
+  @include fluidValue(font-size, 18, 16, 1680, 768);
   cursor: pointer;
 
   &:focus {
@@ -58,6 +61,7 @@
       animation: pulsePaginationBulletAnimation 2s infinite;
     }
   }
+
   @keyframes pulsePaginationBulletAnimation {
     0% {
       box-shadow: 0 0 0 0 rgba($colorPink, 0.4);
@@ -77,19 +81,19 @@
   position: relative;
   display: flex;
   height: 550px;
+  width: max-content;
 }
 
 .journey-slider {
   overflow: hidden;
-  width: 100%;
 
   .swiper-slide {
     display: grid;
     top: 0;
     grid-template-columns: max-content 1fr;
-    width: 100%;
-    @include fluidValue(gap, 90, 85, 1680, 1200);
     @include fluidValue(gap, 10, 30, 1199, 768);
+    @include fluidValue(gap, 90, 85, 1680, 1200);
+
     opacity: 0 !important;
 
     &.swiper-slide-active {
@@ -98,30 +102,31 @@
     }
   }
 }
+
 .slide-info {
-  @include fluidValue(width, 415, 296, 1680, 768);
+  @include fluidValue(width, 375, 296, 1200, 768);
   padding-top: 55px;
-  
+
   h3 {
     font-style: italic;
     font-family: $font-mercury;
     font-weight: 400;
     margin-bottom: 17px;
   }
-  
+
   h4 {
     font-style: italic;
     font-family: $font-ideal-sans;
     font-weight: 400;
     margin-bottom: 17px;
   }
-  
+
   span {
     display: inline-block;
     font-family: $font-ideal-sans;
     font-weight: $font-weight-medium;
   }
-  
+
   p {
     font-family: $font-family-base;
     font-size: 18px;
@@ -129,7 +134,7 @@
     margin-bottom: 35px;
     margin-top: 0;
   }
-  
+
   a {
     color: $colorWhite;
     text-transform: uppercase;
@@ -143,14 +148,8 @@
   }
 }
 
-
 .slide-icon {
   margin-bottom: 37px;
-
-  @media (min-width: 1199px) {
-    width: 90px;
-    height: 90px;
-  }
 
   circle {
     fill: $colorPink;
@@ -162,7 +161,7 @@
 
   .slide2 & {
     circle {
-      fill: $colorYellowCircle;
+      fill: $colorOrangeButton;
     }
   }
 
@@ -183,30 +182,36 @@
       fill: $colorTurquoise;
     }
   }
+  @media (min-width: 1199px) {
+    width: 90px;
+    height: 90px;
+  }
 }
 
 .slide-image {
   position: relative;
-  @include fluidValue(width, 692, 540, 1680, 1200);
   @include fluidValue(width, 370, 335, 1200, 768);
+  @include fluidValue(width, 692, 540, 1680, 1200);
+
   .sky {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
-    @include fluidValue(width, 540, 500, 1680, 1200);
-    @include fluidValue(height, 525, 490, 1680, 1200);
     @include fluidValue(width, 240, 262, 1200, 768);
     @include fluidValue(height, 290, 307, 1200, 768);
+    @include fluidValue(width, 540, 500, 1680, 1200);
+    @include fluidValue(height, 525, 490, 1680, 1200);
 
     &.borderPink {
       border-bottom: 7px solid $colorPink;
     }
   }
+
   .sky {
     &.borderYellow {
-      border-bottom: 10px solid $colorYellowCircle;
+      border-bottom: 10px solid $colorOrangeButton;
     }
 
     &.borderRed {
@@ -217,7 +222,7 @@
       border-bottom: 10px solid $colorGreen;
     }
 
-    &.borderBlue {
+    &.borderTurquoise {
       border-bottom: 10px solid $colorTurquoise;
     }
   }
@@ -231,12 +236,12 @@
   right: 0;
   top: 40px;
   z-index: 1;
-  background-color: $colorGrayBar;
-  border-bottom: 8px solid $colorGrayBar;
+  background-color: $colorGray;
+  border-bottom: 8px solid $colorGray;
   border-radius: 6px;
-  @include fluidValue(width, 692, 540, 1680, 1200);
-  @include fluidValue(width, 450, 335, 1200, 768);
   @include fluidValue(width, 290, 335, 1199, 768);
+  @include fluidValue(width, 450, 335, 1200, 768);
+  @include fluidValue(width, 692, 540, 1680, 1200);
 
   img {
     background-color: $colorWhite;
@@ -244,6 +249,7 @@
     width: 100%;
   }
 }
+
 .circles {
   display: grid;
   @include fluidValue(width, 55, 28, 1680, 768);
@@ -252,12 +258,17 @@
 
 .circle {
   position: relative;
+  width: 8px;
+  height: 8px;
   align-self: center;
   justify-self: center;
-  @include fluidValue(width, 8, 4, 1680, 768);
-  @include fluidValue(height, 8, 4, 1680, 768);
-  background-color: $colorYellowCircle;
+  background-color: $colorOrangeButton;
   border-radius: 50%;
+
+  @media (max-width: 767px) {
+    width: 4px;
+    height: 4px;
+  }
 
   &::before,
   &::after {
@@ -269,12 +280,24 @@
   }
 
   &::before {
-    background-color: $colorRedCircle;
-    @include fluidValue("right", 16, 8, 1680, 768);
+    content: "";
+    background-color: $colorRed;
+
+    @include fluidValue(right, 16, 8, 1680, 768);
+    @media (max-width: 767px) {
+      width: 4px;
+      height: 4px;
+    }
   }
 
   &::after {
-    background-color: $colorGreenCircle;
+    content: "";
+    background-color: $colorGreen;
+
     @include fluidValue("left", 16, 8, 1680, 768);
+    @media (max-width: 767px) {
+      width: 4px;
+      height: 4px;
+    }
   }
 }

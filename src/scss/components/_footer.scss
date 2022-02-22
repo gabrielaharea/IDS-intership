@@ -2,9 +2,9 @@
   background-color: $colorDarkBlue;
 
   .container {
-    grid-template-columns: 635px 350px;
-    column-gap: 125px;
-    padding: 120px 105px;
+    grid-template-columns: max-content max-content; //635px 350px
+    column-gap: 115px;
+    padding: 120px 0;
     color: $colorWhite;
 
     @media (max-width: 1199px) {
@@ -36,6 +36,7 @@
   }
 
   .about-left {
+    max-width: 635px;
     h5 {
       @media (max-width: 1199px) {
         margin-bottom: 18px;
@@ -60,6 +61,7 @@
 
     a {
       font-size: 16px;
+      font-weight: bold;
       line-height: 24px;
       letter-spacing: 2px;
       text-transform: uppercase;
@@ -67,11 +69,13 @@
     }
 
     .arrow-footer {
-      padding-left: 10px;
+      padding-left: 15px;
     }
   }
 
   .about-right {
+    max-width: 350px;
+
     h5 {
       @media (max-width: 1199px) {
         margin-bottom: 44px;
@@ -83,7 +87,7 @@
     }
 
     p {
-      margin-bottom: 135px;
+      margin-bottom: 110px;
 
       @media (max-width: 1199px) {
         margin-bottom: 54px;
@@ -96,20 +100,23 @@
 
     a {
       font-style: normal;
-      text-decoration: none;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 2px;
-      color: $colorWhite;
       border-bottom: 0.5px solid #ffffff;
+      text-decoration: none;
+      color: $colorWhite;
     }
   }
 
   .link-insomniac {
     font-size: 18px;
     line-height: 27px;
-    font-style: normal;
-    font-weight: normal;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 
   .web-insomniac {

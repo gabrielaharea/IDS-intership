@@ -1,10 +1,10 @@
 .section-podcasts {
   display: flex;
   justify-content: center;
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 
   @media (max-width: 1199px) {
-    margin-bottom: 43px;
+    margin-bottom: 40px;
   }
 
   @media (max-width: 767px) {
@@ -13,36 +13,44 @@
   }
 
   .container {
-    // display: grid;
-    // grid-template-columns: 701px 400px;
-    // justify-content: center;
-    // align-items: center;
-    // padding-top: 80px;
-    // padding-bottom: 80px;
-    .podcasts {
-      position: relative;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      min-width: 50px;
-      height: 50px;
-      margin: 8px 50px 0 0;
-      padding: 0;
-      border: 0;
+    grid-template-columns: max-content max-content;
+    column-gap: 281px;
+
+    @media (max-width: 1199px) {
+      column-gap: 79px;
     }
 
-    .podcasts-description {
-      max-width: 640px;
-      line-height: 33px;
-      font-size: 22px;
+    @media (max-width: 768px) {
+      grid-template-columns: max-content;
+    }
+  }
+
+  .podcasts-description {
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: normal;
+    font-style: normal;
+    font-weight: $font-family-base;
+    max-width: 640px;
+
+    @media (max-width: 1199px) {
+      max-width: 399px;
+      font-style: italic;
       font-weight: normal;
-      font-style: normal;
-      font-weight: $font-family-base;
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    @media (max-width: 768px) {
+      max-width: 400px;
+      margin-bottom: 40px;
     }
   }
 
   .btn-secondary {
     position: relative;
+    max-width: 180px;
+    max-height: 48px;
     padding: 12px 24px;
     font-family: $font-ideal-sans;
     font-size: 16px;
@@ -52,6 +60,19 @@
     text-transform: uppercase;
     text-align: center;
     transition: background-color 0.2s ease-out;
+
+    @media (max-width: 1199px) {
+      max-width: 161px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      max-width: 164px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 21px;
+    }
 
     &.btn-secondary {
       background-color: $colorPink;

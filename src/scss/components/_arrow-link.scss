@@ -1,0 +1,52 @@
+.arrow-link {
+  display: inline-grid;
+  grid-template-columns: max-content max-content;
+  justify-self: start;
+  align-items: center;
+  gap: 0 20px;
+  font-weight: $font-weight-semibold;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  color: $colorDarkBlue;
+  text-transform: uppercase;
+  transition: color 0.3s ease-in-out;
+
+  svg {
+    width: 33px;
+    height: 13px;
+    transition: margin-left 0.3s ease-in-out;
+    fill: currentColor;
+  }
+
+  &:active {
+    color: $colorBlue;
+
+    svg {
+      margin-left: 15px;
+    }
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      color: $colorBlue;
+
+      svg {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  &.white {
+    color: $colorWhite;
+  }
+
+  &.align-self-end {
+    align-self: end;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+}

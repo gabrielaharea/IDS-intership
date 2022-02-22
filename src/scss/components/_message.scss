@@ -27,7 +27,7 @@
         height: calc(100% - 265px);
       }
 
-      @include fluidValue("max-width", 2002, 700, 767, 320);
+      @include fluidValue("max-height", 1044, 415, 767, 320);
     }
 
     &::after {
@@ -68,6 +68,10 @@
   padding: 40px 25px;
   font-weight: $font-weight-normal;
 
+  @media (max-width: 768px) {
+    font-style: italic;
+  }
+
   @media (min-width: 1120px) {
     padding: 40px 65px 59px 65px;
   }
@@ -75,10 +79,27 @@
   h4 {
     font-weight: $font-weight-normal;
     margin-bottom: 18px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
   }
 
   p {
     margin: 0 0 11px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  a {
+    @media (max-width: 768px) {
+      font-style: normal;
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 }
 
