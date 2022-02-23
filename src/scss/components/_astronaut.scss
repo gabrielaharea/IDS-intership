@@ -20,7 +20,7 @@
     margin: auto;
     background-color: $colorBlue;
     @include fluidValue(max-height, 580, 452, 1336, 768);
-    @include fluidValue(max-height, 1080, 870, 768, 300);
+    // @include fluidValue(max-height, 1080, 870, 768, 320);
     z-index: -1;
 
     @media (max-width: 768px) {
