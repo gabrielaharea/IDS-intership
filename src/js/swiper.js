@@ -27,7 +27,7 @@ const knowledgeSlider = new Swiper(".knowledge-slider", {
 });
 
 const circleSlider = new Swiper(".circle-slider", {
-  modules: [Autoplay, EffectFade],
+  modules: [Autoplay, EffectFade, Pagination],
   autoplay: {
     delay: 1500,
     waitForTransition: false,
@@ -41,12 +41,21 @@ const circleSlider = new Swiper(".circle-slider", {
     slideChange: function () {
       const index_currentSlide = circleSlider.realIndex;
       const bigCircle = document.querySelector(".big-circle");
-      const slide = document.querySelector(".swiper-wrapper");
+      const slideWrapper = document.querySelector(".swiper-wrapper");
       let removeIndex = index_currentSlide === 0 ? 11 : index_currentSlide - 1;
       bigCircle.classList.add("big-circle-" + index_currentSlide);
       bigCircle.classList.remove("big-circle-" + removeIndex);
-      slide.classList.add("slide-" + index_currentSlide);
-      slide.classList.remove("slide-" + removeIndex);
+      slideWrapper.classList.add("slide-" + index_currentSlide);
+      slideWrapper.classList.remove("slide-" + removeIndex);
+    },
+  },
+  pagination: {
+    el: ".pagination",
+    type: "fraction",
+    renderFraction: function (currentClass, totalClass) {
+      return `
+      <span class="space-number">Space <span class="${currentClass}">${currentClass}</span>  </span>
+      <div class="pagination-counter"><span class="${currentClass}">${currentClass}</span>/<span class="${totalClass}"> ${totalClass}</span></div>`;
     },
   },
 });
