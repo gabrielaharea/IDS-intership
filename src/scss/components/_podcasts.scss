@@ -25,20 +25,17 @@
     }
   }
 
-  .podcasts-description {
+  .podcasts-content {
+    max-width: 640px;
     font-size: 22px;
     line-height: 33px;
-    font-weight: normal;
-    font-style: normal;
     font-weight: $font-family-base;
-    max-width: 640px;
 
     @media (max-width: 1199px) {
       max-width: 399px;
-      font-style: italic;
-      font-weight: normal;
       font-size: 18px;
       line-height: 27px;
+      font-style: italic;
     }
 
     @media (max-width: 768px) {
@@ -49,16 +46,17 @@
 
   .btn-secondary {
     position: relative;
-    max-width: 180px;
+    text-align: center;
     max-height: 48px;
+    max-width: 180px;
     padding: 12px 24px;
+    // font style
     font-family: $font-ideal-sans;
     font-size: 16px;
-    font-weight: $font-weight-medium;
     line-height: 1.5;
+    font-weight: $font-weight-medium;
     color: $colorWhite;
     text-transform: uppercase;
-    text-align: center;
     transition: background-color 0.2s ease-out;
 
     @media (max-width: 1199px) {
@@ -68,8 +66,6 @@
 
     @media (max-width: 768px) {
       max-width: 164px;
-      font-style: normal;
-      font-weight: normal;
       font-size: 14px;
       line-height: 21px;
     }
