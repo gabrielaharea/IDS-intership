@@ -41,7 +41,7 @@
   }
 
   @media (min-width: 768px) {
-    height: calc(100%- 80px);
+    height: calc(100% - 80px);
   }
 
   h3,
@@ -72,19 +72,25 @@
     height: 100%;
     object-fit: cover;
     object-position: top;
+
+    @media (max-width: 768px) {
+      object-position: center;
+    }
   }
 }
 
 .about-description {
   align-self: start;
-  padding: 86px 115px;
+  padding: 20px;
   background-color: $colorTurquoise;
   font-family: $font-family-base;
   font-weight: normal;
   font-style: normal;
   color: $colorWhite;
-
-  @media (max-width: 1199px) {
+  @media (min-width: 767px) {
     padding: 50px;
+  }
+  @media (min-width: 1199px) {
+    padding: 86px 115px;
   }
 }

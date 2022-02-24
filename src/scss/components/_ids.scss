@@ -1,31 +1,25 @@
 .section-ids {
   position: relative;
-  margin-bottom: 80px;
-
-  @media (max-width: 1199px) {
-    margin-bottom: 40px;
-  }
-
-  @media (max-width: 768px) {
-    margin-bottom: 40px;
-  }
+  @include fluidValue(padding-bottom, 80, 40, 1680, 768);
 
   &::before {
     content: "";
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 100px;
     left: 0;
-    width: 50%;
-    margin: auto;
-    background-color: $colorBlue;
-    @include fluidValue(max-height, 580, 452, 1336, 768);
-    // @include fluidValue(max-height, 1080, 870, 768, 320);
+    width: 100%;
     z-index: -1;
+    transform: translateX(-50%);
+    background-color: $colorBlue;
+    @include fluidValue(height, 576, 492, 1680, 768);
+
+    @media (max-width: 1199px) {
+      top: 90px;
+    }
 
     @media (max-width: 768px) {
       top: -20px;
-      bottom: -20px;
+      height: 100%;
     }
   }
 

@@ -17,17 +17,20 @@
     }
 
     &::before {
+      transform: translateX(-70%);
+      width: 100%;
       content: "";
       top: 0;
       left: 0;
-      height: calc(100% - 672px);
+      @include fluidValue(height, 1040, 415, 767, 320);
       background-color: $colorTurquoise;
 
-      @media (min-width: 1199px) {
-        height: calc(100% - 265px);
+      @media (min-width: 768px) {
+        height: calc(100% - 657px);
       }
-
-      @include fluidValue("max-height", 1044, 415, 767, 320);
+      @media (min-width: 1199px) {
+        height: calc(100% - 264px);
+      }
     }
 
     &::after {
@@ -36,11 +39,11 @@
         bottom: 0;
         right: 0;
         background-color: $colorRed;
-        height: 750px;
+        height: 532px;
       }
 
-      @media (min-width: 1199px) {
-        height: 500px;
+      @media (min-width: 1200px) {
+        height: 423px;
       }
     }
   }
@@ -66,40 +69,17 @@
 
 .message-contact-info {
   padding: 40px 25px;
-  font-weight: $font-weight-normal;
 
-  @media (max-width: 768px) {
-    font-style: italic;
-  }
-
-  @media (min-width: 1120px) {
+  @media (min-width: 1199px) {
     padding: 40px 65px 59px 65px;
   }
 
   h4 {
-    font-weight: $font-weight-normal;
     margin-bottom: 18px;
-
-    @media (max-width: 768px) {
-      margin-bottom: 20px;
-      font-weight: bold;
-    }
   }
 
   p {
-    margin: 0 0 11px;
-
-    @media (max-width: 768px) {
-      margin-bottom: 20px;
-    }
-  }
-
-  a {
-    @media (max-width: 768px) {
-      font-style: normal;
-      font-size: 16px;
-      line-height: 24px;
-    }
+    margin-bottom: 11px;
   }
 }
 
@@ -112,9 +92,8 @@
 }
 
 .message-description {
-  padding: 70px 60px; // 70px 60px
+  padding: 70px 60px;
   font-family: $font-family-base;
-  font-weight: $font-weight-normal;
   background-color: $colorGray;
 
   @media (min-width: 768px) {
@@ -127,10 +106,6 @@
 
   h2 {
     margin-bottom: 20px;
-  }
-
-  p {
-    margin: 0 0 16px;
   }
 }
 
