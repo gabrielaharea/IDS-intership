@@ -66,7 +66,7 @@
             <nav class="header-nav">
               <a class="active" href="#">About us</a>
               <a href="#">Knowledge Management Journey</a>
-              <a href="#">Knowledge Solutions</a>
+              <a href="../../html/views/solutions.html">Knowledge Solutions</a>
             </nav>
             <!-- .header-nav -->
             <a
@@ -697,12 +697,10 @@
               metus.
             </p>
           </div>
-          <!-- <div class="ids-img">
-            <img  srcset="img/ids-768w.jpg 768w, img/hero-image.png 1199w" sizes="(max-width: 768px) 567px, 1199px" src="img/hero-image.png" alt="ids image">
-          </div> -->
           <picture class="ids-img">
             <source media="(min-width:1199px)" srcset="img/ids.jpg" />
-            <img src="img/ids-768.jpg" alt="ids image" />
+            <source media="(min-width:768px)" srcset="img/ids-tablet.jpg" />
+            <img src="img/ids-mobile.jpg" alt="ids image" class="img-ids-mobile"/>
           </picture>
         </div>
       </section>
@@ -782,6 +780,6 @@
       <!-- .footer-main -->
     </main>
     <!-- .main-header -->
-    <script src="js/app.js"></script>
+    <script src="../../js/app.js"></script>
   </body>
 </html>

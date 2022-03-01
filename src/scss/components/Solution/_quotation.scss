@@ -1,0 +1,36 @@
+.section-quotation {
+  margin-bottom: 100px;
+
+  .box-quotation {
+    justify-items: center;
+    position: relative;
+    justify-content: center;
+    display: flex;
+  }
+
+  .lines {
+    svg {
+      @include fluidValue(width, 982, 696, 1680, 768);
+      @include fluidValue(height, 274, 253, 1680, 768);
+      @include fluidValue(width, 696, 296, 768, 320);
+      @include fluidValue(height, 253, 289, 768, 320);
+    }
+  }
+
+  .quotation-mark {
+    position: absolute;
+
+    @include fluidValue(top, -20, 5, 1920, 768);
+    @include fluidValue(top, 5, 90, 767, 320);
+
+    @include fluidValue(left, 330, 355, 1680, 1200);
+    @include fluidValue(left, 170, 145, 1199, 768);
+    @include fluidValue(left, 165, 55, 767, 320);
+
+    svg {
+      @include fluidValue(width, 70, 41, 768, 320);
+      @include fluidValue(height, 51, 30, 768, 320);
+    }
+  }
+}
+
