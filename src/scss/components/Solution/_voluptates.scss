@@ -1,0 +1,41 @@
+.section-voluptates {
+  position: relative;
+  margin-bottom: 60px;
+
+  @media (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+}
+
+.voluptates-content {
+  justify-self: center;
+  max-width: 790px;
+
+  @media (max-width: 1199px) {
+    max-width: 696px;
+  }
+
+  h2 {
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 33px;
+    margin-bottom: 20px;
+
+    @media (max-width: 1199px) {
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+
+  h3 {
+    font-family: $font-mercury;
+    font-style: italic;
+    color: $colorTurquoise;
+  }
+}
