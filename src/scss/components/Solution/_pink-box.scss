@@ -1,19 +1,26 @@
 .box-left {
   position: absolute;
-  width: 186px;
-  height: 280px;
-  border-left: 1px solid;
+  bottom: 0;
   border-top: 1px solid;
+  border-left: 1px solid;
   color: $colorPink;
+
+  @include fluidValue(width, 180, 128, 1680, 768);
+  @include fluidValue(height, 270, 253, 1680, 768);
+  @include fluidValue(width, 128, 40, 768, 320);
+  @include fluidValue(height, 253, 289, 768, 320);
 }
 
 .box-right {
-  position: absolute;
-  width: 600px;
-  height: 250px;
+  position: absolute; 
   right: 0;
   bottom: 0;
-  border-right: 1px solid;
   border-top: 1px solid;
+  border-right: 1px solid;
   color: $colorPink;
+
+  @include fluidValue(width, 660, 470, 1680, 768);
+  @include fluidValue(height, 250, 233, 1680, 768);
+  @include fluidValue(width, 470, 180, 768, 320);
+  @include fluidValue(height, 233, 275, 768, 320);
 }
