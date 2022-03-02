@@ -2,24 +2,50 @@
   margin-bottom: 100px;
 
   .box-quotation {
-    justify-items: center;
-    position: relative;
-    justify-content: center;
     display: flex;
-  }
+    position: relative;
+    justify-self: center;
+    border-collapse: separate;
+    border-bottom: 1px solid $colorPink;
+    border-left: 1px solid $colorPink;
+    border-right: 1px solid $colorPink;
 
-  .lines {
-    svg {
-      @include fluidValue(width, 982, 696, 1680, 768);
-      @include fluidValue(height, 274, 253, 1680, 768);
-      @include fluidValue(width, 696, 296, 768, 320);
-      @include fluidValue(height, 253, 289, 768, 320);
+    @include fluidValue(width, 980, 696, 1680, 768);
+    @include fluidValue(height, 272, 253, 1680, 768);
+    @include fluidValue(width, 696, 296, 768, 320);
+    @include fluidValue(height, 253, 289, 768, 320);
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 20%;
+      height: 1px;
+      background-color: $colorPink;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 20px;
+      width: 70%;
+      height: 1px;
+      background-color: $colorPink;
     }
   }
 
+  // .lines {
+  //   svg {
+  //     @include fluidValue(width, 982, 696, 1680, 768);
+  //     @include fluidValue(height, 274, 253, 1680, 768);
+  //     @include fluidValue(width, 696, 298, 768, 320);
+  //     @include fluidValue(height, 253, 291, 768, 320);
+  //   }
+  // }
+
   .quotation-mark {
     position: absolute;
-
     @include fluidValue(top, -20, 5, 1920, 768);
     @include fluidValue(top, 5, 90, 767, 320);
 
@@ -32,5 +58,42 @@
       @include fluidValue(height, 51, 30, 768, 320);
     }
   }
-}
 
+  .quotation-content {
+    position: absolute;
+    align-self: center;
+    text-align: center;
+
+    h4 {
+      font-style: italic;
+      font-weight: $font-weight-normal;
+      margin-bottom: 10px;
+
+      @media (max-width: 1200px) {
+        font-size: 18px;
+        line-height: 27px;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
+
+    p {
+      font-weight: $font-weight-normal;
+      font-size: 18px;
+      line-height: 27px;
+
+      @media (max-width: 1200px) {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+}
