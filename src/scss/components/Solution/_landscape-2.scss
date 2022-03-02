@@ -1,0 +1,42 @@
+.section-landscape-2 {
+  margin-bottom: 120px;
+
+  @media (max-width: 1199px) {
+    margin-bottom: 50px;
+  }
+
+  img {
+    width: 100%;
+    margin-bottom: 30px;
+
+    @media (max-width: 1199px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  .img-description {
+    display: grid;
+    justify-self: start;
+  }
+
+  p {
+    font-style: italic;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: start;
+    margin-bottom: 60px;
+    color: $dull;
+  }
+
+  .paragraph {
+    max-width: 790px;
+    justify-self: center;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 33px;
+
+    p {
+      color: $colorBlack;
+    }
+  }
+}
