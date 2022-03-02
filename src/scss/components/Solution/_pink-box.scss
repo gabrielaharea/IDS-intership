@@ -1,0 +1,19 @@
+.box-left {
+  position: absolute;
+  width: 186px;
+  height: 280px;
+  border-left: 1px solid;
+  border-top: 1px solid;
+  color: $colorPink;
+}
+
+.box-right {
+  position: absolute;
+  width: 600px;
+  height: 250px;
+  right: 0;
+  bottom: 0;
+  border-right: 1px solid;
+  border-top: 1px solid;
+  color: $colorPink;
+}
