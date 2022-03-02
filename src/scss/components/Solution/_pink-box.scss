@@ -4,7 +4,6 @@
   border-top: 1px solid;
   border-left: 1px solid;
   color: $colorPink;
-
   @include fluidValue(width, 180, 128, 1680, 768);
   @include fluidValue(height, 270, 253, 1680, 768);
   @include fluidValue(width, 128, 40, 768, 320);
@@ -18,7 +17,6 @@
   border-top: 1px solid;
   border-right: 1px solid;
   color: $colorPink;
-
   @include fluidValue(width, 660, 470, 1680, 768);
   @include fluidValue(height, 250, 233, 1680, 768);
   @include fluidValue(width, 470, 180, 768, 320);

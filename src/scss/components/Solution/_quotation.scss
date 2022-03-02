@@ -1,43 +1,43 @@
-.section-quotation {
+.section-quote {
   margin-bottom: 100px;
+}
 
-  .box-quotation {
-    display: flex;
-    position: relative;
-    justify-self: center;
-    border-bottom: 1px solid $colorPink;
-    @include fluidValue(width, 980, 696, 1680, 768);
-    @include fluidValue(height, 290, 253, 1680, 768);
-    @include fluidValue(width, 696, 296, 768, 320);
-    @include fluidValue(height, 273, 300, 768, 320);
-  }
+.box-quote {
+  display: flex;
+  position: relative;
+  justify-self: center;
+  border-bottom: 1px solid $colorPink;
+  @include fluidValue(width, 980, 696, 1680, 768);
+  @include fluidValue(height, 290, 253, 1680, 768);
+  @include fluidValue(width, 696, 296, 768, 320);
+  @include fluidValue(height, 273, 300, 768, 320);
+}
 
-  .quotation-content {
-    position: absolute;
-    align-self: center;
-    text-align: center;
-    margin: 100px 95px 60px 95px;
+.quote-content {
+  position: absolute;
+  align-self: center;
+  text-align: center;
+  margin: 100px 95px 60px 95px;
 
-    h4 {
-      font-style: italic;
-      font-weight: $font-weight-normal;
-      margin-bottom: 10px;
+  h4 {
+    font-style: italic;
+    font-weight: $font-weight-normal;
+    margin-bottom: 10px;
 
-      @media (max-width: 1199px) {
-        font-size: 18px;
-        line-height: 27px;
-      }
-    }
-
-    p {
-      font-weight: $font-weight-normal;
+    @media (max-width: 1199px) {
       font-size: 18px;
       line-height: 27px;
+    }
+  }
 
-      @media (max-width: 1199px) {
-        font-size: 16px;
-        line-height: 24px;
-      }
+  p {
+    font-weight: $font-weight-normal;
+    font-size: 18px;
+    line-height: 27px;
+
+    @media (max-width: 1199px) {
+      font-size: 16px;
+      line-height: 24px;
     }
   }
 }
