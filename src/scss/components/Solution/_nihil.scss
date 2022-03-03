@@ -1,0 +1,8 @@
+.section-nihil {
+  position: relative;
+  margin: 100px 0 100px 0;
+
+  @media (max-width: 1199px) {
+    margin: 50px 0 50px 0;
+  }
+}
