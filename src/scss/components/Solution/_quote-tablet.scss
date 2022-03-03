@@ -1,0 +1,11 @@
+.section-quote-tablet {
+  margin: 50px 0 50px 0;
+  
+  @media (min-width: 1199px) {
+    display: none;
+  }
+
+  .box-quote {
+    margin-bottom: 50px;
+  }
+}
