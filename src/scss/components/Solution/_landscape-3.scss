@@ -1,0 +1,15 @@
+.section-landscape-3 {
+  .container {
+    justify-content: center;
+  }
+
+  picture {
+    width: 100%;
+
+    img {
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+  }
+}

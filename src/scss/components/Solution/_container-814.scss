@@ -1,0 +1,17 @@
+.container-814 {
+  display: grid;
+  width: 100%;
+  max-width: 814px;
+  padding: 0 $container-gap;
+  margin: 0 auto;
+
+  @media (max-width: 1199px) {
+    max-width: 768px;
+    padding: 0 $container-gap-tablet;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 0 $container-gap;
+  }
+}

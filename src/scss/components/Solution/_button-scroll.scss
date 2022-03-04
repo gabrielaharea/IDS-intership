@@ -1,0 +1,32 @@
+.button-scroll {
+  cursor: pointer;
+  display: grid;
+  position: fixed;
+  align-content: center;
+  row-gap: 8px;
+  right: 2px;
+  bottom: 50%;
+  width: 80px;
+  height: 80px;
+  background: transparent;
+  border: 1.5px solid #d8d8d8;
+  border-radius: 50%;
+  
+
+  svg {
+    justify-self: center;
+  }
+
+  a {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.8px;
+    color: $colorBlack;
+    align-self: end;
+  }
+}
+
+.button-scroll:active {
+  pointer-events: auto;
+  opacity: 1;
+}
