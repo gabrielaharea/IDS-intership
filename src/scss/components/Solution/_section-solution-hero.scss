@@ -1,4 +1,5 @@
 .section-solution-hero {
+  display: relative;
   margin: 80px 0 120px;
 
   @media (max-width: 1199px) {
@@ -10,7 +11,9 @@
   }
 
   .container {
-    justify-content: center;
+    @media (min-width: 1199px) {
+      justify-content: center;
+    }
   }
 
   .link-back {
@@ -50,9 +53,10 @@
 
   .second-info {
     display: grid;
-    grid-template-columns: max-content 614px;
-    column-gap: 177px;
-    @include fluidValue(column-gap, 177, 96, 1680, 768);
+    max-width: 696px;
+    grid-template-columns: max-content max-content;
+    @include fluidValue(column-gap, 177, 130, 1680, 1199);
+    @include fluidValue(column-gap, 115, 80, 1199, 768);
 
     @media (max-width: 768px) {
       grid: unset;
@@ -90,11 +94,10 @@
 
   .title {
     align-self: center;
-    @include fluidValue(max-width, 614, 480, 1680, 768);
+    @include fluidValue(max-width, 614, 440, 1680, 768);
 
     p {
       font-family: $font-mercury;
-      font-weight: $font-weight-normal;
       font-size: 16px;
       line-height: 24px;
       margin-bottom: 10px;
