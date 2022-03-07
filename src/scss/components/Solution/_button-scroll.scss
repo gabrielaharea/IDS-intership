@@ -1,17 +1,18 @@
 .button-scroll {
-  cursor: pointer;
   display: grid;
+  // display: none;
+  cursor: pointer;
   position: fixed;
   align-content: center;
   row-gap: 8px;
-  right: 2px;
-  bottom: 50%;
+  right: 3px;
+  bottom: 30px;
   width: 80px;
   height: 80px;
-  background: transparent;
+  background-color: white;
   border: 1.5px solid #d8d8d8;
   border-radius: 50%;
-  
+  z-index: 99;
 
   svg {
     justify-self: center;
@@ -24,9 +25,13 @@
     color: $colorBlack;
     align-self: end;
   }
+
+  @media (max-width: 1199px) {
+    display: none;
+  }
 }
 
-.button-scroll:active {
-  pointer-events: auto;
-  opacity: 1;
+.button-scroll:hover {
+  border-color: $colorPink;
+  background-color: $colorPink;
 }

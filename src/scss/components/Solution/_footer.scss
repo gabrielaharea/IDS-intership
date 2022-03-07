@@ -12,8 +12,26 @@
   }
 
   .container {
-    grid-template-columns: max-content max-content;
-    column-gap: 115px;
+    display: grid;
+    width: 100%;
+    max-width: 1125px !important;
+    padding: 0 $container-gap;
+    margin: 0 auto;
+
+    @media (max-width: 1199px) {
+      max-width: 768px;
+      padding: 0 $container-gap-tablet;
+    }
+
+    @media (max-width: 767px) {
+      padding: 0 $container-gap;
+    }
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 126px;
     color: $colorWhite;
 
     @media (max-width: 1199px) {
@@ -26,13 +44,14 @@
     }
 
     h5 {
-      font-size: 28px;
-      line-height: 42px;
       margin-bottom: 30px;
+
+      @media (max-width: 1199px) {
+        margin-bottom: 20px;
+      }
     }
 
     p {
-      font-style: normal;
       font-size: 18px;
       line-height: 27px;
       letter-spacing: 1.13px;
@@ -46,57 +65,45 @@
       grid-row: 2;
     }
 
-    h5 {
-      @media (max-width: 1199px) {
-        margin-bottom: 20px;
-      }
-    }
-
-    p {
-      margin-bottom: 80px;
+    span {
+      display: block;
+      margin-top: 94px;
+      font-size: 18px;
+      line-height: 27px;
+      letter-spacing: 1.125px;
 
       @media (max-width: 1199px) {
-        margin-bottom: 40px;
+        margin-top: 40px;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 1.13px;
       }
-    }
-
-    a {
-      font-size: 16px;
-      line-height: 24px;
-      letter-spacing: 2px;
     }
   }
 
   .about-right {
     max-width: 350px;
 
-    h5 {
-      margin-bottom: 30px;
+    // p {
+    //   margin-bottom: 110px;
+
+    //   @media (max-width: 1199px) {
+    //     margin-bottom: 40px;
+    //   }
+    // }
+
+    a {
+      margin-top: 150px;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: $colorWhite;
 
       @media (max-width: 1199px) {
-        margin-bottom: 20px;
-      }
-    }
-
-    p {
-      margin-bottom: 110px;
-
-      @media (max-width: 1199px) {
-        margin-bottom: 40px;
-      }
-
-      a {
-        font-style: normal;
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: 2px;
-        text-decoration: none;
-        color: $colorWhite;
-
-        @media (max-width: 1199px) {
-          font-size: 14px;
-          line-height: 21px;
-        }
+        margin-top: 40px;
+        font-size: 14px;
+        line-height: 21px;
       }
     }
   }
