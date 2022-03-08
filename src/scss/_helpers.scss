@@ -23,7 +23,7 @@ body {
   font-family: $font-ideal-sans;
   font-size: $font-size-base;
   font-weight: $font-weight-light;
-  font-feature-settings: "lnum";
+  font-feature-settings: 'lnum';
   line-height: $line-height-base;
   color: $colorBlack;
   -webkit-font-smoothing: antialiased;
@@ -54,4 +54,10 @@ body {
   @media (max-width: 767px) {
     padding: 0 $container-gap;
   }
+}
+
+.highlight-title {
+  font-family: $font-mercury;
+  font-style: italic;
+  color: $colorTurquoise;
 }

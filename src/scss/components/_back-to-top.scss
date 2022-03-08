@@ -1,0 +1,33 @@
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: none;
+  width: 80px;
+  height: 80px;
+  padding: 0;
+  margin: 0;
+  background: url('/img/svg/back-to-top.svg') center / cover no-repeat;
+  border: none;
+  opacity: 0.8;
+  cursor: pointer;
+  z-index: 300;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &.show-btn {
+    display: block;
+  }
+
+  @media (max-width: 1199px) {
+    &.show-btn {
+      display: none;
+    }
+  }
+}

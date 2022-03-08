@@ -1,34 +1,31 @@
 $colorBlack: #000;
 $colorWhite: #fff;
-$colorBlue-100: #023d74;
 $colorPink: #e76ece;
-$colorGray: #eff9fd;
-// color .section-about .footer
 $colorDarkBlue: #003c82;
-$colorGray-100: #f0f0f0;
-// color .section-message
-$colorGray: #eff9fd;
+$colorBlue-100: #023d74;
 $colorTurquoise: #1996c3;
-$colorRed: #d84e30; // color .section-ids
+$colorRed: #d84e30;
 $colorGreen: #8dc63f;
 $colorOrangeButton: #f37e26;
-// color .section-journey
 $colorBlue: #266299;
 $colorGrayBar: #e1e3e8;
 $colorRedCircle: #e75228;
 $colorYellowCircle: #fbb316;
 $colorGreenCircle: #84bf42;
-// color .section-space
 $colorBeeYellow: #699c1c;
 $colorEvaGreen: #24c270;
 $dull: #717171;
 $springMorn: #e5f1d4;
 $pacificDepths: #004888;
+$colorGray: #eff9fd;
+$colorGray-100: #f0f0f0;
+$colorGray-200: #fafafa;
+$colorGray-900: #1e1e1e;
 
 /* Typography */
-$font-family-base: "Helvetica", Arial, sans-serif;
-$font-ideal-sans: "Ideal Sans", $font-family-base;
-$font-mercury: "Mercury Text G2";
+$font-family-base: 'Helvetica', Arial, sans-serif;
+$font-ideal-sans: 'Ideal Sans', $font-family-base;
+$font-mercury: 'Mercury Text G2';
 
 $font-size-base: 18px;
 $font-size-base-mobile: 16px;
