@@ -1,44 +1,31 @@
-@import "~normalize.css";
-@import "fonts";
-@import "variables";
-@import "helpers";
-@import "typography";
-@import "mixins/fluid-values";
-@import "mixins/line-clamp";
-@import "mixins/button-pink";
+@import '~normalize.css';
+@import 'fonts';
+@import 'variables';
+@import 'helpers';
+@import 'typography';
+@import 'mixins/fluid-values';
+@import 'mixins/line-clamp';
+@import 'mixins/button-pink';
 
 /* Components */
-@import "components/button";
-@import "components/burger-btn";
-@import "components/arrow-link";
-@import "components/Solution/pink-box";
-@import "components/Solution/quotation-mark";
-@import "components/Solution/container-814";
-@import "components/Solution/content";
-@import "components/Solution/button-scroll";
+@import 'components/button';
+@import 'components/back-btn';
+@import 'components/back-to-top';
+@import 'components/burger-btn';
+@import 'components/arrow-link';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/hero';
+@import 'components/about';
+@import 'components/message';
+@import 'components/dropdown';
+@import 'components/journey';
+@import 'components/space';
+@import 'components/ids';
+@import 'components/podcasts';
 
-/* Components */
-@import "components/header";
-@import "components/footer";
-@import "components/hero";
-@import "components/about";
-@import "components/message";
-@import "components/dropdown";
-@import "components/journey";
-@import "components/space";
-@import "components/ids";
-@import "components/podcasts";
-
-
-/* Components Solutions */
-@import "components/Solution/section-solution-hero";
-@import "components/Solution/footer";
-@import "components/Solution/landscape";
-@import "components/Solution/quote";
-@import "components/Solution/consectetur";
-@import "components/Solution/voluptates";
-@import "components/Solution/landscape-2";
-@import "components/Solution/lorem";
-@import "components/Solution/landscape-3";
-@import "components/Solution/quote-tablet";
-@import "components/Solution/info";
+@import 'components/img-box';
+@import 'components/section-info';
+@import 'components/section-quotation';
+@import 'components/section-content';
+@import 'components/section-hashtag';

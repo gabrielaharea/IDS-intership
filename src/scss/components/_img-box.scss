@@ -1,0 +1,67 @@
+.img-box {
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  picture {
+    display: grid;
+  }
+
+  figcaption {
+    display: grid;
+    padding: 15px 12px 0;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 21px;
+    color: $dull;
+
+    @media (min-width: 768px) {
+      max-width: 768px;
+      padding: 17px 36px 0;
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 1269px;
+      padding: 30px 36px 0;
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+
+  &.medium,
+  &.small {
+    margin: 22px auto 0;
+
+    @media (min-width: 768px) {
+      margin: 30px auto 0;
+    }
+
+    @media (min-width: 1200px) {
+      margin: 40px auto 0;
+    }
+
+    figcaption {
+      margin: 0;
+      padding: 15px 0 0;
+
+      @media (min-width: 768px) {
+        padding: 17px 0 0;
+      }
+
+      @media (min-width: 1200px) {
+        padding: 30px 0 0;
+      }
+    }
+  }
+
+  &.medium {
+    max-width: 1320px;
+  }
+
+  &.small {
+    max-width: 1109px;
+  }
+}

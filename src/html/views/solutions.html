@@ -1,663 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width,
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,
           user-scalable=no,
           initial-scale=1.0,
           maximum-scale=1.0,
-          minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta property="og:title" content="Knowledge Solutions" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="description" content="Knowledge Solutions Description" />
-    <meta name="keywords" content="Knowledge Solutions Keywords" />
-    <title>Knowledge Solutions</title>
-    <!-- <link rel="shortcut icon" href="img/favicon/favicon.ico" /> -->
-    <link rel="stylesheet" href="css/app.css" />
-  </head>
-  <body>
-    <main>
-      <header class="header-main">
-        <div class="header-container">
-          <a href="/" class="header-logo">
-            <img src="../../img/logo-hero.png" alt="IDS logo" />
+          minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta property="og:title" content="Knowledge Solutions" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="description" content="Knowledge Solutions Description" />
+  <meta name="keywords" content="Knowledge Solutions Keywords" />
+  <title>Knowledge Solutions</title>
+  <!-- <link rel="shortcut icon" href="img/favicon/favicon.ico" /> -->
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+
+<body>
+  <main>
+    <header class="header-main">
+      <div class="header-container">
+        <a href="/" class="header-logo">
+          <img src="/img/logo-hero.png" alt="IDS logo" />
+        </a>
+        <!-- .header-log -->
+        <button class="burger-btn" type="button" title="Burger button" aria-labelledby="Open menu">
+          <svg class="icon-burger" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+            <path class="line line1" d="M 30,65 H 70" />
+            <path class="line line2"
+              d="M 70,50 H 30 C 30,50 18.644068,50.320751 18.644068,36.016949 C 18.644068,21.712696 24.988973,6.5812347 38.79661,11.016949 C 52.604247,15.452663 46.423729,62.711864 46.423729,62.711864 L 50.423729,49.152542 L 50.423729,16.101695" />
+            <path class="line line3"
+              d="M 30,35 H 70 C 70,35 80.084746,36.737688 80.084746,25.423729 C 80.084746,19.599612 75.882239,9.3123528 64.711864,13.559322 C 53.541489,17.806291 54.423729,62.711864 54.423729,62.711864 L 50.423729,49.152542 V 16.101695" />
+          </svg>
+          <svg class="icon-cross" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+            <path class="line" d="M 34,32 L 66,68" />
+            <path class="line" d="M 66,32 L 34,68" />
+          </svg>
+        </button>
+        <!-- .burger-btn -->
+        <div class="mobile-box">
+          <nav class="header-nav">
+            <a class="active" href="#">About us</a>
+            <a href="#">Knowledge Management Journey</a>
+            <a href="">Knowledge Solutions</a>
+          </nav>
+          <!-- .header-nav -->
+          <a class="btn primary" href="pdf/Codecademy.pdf" title="Download pdf file" target="_blank"
+            rel="noopener noreferrer" aria-labelledby="Download pdf file" download="pdf.pdf">
+            <span>DOWNLOAD PDF</span>
+            <span>DOWNLOAD Full Publication PDF</span>
           </a>
-          <!-- .header-log -->
-          <button
-            class="burger-btn"
-            type="button"
-            title="Burger button"
-            aria-labelledby="Open menu"
-          >
-            <svg
-              class="icon-burger"
-              version="1.1"
-              height="100"
-              width="100"
-              viewBox="0 0 100 100"
-            >
-              <path class="line line1" d="M 30,65 H 70" />
-              <path
-                class="line line2"
-                d="M 70,50 H 30 C 30,50 18.644068,50.320751 18.644068,36.016949 C 18.644068,21.712696 24.988973,6.5812347 38.79661,11.016949 C 52.604247,15.452663 46.423729,62.711864 46.423729,62.711864 L 50.423729,49.152542 L 50.423729,16.101695"
-              />
-              <path
-                class="line line3"
-                d="M 30,35 H 70 C 70,35 80.084746,36.737688 80.084746,25.423729 C 80.084746,19.599612 75.882239,9.3123528 64.711864,13.559322 C 53.541489,17.806291 54.423729,62.711864 54.423729,62.711864 L 50.423729,49.152542 V 16.101695"
-              />
-            </svg>
-            <svg
-              class="icon-cross"
-              version="1.1"
-              height="100"
-              width="100"
-              viewBox="0 0 100 100"
-            >
-              <path class="line" d="M 34,32 L 66,68" />
-              <path class="line" d="M 66,32 L 34,68" />
-            </svg>
-          </button>
-          <!-- .burger-btn -->
-          <div class="mobile-box">
-            <nav class="header-nav">
-              <a class="active" href="#">About us</a>
-              <a href="#">Knowledge Management Journey</a>
-              <a href="">Knowledge Solutions</a>
-            </nav>
-            <!-- .header-nav -->
-            <a
-              class="btn primary"
-              href="pdf/Codecademy.pdf"
-              title="Download pdf file"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-labelledby="Download pdf file"
-              download="pdf.pdf"
-            >
-              <span>DOWNLOAD PDF</span>
-              <span>DOWNLOAD Full Publication PDF</span>
-            </a>
-          </div>
-          <!-- .mobile-box -->
         </div>
-        <!-- .header-container-->
-      </header>
-      <section class="section-solution-hero">
-        <div class="container">
-          <a class="link-back" href="../../html/views/index.html">
-            <svg
-              width="7"
-              height="12"
-              viewBox="0 0 7 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M6.15596 11.0496L1.00823 6.29119"
-                stroke="black"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              />
-              <path
-                d="M6.15589 1.53235L1.00815 6.29076"
-                stroke="black"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              /></svg
-            >back</a
-          >
-          <div class="second-info">
-            <div class="logo-project">
-              <span class="circle"></span>
-              <img
-                class="logo-img-project"
-                src="../../svg/space-1.svg"
-                alt="space"
-              />
-            </div>
-            <div class="title">
-              <p>Category name</p>
-              <h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam!
-              </h3>
-            </div>
+        <!-- .mobile-box -->
+      </div>
+      <!-- .header-container-->
+    </header>
+    <!-- .header-main -->
+    <button type="button" aria-label="Back to Top" title="Back to Top" class="back-to-top"></button>
+    <section class="section-info">
+      <div class="container">
+        <a class="back-btn" href="/">back</a>
+        <div class="solution-info">
+          <div class="brand-icon">
+            <img src="/img/svg/space-1.svg" alt="brand icon" />
           </div>
-          <div class="form">
-            <div class="box">
-              <div class="name">
-                <p>Project Name:</p>
-              </div>
-              <div class="info">
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
-              </div>
-            </div>
-            <div class="box">
-              <div class="name">
-                <p>Region/Country:</p>
-              </div>
-              <div class="info">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-              </div>
-            </div>
-            <div class="box">
-              <div class="name">
-                <p>Sector and Themes:</p>
-              </div>
-              <div class="info">
-                <p>Lorem ipsum dolor sit.</p>
-              </div>
-            </div>
-            <div class="box">
-              <div class="name">
-                <p>Year:</p>
-              </div>
-              <div class="info">
-                <p>2019</p>
-              </div>
-            </div>
-            <div class="box">
-              <div class="name">
-                <p>Project Leaders:</p>
-              </div>
-              <div class="info">
-                <p>John Green</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- .section-project-->
-      <section class="section-landscape">
-        <div>
-          <picture>
-            <source
-              media="(min-width:1199px)"
-              srcset="../../img/landscape.jpg"
-            />
-            <source
-              media="(min-width:768px)"
-              srcset="../../img/landscape-tablet.jpg"
-            />
-            <img src="../../img/landscape-mobil.jpg" alt="landscape hills" />
-          </picture>
-          <div class="paragraph">
-            <em>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad,
-              ipsum eum accusamus nulla deserunt dignissimos perferendis.
-            </em>
-          </div>
-        </div>
-      </section>
-      <!-- .section-landscape-->
-      <section class="section-quote">
-        <div class="container">
-          <div class="box-quote">
-            <div class="box-left"></div>
-            <div class="box-right"></div>
-            <div class="quotation-mark">
-              <svg
-                width="70"
-                height="51"
-                viewBox="0 0 70 51"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  id="Fill 4"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M0 38.165C0 45.9332 4.66712 51 11.6668 51C18.3331 51 23.0002 46.2711 24.0007 39.5167C20.3341 37.4892 16.5007 35.6326 16.5007 30.0589C16.5007 23.4735 20.6676 15.8743 34 6.58547L30.5001 0C11.3333 12.497 0 25.668 0 38.165ZM36 38.165C36 45.9332 40.6671 51 47.6668 51C54.3331 51 59.0002 46.2711 60.0007 39.5167C56.3341 37.4892 52.5007 35.6326 52.5007 30.0589C52.5007 23.4735 56.6657 15.8743 70 6.58547L66.5001 0C47.3333 12.497 36 25.668 36 38.165Z"
-                  fill="#E76ECE"
-                />
-              </svg>
-            </div>
-            <div class="quote-content">
-              <h4>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-                recusandae eos eius ullam perspiciatis, at minus sunt?
-                Laboriosam mollitia.
-              </h4>
-              <p>
-                -Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
-                modi possimus aliquid nam cupiditate.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- .section-quote-->
-      <section class="section-consectetur background">
-        <div class="container-814">
-          <div class="content">
-            <h2>Consectetur adipisicing</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
-              accusamus illum sunt error modi ab voluptates temporibus
-              inventore. Distinctio nostrum modi nam voluptate cumque
-              recusandae, aliquam esse tempore soluta maxime, aut a dolores
-              deserunt incidunt. Doloremque tempore non quidem, fuga obcaecati
-              ullam vitae hic quam modi iure nostrum labore aliquid, est, quae
-              quaerat facere? Ullam nostrum dolores quae iste impedit corrupti
-              incidunt fugiat laborum alias nobis dolore reiciendis vero
-              consequatur adipisci atque, molestiae voluptas corporis
-              exercitationem odio.
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- .section-blue -->
-      <section class="section-voluptates">
-        <div class="container-814">
-          <div class="voluptates-content">
-            <h2>Voluptates</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
-              consequuntur nesciunt molestiae sunt voluptatibus odio nostrum
-              illo, officiis, dolor delectus modi ad quis aspernatur labore
-              porro nemo quidem tenetur id sit fugiat? Minima dicta hic sed quam
-              impedit voluptate fugit possimus necessitatibus voluptatum
-              numquam?
-            </p>
+          <div class="solution-titles">
+            <span class="solution-category">Category name</span>
             <h3>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-              laboriosam adipisci dolorem repudiandae, ratione.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam!
             </h3>
           </div>
         </div>
-      </section>
-      <!-- .section-voluptates-->
-      <section class="section-landscape-2">
-        <div class="container-landscape">
-          <picture>
-            <source
-              media="(min-width:1199px)"
-              srcset="../../img/landscape-2.jpg"
-              class="img-descktop"
-            />
-            <source
-              media="(min-width:768px)"
-              srcset="../../img/landscape-tablet-2.jpg"
-            />
-            <img src="../../img/landscape-mobil-2.jpg" alt="landscape hills" />
-          </picture>
-          <em>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-            laboriosam adipisci dolorem repudiandae, ratione perspiciatis.
-          </em>
-        </div>
-
-        <div class="container">
-          <div class="paragraph">
+        <!-- .solution-info -->
+        <ul class="solution-list-description">
+          <li>
+            <strong>Project Name:</strong>
+            <span>Lorem ipsum dolor sit amet consectetur.</span>
+          </li>
+          <li>
+            <strong>Region/Country:</strong>
+            <span>Lorem, ipsum dolor sit amet consectetur adipisicing.</span>
+          </li>
+          <li>
+            <strong>Sector and Themes:</strong>
+            <span>Lorem ipsum dolor sit.</span>
+          </li>
+          <li>
+            <strong>Year:</strong>
+            <span>2019</span>
+          </li>
+          <li>
+            <strong>Project Leaders:</strong>
+            <span>John Green</span>
+          </li>
+        </ul>
+        <!-- .solution-list-description -->
+      </div>
+      <!-- .container -->
+    </section>
+    <!-- .section-info -->
+    <figure class="img-box">
+      <picture>
+        <source media="(min-width:1199px)" srcset="/img/landscape.jpg" />
+        <source media="(min-width:768px)" srcset="/img/landscape-tablet.jpg" />
+        <img src="/img/landscape-mobil.jpg" alt="landscape hills" />
+      </picture>
+      <figcaption>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad,
+        ipsum eum accusamus nulla deserunt dignissimos perferendis.
+      </figcaption>
+    </figure>
+    <!-- .img-box -->
+    <section class="section-quotation">
+      <div class="container">
+        <div class="quotation primary">
+          <div class="quotation-mark">
+            <svg width="70" height="51" viewBox="0 0 70 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="Fill 4" fill-rule="evenodd" clip-rule="evenodd"
+                d="M0 38.165C0 45.9332 4.66712 51 11.6668 51C18.3331 51 23.0002 46.2711 24.0007 39.5167C20.3341 37.4892 16.5007 35.6326 16.5007 30.0589C16.5007 23.4735 20.6676 15.8743 34 6.58547L30.5001 0C11.3333 12.497 0 25.668 0 38.165ZM36 38.165C36 45.9332 40.6671 51 47.6668 51C54.3331 51 59.0002 46.2711 60.0007 39.5167C56.3341 37.4892 52.5007 35.6326 52.5007 30.0589C52.5007 23.4735 56.6657 15.8743 70 6.58547L66.5001 0C47.3333 12.497 36 25.668 36 38.165Z"
+                fill="#E76ECE" />
+            </svg>
+          </div>
+          <div class="quotation-content">
+            <h4>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+              recusandae eos eius ullam perspiciatis, at minus sunt?
+              Laboriosam mollitia.
+            </h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sit,
-              esse dicta nobis a reprehenderit. In provident earum laudantium ex
-              magni, nesciunt enim nisi, mollitia quis delectus cum. Blanditiis
-              veniam doloremque voluptas, dicta, culpa nisi, soluta quasi
-              voluptatibus amet consequatur temporibus sunt possimus ea.
+              -Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
+              modi possimus aliquid nam cupiditate.
             </p>
           </div>
         </div>
-      </section>
-      <!-- .section-landscape-2-->
-      <section class="section-lorem">
-        <div class="container-814">
-          <div class="content-lorem">
-            <h2>Lorem ipsum dolor sit amet</h2>
+      </div>
+    </section>
+    <!-- .section-quotation -->
+    <section class="section-content" data-bg="gray">
+      <div class="container">
+        <h2>Consectetur adipisicing</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+          accusamus illum sunt error modi ab voluptates temporibus
+          inventore. Distinctio nostrum modi nam voluptate cumque
+          recusandae, aliquam esse tempore soluta maxime, aut a dolores
+          deserunt incidunt. Doloremque tempore non quidem, fuga obcaecati
+          ullam vitae hic quam modi iure nostrum labore aliquid, est, quae
+          quaerat facere? Ullam nostrum dolores quae iste impedit corrupti
+          incidunt fugiat laborum alias nobis dolore reiciendis vero
+          consequatur adipisci atque, molestiae voluptas corporis
+          exercitationem odio.
+        </p>
+      </div>
+    </section>
+    <!-- .section-content -->
+    <section class="section-content">
+      <div class="container">
+        <h2>Voluptates</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
+          consequuntur nesciunt molestiae sunt voluptatibus odio nostrum
+          illo, officiis, dolor delectus modi ad quis aspernatur labore
+          porro nemo quidem tenetur id sit fugiat? Minima dicta hic sed quam
+          impedit voluptate fugit possimus necessitatibus voluptatum
+          numquam?
+        </p>
+        <h3 class="highlight-title">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+          laboriosam adipisci dolorem repudiandae, ratione.
+        </h3>
+      </div>
+      <!-- .container -->
+      <figure class="img-box medium">
+        <picture>
+          <source media="(min-width:1199px)" srcset="/img/landscape-2.jpg" class="img-descktop" />
+          <source media="(min-width:768px)" srcset="/img/landscape-tablet-2.jpg" />
+          <img src="/img/landscape-mobil-2.jpg" alt="landscape hills" />
+        </picture>
+        <figcaption>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+          laboriosam adipisci dolorem repudiandae, ratione perspiciatis.
+        </figcaption>
+      </figure>
+      <!-- .img-box -->
+      <div class="container">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sit,
+          esse dicta nobis a reprehenderit. In provident earum laudantium ex
+          magni, nesciunt enim nisi, mollitia quis delectus cum. Blanditiis
+          veniam doloremque voluptas, dicta, culpa nisi, soluta quasi
+          voluptatibus amet consequatur temporibus sunt possimus ea.
+        </p>
+      </div>
+      <!-- .container -->
+    </section>
+    <!-- .section-content -->
+    <section class="section-content" data-bg="gray-200">
+      <div class="container">
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
+          quibusdam iusto tempore culpa quasi expedita exercitationem
+          commodi eius consectetur repellat est, deserunt repudiandae iste
+          impedit cumque ullam aperiam temporibus quia eum ex error
+          doloremque. Quia itaque nesciunt necessitatibus, quibusdam odio
+          ducimus odit repellendus omnis earum reiciendis dolorum
+          perspiciatis architecto eligendi! Dignissimos cupiditate expedita
+          minus maiores illo quibusdam sed, porro veniam eum nobis eius
+          doloribus similique asperiores nisi est consectetur error ullam ex
+          neque temporibus voluptate placeat nulla? Magni, deserunt iusto
+          dignissimos ipsa id doloribus fuga itaque quibusdam esse.
+          Dignissimos cupiditate expedita minus maiores illo quibusdam sed,
+          porro veniam eum nobis eius doloribus similique asperiores nisi
+          est consectetur error ullam ex neque temporibus voluptate placeat
+          nulla? Magni, deserunt.
+        </p>
+      </div>
+      <figure class="img-box small">
+        <picture>
+          <source media="(min-width:1199px)" srcset="/img/landscape-3.jpg" />
+          <source media="(min-width:768px)" srcset="/img/landscape-tablet-3.jpg" />
+          <img class="img-mobil" src="/img/landscape-mobil-2.jpg" alt="landscape hills" />
+        </picture>
+        <figcaption>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+          laboriosam adipisci dolorem repudiandae, ratione perspiciatis.
+        </figcaption>
+      </figure>
+      <!-- .img-box -->
+      <div class="container">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
+          quibusdam iusto tempore culpa quasi expedita exercitationem
+          commodi eius consectetur repellat est, deserunt repudiandae iste
+          impedit cumque ullam aperiam temporibus quia eum ex error
+          doloremque. Quia itaque nesciunt necessitatibus, quibusdam odio
+          ducimus odit repellendus omnis earum reiciendis dolorum
+          perspiciatis architecto eligendi! Dignissimos cupiditate expedita
+          minus maiores illo quibusdam sed, porro veniam eum nobis eius
+          doloribus similique asperiores nisi est consectetur error ullam ex
+          neque temporibus voluptate placeat nulla? Magni, deserunt iusto
+          dignissimos ipsa id doloribus fuga itaque quibusdam esse.
+          Dignissimos cupiditate expedita minus maiores illo quibusdam sed,
+          porro veniam eum nobis eius doloribus similique asperiores nisi
+          est consectetur error ullam ex neque temporibus voluptate placeat
+          nulla? Magni, deserunt.
+        </p>
+      </div>
+    </section>
+    <!-- .section-content -->
+    <section class="section-content">
+      <div class="container">
+        <h2>Nihil quibusdam iusto</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sit,
+          esse dicta nobis a reprehenderit. In provident earum laudantium ex
+          magni, nesciunt enim nisi, mollitia quis delectus cum. Blanditiis
+          veniam doloremque voluptas, dicta, culpa nisi, soluta quasi
+          voluptatibus amet consequatur temporibus sunt possimus ea.
+          Blanditiis veniam doloremque voluptas, dicta, culpa nisi, soluta
+          quasi voluptatibus amet consequatur.
+        </p>
+      </div>
+    </section>
+    <!-- .section-content-->
+    <section class="section-content" data-bg="gray">
+      <div class="container">
+        <h2>Consectetur adipisicing</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+          accusamus illum sunt error modi ab voluptates temporibus
+          inventore. Distinctio nostrum modi nam voluptate cumque
+          recusandae, aliquam esse tempore soluta maxime, aut a dolores
+          deserunt incidunt. Doloremque tempore non quidem, fuga obcaecati
+          ullam vitae hic quam modi iure nostrum labore aliquid, est, quae
+          quaerat facere? Ullam nostrum dolores quae iste impedit corrupti
+          incidunt fugiat laborum alias nobis dolore reiciendis vero
+          consequatur adipisci atque, molestiae voluptas corporis
+          exercitationem odio.
+        </p>
+      </div>
+    </section>
+    <!-- .section-content-->
+    <section class="section-quotation display-tablet">
+      <div class="container">
+        <div class="quotation primary">
+          <div class="quotation-mark">
+            <svg width="70" height="51" viewBox="0 0 70 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="Fill 4" fill-rule="evenodd" clip-rule="evenodd"
+                d="M0 38.165C0 45.9332 4.66712 51 11.6668 51C18.3331 51 23.0002 46.2711 24.0007 39.5167C20.3341 37.4892 16.5007 35.6326 16.5007 30.0589C16.5007 23.4735 20.6676 15.8743 34 6.58547L30.5001 0C11.3333 12.497 0 25.668 0 38.165ZM36 38.165C36 45.9332 40.6671 51 47.6668 51C54.3331 51 59.0002 46.2711 60.0007 39.5167C56.3341 37.4892 52.5007 35.6326 52.5007 30.0589C52.5007 23.4735 56.6657 15.8743 70 6.58547L66.5001 0C47.3333 12.497 36 25.668 36 38.165Z"
+                fill="#E76ECE" />
+            </svg>
+          </div>
+          <div class="quotation-content">
+            <h4>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+              recusandae eos eius ullam perspiciatis, at minus sunt?
+              Laboriosam mollitia.
+            </h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
-              quibusdam iusto tempore culpa quasi expedita exercitationem
-              commodi eius consectetur repellat est, deserunt repudiandae iste
-              impedit cumque ullam aperiam temporibus quia eum ex error
-              doloremque. Quia itaque nesciunt necessitatibus, quibusdam odio
-              ducimus odit repellendus omnis earum reiciendis dolorum
-              perspiciatis architecto eligendi! Dignissimos cupiditate expedita
-              minus maiores illo quibusdam sed, porro veniam eum nobis eius
-              doloribus similique asperiores nisi est consectetur error ullam ex
-              neque temporibus voluptate placeat nulla? Magni, deserunt iusto
-              dignissimos ipsa id doloribus fuga itaque quibusdam esse.
-              Dignissimos cupiditate expedita minus maiores illo quibusdam sed,
-              porro veniam eum nobis eius doloribus similique asperiores nisi
-              est consectetur error ullam ex neque temporibus voluptate placeat
-              nulla? Magni, deserunt.
+              -Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
+              modi possimus aliquid nam cupiditate.
             </p>
           </div>
         </div>
-      </section>
-      <!-- .section-lorem-->
-      <section class="section-landscape-3">
-        <button
-          class="button-scroll"
-          onclick="topFunction()"
-          id="myBtn"
-          title="Back to top"
-        >
-          <svg
-            width="22"
-            height="11"
-            viewBox="0 0 22 11"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M1.21739 10L11 0.217391"
-              stroke="black"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-            <path
-              d="M20.7826 10L11 0.217391"
-              stroke="black"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-          </svg>
-          <a href="#">Back To Top<i></i></a>
-        </button>
-
-        <div class="container">
-          <picture>
-            <source
-              media="(min-width:1199px)"
-              srcset="../../img/landscape-3.jpg"
-              class="img-desktop"
-            />
-            <source
-              media="(min-width:768px)"
-              srcset="../../img/landscape-tablet-3.jpg"
-            />
-            <img
-              class="img-mobil"
-              src="../../img/landscape-mobil-2.jpg"
-              alt="landscape hills"
-            />
-          </picture>
-          <em>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-            laboriosam adipisci dolorem repudiandae, ratione perspiciatis.
-          </em>
-          <div class="paragraph">
+        <div class="quotation primary">
+          <div class="quotation-mark">
+            <svg width="70" height="51" viewBox="0 0 70 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="Fill 4" fill-rule="evenodd" clip-rule="evenodd"
+                d="M0 38.165C0 45.9332 4.66712 51 11.6668 51C18.3331 51 23.0002 46.2711 24.0007 39.5167C20.3341 37.4892 16.5007 35.6326 16.5007 30.0589C16.5007 23.4735 20.6676 15.8743 34 6.58547L30.5001 0C11.3333 12.497 0 25.668 0 38.165ZM36 38.165C36 45.9332 40.6671 51 47.6668 51C54.3331 51 59.0002 46.2711 60.0007 39.5167C56.3341 37.4892 52.5007 35.6326 52.5007 30.0589C52.5007 23.4735 56.6657 15.8743 70 6.58547L66.5001 0C47.3333 12.497 36 25.668 36 38.165Z"
+                fill="#E76ECE" />
+            </svg>
+          </div>
+          <div class="quotation-content">
+            <h4>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+              recusandae eos eius ullam perspiciatis, at minus sunt?
+              Laboriosam mollitia.
+            </h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
-              quibusdam iusto tempore culpa quasi expedita exercitationem
-              commodi eius consectetur repellat est, deserunt repudiandae iste
-              impedit cumque ullam aperiam temporibus quia eum ex error
-              doloremque. Quia itaque nesciunt necessitatibus, quibusdam odio
-              ducimus odit repellendus omnis earum reiciendis dolorum
-              perspiciatis architecto eligendi! Dignissimos cupiditate expedita
-              minus maiores illo quibusdam sed, porro veniam eum nobis eius
-              doloribus similique asperiores nisi est consectetur error ullam ex
-              neque temporibus voluptate placeat nulla? Magni, deserunt iusto
-              dignissimos ipsa id doloribus fuga itaque quibusdam esse.
-              Dignissimos cupiditate expedita minus maiores illo quibusdam sed,
-              porro veniam eum nobis eius doloribus similique asperiores nisi
-              est consectetur error ullam ex neque temporibus voluptate placeat
-              nulla? Magni, deserunt.
+              -Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
+              modi possimus aliquid nam cupiditate.
             </p>
           </div>
         </div>
-      </section>
-      <!-- .section--landscape-3-->
-      <section class="section-nihil">
-        <div class="container-814">
-          <div class="content">
-            <h2>Nihil quibusdam iusto</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sit,
-              esse dicta nobis a reprehenderit. In provident earum laudantium ex
-              magni, nesciunt enim nisi, mollitia quis delectus cum. Blanditiis
-              veniam doloremque voluptas, dicta, culpa nisi, soluta quasi
-              voluptatibus amet consequatur temporibus sunt possimus ea.
-              Blanditiis veniam doloremque voluptas, dicta, culpa nisi, soluta
-              quasi voluptatibus amet consequatur.
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- .section-nihil-->
-      <section class="section-dignissimos background">
-        <div class="container-814">
-          <div class="content">
-            <h2>Consectetur adipisicing</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
-              accusamus illum sunt error modi ab voluptates temporibus
-              inventore. Distinctio nostrum modi nam voluptate cumque
-              recusandae, aliquam esse tempore soluta maxime, aut a dolores
-              deserunt incidunt. Doloremque tempore non quidem, fuga obcaecati
-              ullam vitae hic quam modi iure nostrum labore aliquid, est, quae
-              quaerat facere? Ullam nostrum dolores quae iste impedit corrupti
-              incidunt fugiat laborum alias nobis dolore reiciendis vero
-              consequatur adipisci atque, molestiae voluptas corporis
-              exercitationem odio.
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- .section-dignissimos-->
-      <section class="section-quote-tablet">
-        <div class="container">
-          <div class="box-quote">
-            <div class="box-left"></div>
-            <div class="box-right"></div>
-            <div class="quotation-mark">
-              <svg
-                width="70"
-                height="51"
-                viewBox="0 0 70 51"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  id="Fill 4"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M0 38.165C0 45.9332 4.66712 51 11.6668 51C18.3331 51 23.0002 46.2711 24.0007 39.5167C20.3341 37.4892 16.5007 35.6326 16.5007 30.0589C16.5007 23.4735 20.6676 15.8743 34 6.58547L30.5001 0C11.3333 12.497 0 25.668 0 38.165ZM36 38.165C36 45.9332 40.6671 51 47.6668 51C54.3331 51 59.0002 46.2711 60.0007 39.5167C56.3341 37.4892 52.5007 35.6326 52.5007 30.0589C52.5007 23.4735 56.6657 15.8743 70 6.58547L66.5001 0C47.3333 12.497 36 25.668 36 38.165Z"
-                  fill="#E76ECE"
-                />
-              </svg>
+      </div>
+    </section>
+    <!-- .section-quotation -->
+    <section class="section-hashtag" data-attrs="health">
+      <div class="container">
+        <div class="hashtags-content">
+          <div>
+            <strong>Hashtags:</strong>
+            <div class="all-hashtags">
+              <span>#Necessitatibusasdf</span>
+              <span>#Commodi</span>
+              <span>#Excepturi</span>
+              <span>#Ducimus</span>
+              <span>#Inventore</span>
+              <span>#Sapiente</span>
+              <span>#Corporis</span>
+              <span>#Accusamus</span>
+              <span>#Possimus</span>
+              <span>#Veniam</span>
             </div>
-            <div class="quote-content">
-              <h4>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-                recusandae eos eius ullam perspiciatis, at minus sunt?
-                Laboriosam mollitia.
-              </h4>
-              <p>
-                -Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
-                modi possimus aliquid nam cupiditate.
-              </p>
-            </div>
           </div>
-          <div class="box-quote">
-            <div class="box-left"></div>
-            <div class="box-right"></div>
-            <div class="quotation-mark">
-              <svg
-                width="70"
-                height="51"
-                viewBox="0 0 70 51"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  id="Fill 4"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M0 38.165C0 45.9332 4.66712 51 11.6668 51C18.3331 51 23.0002 46.2711 24.0007 39.5167C20.3341 37.4892 16.5007 35.6326 16.5007 30.0589C16.5007 23.4735 20.6676 15.8743 34 6.58547L30.5001 0C11.3333 12.497 0 25.668 0 38.165ZM36 38.165C36 45.9332 40.6671 51 47.6668 51C54.3331 51 59.0002 46.2711 60.0007 39.5167C56.3341 37.4892 52.5007 35.6326 52.5007 30.0589C52.5007 23.4735 56.6657 15.8743 70 6.58547L66.5001 0C47.3333 12.497 36 25.668 36 38.165Z"
-                  fill="#E76ECE"
-                />
-              </svg>
-            </div>
-            <div class="quote-content">
-              <h4>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-                recusandae eos eius ullam perspiciatis, at minus sunt?
-                Laboriosam mollitia.
-              </h4>
-              <p>
-                -Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
-                modi possimus aliquid nam cupiditate.
-              </p>
-            </div>
+          <div>
+            <strong>Find:</strong>
+            <a class="more-link" target="_blank" title="Find out more" aria-label="Go to publication"
+              href="https://facke-link.com">https://facke-link.com</a>
           </div>
-        </div>
-      </section>
-      <!-- .section-quote-tablet-->
-      <section class="section-info">
-        <div class="container-text">
-          <div class="info-content">
-            <p class="title">Hashtags:</p>
-            <p class="hashtag">
-              #Necessitatibusasdf #Commodi #Excepturi #Ducimus #Quibusdam
-              #Inventore #Sapiente #Corporis #Accusamus #Possimus #Veniam
-            </p>
-            <p class="title">Find:</p>
-            <a class="link-ids" href="#"
-              >https://www.ids.com/inforamtion/bootstrap-library-equality-ids-examp-studen-ids-performance</a
-            >
-            <p class="title">Socials:</p>
-            <div class="social-icon">
-              <a href="#"
-                ><svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M21.4763 2H2.52373C1.13227 2 0 3.27834 0 4.84932V19.1507C0 20.722 1.13227 22 2.52373 22H21.4763C22.868 22 24 20.722 24 19.1507V4.84932C24 3.27834 22.868 2 21.4763 2ZM2.52373 3.80641H21.4763C21.9856 3.80641 22.4 4.27427 22.4 4.84932V6.3393L12.3179 11.5972C12.1157 11.7025 11.8837 11.7022 11.6816 11.5972L1.6 6.3393V4.84932C1.6 4.27427 2.0144 3.80641 2.52373 3.80641ZM1.6 19.1507C1.6 19.7257 2.0144 20.1936 2.52373 20.1936H21.4763C21.9856 20.1936 22.4 19.7257 22.4 19.1507V8.32907L12.9891 13.2371C12.6749 13.4009 12.3376 13.4828 12 13.4828C11.6624 13.4828 11.3251 13.4012 11.0107 13.2371L1.6 8.32937V19.1507Z"
-                    fill="black"
-                  /></svg
-              ></a>
-              <a href="#"
-                ><svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M24 4.38462C23.1028 4.76923 22.2056 5.07692 21.1589 5.15385C22.2056 4.53846 22.9533 3.53846 23.3271 2.38462C22.3551 3 21.3084 3.38462 20.1869 3.61538C19.2897 2.61538 18.0187 2 16.6729 2C13.9813 2 11.7383 4.23077 11.7383 7.07692C11.7383 7.46154 11.8131 7.84615 11.8879 8.23077C7.7757 8 4.18692 6 1.71963 2.92308C1.27103 3.69231 1.04673 4.53846 1.04673 5.46154C1.04673 7.23077 1.94393 8.76923 3.21495 9.69231C2.39252 9.69231 1.64486 9.46154 0.971963 9.07692V9.15385C0.971963 11.6154 2.69159 13.6154 4.93458 14.0769C4.48598 14.1538 4.11215 14.2308 3.66355 14.2308C3.36449 14.2308 3.06542 14.2308 2.76636 14.1538C3.36449 16.1538 5.23364 17.6154 7.3271 17.6923C5.68224 19.0769 3.51402 19.8462 1.19626 19.8462C0.82243 19.8462 0.373832 19.8462 0 19.7692C2.24299 21.1538 4.85981 22 7.62617 22C16.6729 22 21.6075 14.3077 21.6075 7.61538V7C22.5047 6.23077 23.3271 5.38462 24 4.38462Z"
-                    fill="#E76ECE"
-                  /></svg
-              ></a>
-              <a href="#"
-                ><svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M22.6754 0H1.32457C0.592954 0 0 0.592952 0 1.32457V22.6753C0 23.4069 0.592954 24 1.32457 24H12.8192V14.7059H9.69149V11.0838H12.8192V8.41266C12.8192 5.31283 14.7124 3.62489 17.4778 3.62489C18.8024 3.62489 19.9409 3.72344 20.2726 3.7675V7.00707L18.3547 7.00797C16.8508 7.00797 16.5596 7.72259 16.5596 8.77127V11.0838H20.1463L19.6794 14.7059H16.5596V24H22.6754C23.407 24 24 23.4069 24 22.6753V1.32457C24 0.592952 23.407 0 22.6754 0Z"
-                    fill="black"
-                  />
-                  <mask
-                    id="mask0_0_1234"
-                    style="mask-type: alpha"
-                    maskUnits="userSpaceOnUse"
-                    x="0"
-                    y="0"
-                    width="24"
-                    height="24"
-                  >
+          <div>
+            <strong>Socials:</strong>
+            <div class="socials">
+              <a class="js-generate-share-link" data-type="mailto" href="#" title="email" aria-label="Go to email">
+                <svg viewBox="0 0 24 20" style="enable-background: new 0 0 24 20" xml:space="preserve">
+                  <g>
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M22.6754 0H1.32457C0.592954 0 0 0.592952 0 1.32457V22.6753C0 23.4069 0.592954 24 1.32457 24H12.8192V14.7059H9.69149V11.0838H12.8192V8.41266C12.8192 5.31283 14.7124 3.62489 17.4778 3.62489C18.8024 3.62489 19.9409 3.72344 20.2726 3.7675V7.00707L18.3547 7.00797C16.8508 7.00797 16.5596 7.72259 16.5596 8.77127V11.0838H20.1463L19.6794 14.7059H16.5596V24H22.6754C23.407 24 24 23.4069 24 22.6753V1.32457C24 0.592952 23.407 0 22.6754 0Z"
-                      fill="white"
-                    />
-                  </mask>
-                  <g mask="url(#mask0_0_1234)"></g></svg
-              ></a>
-              <a href="#"
-                ><svg
-                  width="28"
-                  height="24"
-                  viewBox="0 0 28 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                      d="M21.5,0h-19C1.1,0,0,1.3,0,2.8v14.3C0,18.7,1.1,20,2.5,20h19c1.4,0,2.5-1.3,2.5-2.8V2.8C24,1.3,22.9,0,21.5,0z
+                  M2.5,1.8h19c0.5,0,0.9,0.5,0.9,1v1.5L12.3,9.6c-0.2,0.1-0.4,0.1-0.6,0L1.6,4.3V2.8C1.6,2.3,2,1.8,2.5,1.8z M21.5,18.2h-19
+                 c-0.5,0-0.9-0.5-0.9-1V6.3l9.4,4.9c0.3,0.2,0.7,0.2,1,0.2s0.7-0.1,1-0.2l9.4-4.9v10.8C22.4,17.7,22,18.2,21.5,18.2z" />
+                  </g>
+                </svg>
+              </a>
+              <a class="js-generate-share-link" data-type="twitter" href="#" target="_blank" title="twitter"
+                aria-label="Go to twitter" rel="noopener noreferrer">
+                <svg viewBox="0 0 22 18" style="enable-background: new 0 0 22 18" xml:space="preserve">
+                  <path d="M22,2.1c-0.6,0.9-1.4,1.7-2.3,2.3c0,0.1,0,0.3,0,0.6c0,1.2-0.2,2.4-0.5,3.6c-0.4,1.2-0.9,2.4-1.6,3.5
+                s-1.6,2.1-2.6,3c-1,0.9-2.2,1.5-3.6,2.1C10,17.7,8.5,18,6.9,18c-2.5,0-4.8-0.7-6.9-2C0.3,16,0.7,16,1.1,16c2.1,0,4-0.6,5.6-1.9
+                c-1,0-1.9-0.3-2.6-0.9s-1.3-1.3-1.6-2.2C2.8,11,3.1,11,3.3,11c0.4,0,0.8-0.1,1.2-0.2c-1-0.2-1.9-0.7-2.6-1.6s-1-1.8-1-2.9V6.3
+                c0.6,0.4,1.3,0.5,2,0.6C2.3,6.5,1.8,6,1.5,5.3S0.9,3.9,0.9,3.1c0-0.8,0.2-1.6,0.6-2.3C2.7,2.2,4,3.3,5.6,4.2S9,5.5,10.8,5.6
+                c-0.1-0.4-0.1-0.7-0.1-1c0-1.3,0.4-2.3,1.3-3.2S14,0,15.2,0c1.3,0,2.4,0.5,3.3,1.4c1-0.2,2-0.6,2.9-1.1c-0.3,1.1-1,1.9-2,2.5
+                C20.3,2.7,21.1,2.5,22,2.1z" />
+                </svg>
+              </a>
+              <a class="js-generate-share-link" data-type="facebook" href="#" target="_blank" title="facebook"
+                aria-label="Go to facebook" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" style="enable-background: new 0 0 24 24" xml:space="preserve">
+                  <path d="M22.7,0H1.3C0.6,0,0,0.6,0,1.3v21.4
+               C0,23.4,0.6,24,1.3,24h11.5v-9.3H9.7v-3.6h3.1V8.4c0-3.1,1.9-4.8,4.7-4.8c1.3,0,2.5,0.1,2.8,0.1V7l-1.9,0c-1.5,0-1.8,0.7-1.8,1.8
+               v2.3h3.6l-0.5,3.6h-3.1V24h6.1c0.7,0,1.3-0.6,1.3-1.3V1.3C24,0.6,23.4,0,22.7,0" />
+                </svg>
+              </a>
+              <a href="pdf/Achieving-Universal-Health-Coverage-in-Asia-and-the-Pacific-24.pdf" title="Download link"
+                target="_blank" rel="noopener noreferrer" aria-labelledby="Download PDF file"
+                download="Achieving-Universal-Health-Coverage-in-Asia-and-the-Pacific-24.pdf">
+                <svg viewBox="0 0 28 24" style="enable-background: new 0 0 28 24" xml:space="preserve">
                   <path
-                    d="M27.2729 21V12H25.3249V21C25.3249 21.5523 24.8888 22 24.3509 22H2.9223C2.38436 22 1.94827 21.5523 1.94827 21V12L0.000221252 12V21C0.000221252 22.6569 1.30848 24 2.9223 24H24.3509C25.9647 24 27.2729 22.6569 27.2729 21V21Z"
-                    fill="black"
-                  />
-                  <path
-                    d="M7.40264 12L12.2728 17C13.0326 17.7754 14.2597 17.7754 15.0195 17L19.8896 12L18.5065 10.55L14.6104 14.55V0L12.6624 0V14.59L8.76627 10.59L7.40264 12Z"
-                    fill="black"
-                  /></svg
-              ></a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- .section-info-->
-      <footer class="footer">
-        <div class="container">
-          <div class="footer-content">
-            <div class="about-left">
-              <h5>About IDS Ducimus minima dolore ab quos</h5>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Accusamus excepturi fugit, iusto illum quis, corporis corrupti
-                necessitatibus magnam nisi deserunt ipsum tenetur voluptatibus
-                eaque dolores. Natus consequuntur recusandae illo. Ducimus
-                minima dolore ab quos iusto est sed, quasi non beatae dolores
-                omnis labore qui temporibus laborum voluptas praesentium
-                architecto ipsum officia voluptate ullam dicta eveniet quia.
-                Quae magnam quibusdam quidem accusantium qui excepturi ducimus
-                amet, animi inventore dolores illum quisquam labore tenetur
-                blanditiis facere dolorum? Animi, sapiente. Sit autem quo hic
-                numquam rerum dolorum laboriosam impedit cupiditate ullam atque,
-                magnam minus nulla vero recusandae obcaecati omnis, aut eveniet
-                maiores iure officiis! Quis asperiores facere laborum? Voluptas
-                fuga atque in, accusantium nulla site.
-              </p>
-              <span>© 2021 Ducimus minima dolore</span>
-            </div>
-            <div class="about-right">
-              <h5>About IDB</h5>
-              <p>
-                IDS is, sapiente. Sit autem quo hic numquam rerum dolorum
-                laboriosam impedit cupiditate ullam atque, magnam minus nulla
-                vero recusandae obcaecati omnis, aut eveniet maiores iure
-                officiis! Quis asperiores facere laborum? Voluptas fuga atque
-                in, accusantium nulla sit possimus pariatur ullam vero ratione
-                porro aliquam veniam sed quisquam? Accusamus excepturi fugit,
-                iusto.
-              </p>
-              <a
-                href="#"
-                target="_blank"
-                class="arrow-link white"
-                title="Link contact"
-                >Contact Us
-                <svg viewBox="0 0 33 13">
-                  <path
-                    d="M32.6,6.5l-8,6.3C24.4,12.9,24.2,13,24,13c-0.3,0-0.6-0.1-0.8-0.4c-0.3-0.4-0.3-1.1,0.2-1.4l4.7-3.7H1  c-0.6,0-1-0.4-1-1c0-0.6,0.4-1,1-1h27.1l-4.7-3.7c-0.4-0.3-0.5-1-0.2-1.4c0.3-0.4,1-0.5,1.4-0.2L32.6,6.5z"
-                  />
+                    d="M27.3,21v-9h-1.9v9c0,0.6-0.4,1-1,1H2.9c-0.5,0-1-0.4-1-1v-9H0v9c0,1.7,1.3,3,2.9,3h21.4
+               C26,24,27.3,22.7,27.3,21L27.3,21z M7.4,12l4.9,5c0.8,0.8,2,0.8,2.7,0l4.9-5l-1.4-1.4l-3.9,4V0h-1.9v14.6l-3.9-4L7.4,12z" />
                 </svg>
               </a>
             </div>
           </div>
         </div>
-      </footer>
-      <!-- .footer-main -->
-    </main>
-    <!-- .main-header -->
-    <script src="../../js/app.js"></script>
-  </body>
+      </div>
+      <!-- .container-small -->
+      <div id="particles-js-dark-tangerine-hashtag" class="animation-box"></div>
+      <!-- .hashtag-bg -->
+    </section>
+    <!-- .hashtag-section -->
+    <footer class="footer-main">
+      <div class="container">
+        <div class="about-left">
+          <h5>About IDB Knowledge Advisory Services Center</h5>
+          <p>
+            Sed aliquet eleifend dapibus. Aliquam erat volutpat. Aliquam erat
+            volutpat. Curabitur ante lorem, vehicula ut lacinia cursus,
+            posuere nec turpis. Praesent bibendum turpis ut leo porttitor, sit
+            amet tempor turpis convallis. Nullam nec pharetra turpis, sed
+            elementum arcu. Nullam venenatis sit amet justo id euismod. Nulla
+            dictum ligula commodo venenatis luctus. Duis at enim suscipit,
+            luctus nunc eu, varius lacus. Pellentesque habitant morbi
+            tristique senectus et netus et malesuada fames ac turpis egestas.
+            Mauris eu lacus congue, lacinia leo non, facilisis tortor. Nam
+            ultricies enim at dolor porta, at malesuada lorem luctus. Maecenas
+            id porttitor magna. Suspendisse aliquet semper nulla, in aliquam
+            elit auctor quis. Vestibulum vel turpis nibh.
+          </p>
+          <a href="#" target="_blank" class="arrow-link white" title="Link contact">Contact Us
+            <svg viewBox="0 0 33 13">
+              <path
+                d="M32.6,6.5l-8,6.3C24.4,12.9,24.2,13,24,13c-0.3,0-0.6-0.1-0.8-0.4c-0.3-0.4-0.3-1.1,0.2-1.4l4.7-3.7H1  c-0.6,0-1-0.4-1-1c0-0.6,0.4-1,1-1h27.1l-4.7-3.7c-0.4-0.3-0.5-1-0.2-1.4c0.3-0.4,1-0.5,1.4-0.2L32.6,6.5z" />
+            </svg>
+          </a>
+        </div>
+        <div class="about-right">
+          <h5>About IDS</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            lectus nulla, mollis ac facilisis id, auctor sed justo. Sed ut
+            consectetur massa. Fusce tristique semper justo, ac porta tortor
+            consectetur a. Ut ullamcorper vel eros non efficitur. Fusce eu
+            tortor ipsum. Suspendisse varius interdum dapibus. Suspendisse
+            potenti.
+          </p>
+          <div class="link-insomniac">
+            <span>© 2021 Insomniac Design Study</span>
+            <br />
+            <span class="web-insomniac">
+              Website created by
+              <a href="#" target="_blank">Insomniac Design, Inc.</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- .footer-main -->
+    <!-- .footer-main -->
+  </main>
+  <script src="/js/app.js"></script>
+</body>
+
 </html>

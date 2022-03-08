@@ -1,0 +1,120 @@
+.section-hashtag {
+  position: relative;
+  padding: 100px 0;
+  overflow: hidden;
+  background: url('/img/svg/info-background.svg') center calc(100% + 244px) / cover no-repeat;
+
+  @media (max-width: 1199px) {
+    padding: 70px 0;
+  }
+
+  @media (max-width: 767px) {
+    padding: 50px 0 0;
+  }
+
+  .container {
+    max-width: 1004px;
+  }
+
+  .hashtag-bg {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      z-index: -1;
+    }
+  }
+}
+
+.hashtags-content {
+  padding: 100px 96px;
+  background-color: $springMorn;
+  display: grid;
+  row-gap: 40px;
+
+  @media (max-width: 1199px) {
+    padding: 70px 60px;
+    row-gap: 30px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 50px 12px;
+    margin: 0 -12px;
+  }
+
+  .more-link {
+    word-break: break-all;
+    font-size: 18px;
+    line-height: 1.5;
+    color: $colorBlue-100;
+
+    @media (max-width: 1199px) {
+      font-size: 16px;
+    }
+
+    &:hover {
+      color: $colorTurquoise;
+    }
+  }
+
+  > div {
+    display: grid;
+    gap: 10px;
+
+    .all-hashtags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0 15px;
+    }
+
+    span {
+      font-size: 18px;
+      line-height: 1.5;
+
+      @media (max-width: 1199px) {
+        font-size: 16px;
+      }
+    }
+
+    strong {
+      font-size: 22px;
+      font-weight: $font-weight-medium;
+      line-height: 1.5;
+
+      @media (max-width: 1199px) {
+        font-size: 18px;
+      }
+    }
+
+    .socials {
+      display: grid;
+      grid-template-columns: repeat(4, max-content);
+      column-gap: 40px;
+      padding-top: 10px;
+
+      a {
+        display: flex;
+        @media (hover: hover) {
+          &:hover {
+            svg {
+              fill: $colorPink;
+              transform: translate(0, -5px);
+            }
+          }
+        }
+      }
+
+      svg {
+        height: 24px;
+        fill: $colorBlack;
+        transition: all 0.3s cubic-bezier(0.77, 0.06, 0.12, 0.98);
+      }
+    }
+  }
+}

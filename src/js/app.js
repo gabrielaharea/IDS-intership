@@ -1,7 +1,7 @@
 import './header';
 import './dropdown';
 import './swiper';
-import './scroll-top';
+import './back-to-top';
 
 /* Import Styles */
 import '../scss/app.scss';
