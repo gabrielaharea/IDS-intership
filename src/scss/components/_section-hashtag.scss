@@ -1,15 +1,15 @@
 .section-hashtag {
   position: relative;
-  padding: 100px 0;
+
   overflow: hidden;
   background: url('/img/svg/info-background.svg') center calc(100% + 244px) / cover no-repeat;
 
-  @media (max-width: 1199px) {
-    padding: 70px 0;
+  @media (min-width: 768px) {
+    padding: 0 0 70px;
   }
 
-  @media (max-width: 767px) {
-    padding: 50px 0 0;
+  @media (min-width: 1200px) {
+    padding: 100px 0;
   }
 
   .container {
