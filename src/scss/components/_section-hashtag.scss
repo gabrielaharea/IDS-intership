@@ -1,8 +1,6 @@
 .section-hashtag {
   position: relative;
-
   overflow: hidden;
-  background: url('/img/svg/info-background.svg') center calc(100% + 244px) / cover no-repeat;
 
   @media (min-width: 768px) {
     padding: 0 0 70px;
@@ -10,6 +8,18 @@
 
   @media (min-width: 1200px) {
     padding: 100px 0;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: calc(100% - 268px);
+    background: url('/img/svg/info-background.svg') center top / cover no-repeat;
+    z-index: -1;
   }
 
   .container {
